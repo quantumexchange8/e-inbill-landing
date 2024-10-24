@@ -2,7 +2,7 @@ import './App.css';
 import Topbar from './Pages/Topbar';
 import Footer from './Pages/Footer';
 import Home from "./Pages/Home";
-import Whyeinbill from "./Pages/Whye_inbill";
+import Whyeinbill from "./Pages/Whyeinbill";
 import Einvoice from "./Pages/Einvoice";
 import Product from "./Pages/Products";
 import ScrollToTop from './Components/ScrollToTop';

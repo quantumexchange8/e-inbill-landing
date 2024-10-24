@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { HomeGroup1, GroupM, Inbill, /*Ellipse1,*/ Tablet, KFGroup1, Pos, Group11, Group12, Group6, KFGroup2, Startup, Arrow } from '../Components/Outline.jsx';
+import { HomeGroup1, GroupM, Tablet, KFGroup1, Pos, Group11, Group12, Group6, KFGroup2, Startup, Arrow } from '../Components/Outline.jsx';
 import beautyImage from '../Asset/Images/beautician-with-brush-applies-white-moisturizing-mask-face-young-girl-client-spa-beauty-salon-1.png';
 import barista from '../Asset/Images/young-woman-barista-working-modern-coffee-shop-1.png';
 import food from '../Asset/Images/couple-enjoying-food-restaurant-1.png';
@@ -21,7 +21,7 @@ const Home = () => {
   const { t, i18n } = useTranslation();
   
   return (
-    <div className='pt-[101px] flex flex-col gap-[100px]'>
+    <div className='pt-[113px] flex flex-col gap-[100px]'>
       {/* 1 */} 
       <div className="relative text-white">
         <video autoPlay loop playsInline muted className='w-full rounded-br-[500px]'>
@@ -44,22 +44,21 @@ const Home = () => {
 
       {/* 2 */}
       <div className='w-full flex justify-center'>
-        <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] w-full '>
+        <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] md:w-full '>
           {/* 2.1 */}
           <div className='flex flex-col gap-5'>
             <div className='text-[#0046BA] text-5xl font-bold text-left'>{t('about_us')}</div>
               <div className='text-[#0060FF] text-2xl font-medium text-left leading-tight flex flex-col gap-10'> 
-                {/* {t('remark2')} */}
                 <div>
-                {t('we_are_einbill')}, a division of Current Tech Industries Sdn Bhd.
+                {t('we_are_einbill')}, a division of Current Tech Industries Sdn Bhd.<br />
                   As a technology-driven company, our core mission at E-inbill is to simplify financial processes and foster connectivity among businesses. Our objective is to streamline financial operations and facilitate seamless interactions between companies.
                 </div>
-                <div>
-                In Malaysia, we have introduced e-invoicing products that comply with LHDN standards, serving over 300 businesses. 
-                Our clientele spans various sectors, from retail to manufacturing, with a focus on providing support to small businesses and medium-sized tech enterprises. 
-                Our solutions adhere to LHDN regulations, PEPPOL, and MDEC compliance requirements. 
-                Through close collaboration with regulatory bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. 
-                Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.
+                <div className='w-[950px]'>
+                  In Malaysia, we have introduced e-invoicing products that comply with LHDN standards, serving over 300 businesses. 
+                  Our clientele spans various sectors, from retail to manufacturing, with a focus on providing support to small businesses and medium-sized tech enterprises. 
+                  Our solutions adhere to LHDN regulations, PEPPOL, and MDEC compliance requirements. 
+                  Through close collaboration with regulatory bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. 
+                  Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.
               </div>
             </div>
           </div>
@@ -71,50 +70,42 @@ const Home = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-[200px]">
               <div className=" flex flex-col items-center gap-[30px]">
                 <Tablet />
-                <div className="text-black text-center font-sans text-xl font-bold leading-tight w-[198px]">Completing the transaction requires just a few clicks.</div>
+                <div className="text-black text-center text-xl font-bold leading-tight w-[198px]">Completing the transaction requires just a few clicks.</div>
               </div>
               <div className="flex flex-col items-center gap-[30px]">
                 <KFGroup1 />
-                <div className="text-black text-center font-sans text-xl font-bold leading-tight w-[149px]">Fully compliant tax e-invoice functionality</div>
+                <div className="text-black text-center text-xl font-bold leading-tight w-[149px]">Fully compliant tax e-invoice functionality</div>
               </div>
               <div className="flex flex-col items-center gap-[30px]">
                 <Pos />
-                <div className="text-black text-center font-sans text-xl font-bold leading-tight w-[140px]">Fully supports all payment methods</div>
+                <div className="text-black text-center text-xl font-bold leading-tight w-[140px]">Fully supports all payment methods</div>
               </div>
               <div className="flex flex-col items-center gap-[30px]">
                 <Group11 />
-                <div className="text-black text-center font-sans text-xl  font-bold leading-tight w-[157px]">Unbeatable low prices you wouldn’t expect</div>
+                <div className="text-black text-center text-xl  font-bold leading-tight w-[157px]">Unbeatable low prices you wouldn’t expect</div>
               </div>
               <div className="flex flex-col items-center gap-[30px] justify-center">
-                  <div className="bg-blue-800 flex flex-col items-center rounded-[30px] w-[150px] h-[150px] justify-center">
-                    {/* <div className='flex justify-center items-center'>
-                      <Ellipse1 />
-                    </div> */}
-                    <div className="flex flex-col gap-[12.23px] items-center">
-                    <div>
-                      <GroupM />
-                    </div>
-                    <div>
-                      <Inbill />
-                    </div>
-                    </div>
+                <div className="bg-blue-800 flex flex-col items-center rounded-[30px] w-[150px] h-[150px] justify-center">
+                  <div>
+                    <GroupM />
                   </div>
+                </div>
               </div>
               <div className="flex flex-col items-center gap-[30px]">
                 <Group12 />
-                <div className="text-black text-center font-sans text-xl  font-bold leading-tight w-[218px]">Absolutely secure cloud synchronization and storage</div>
+                <div className="text-black text-center text-xl font-bold leading-tight w-[218px]">Absolutely secure cloud synchronization and storage</div>
               </div>
               <div className="flex flex-col items-center gap-[30px]">
                 <Group6 />
-                <div className="text-black text-center font-sans text-xl  font-bold leading-tight w-[173px]">User-friendly and easy-to-use interface</div>
+                <div className="text-black text-center text-xl  font-bold leading-tight w-[173px]">User-friendly and easy-to-use interface</div>
               </div>
               <div className="flex flex-col items-center gap-[30px]">
                 <KFGroup2 />
-                <div className="text-black text-center font-sans text-xl  font-bold leading-tight w-[145px]">Set up and start selling within minutes</div>
+                <div className="text-black text-center text-xl  font-bold leading-tight w-[145px]">Set up and start selling within minutes</div>
               </div>
               <div className="flex flex-col items-center gap-[30px]">
                 <Startup />
-                <div className="text-black text-center font-sans text-xl  font-bold leading-tight w-[198px]">Customer support seven days a week for quick assistance</div>
+                <div className="text-black text-center text-xl  font-bold leading-tight w-[198px]">Customer support seven days a week for quick assistance</div>
               </div>
             </div>
           </div>
@@ -127,13 +118,15 @@ const Home = () => {
             </div>
             <div>
               <div className='text-black text-2xl font-medium text-center leading-tight flex flex-col gap-6'>
-                <div>
+                <div className='w-[960px]'>
                   Whether a small street vendor or a large restaurant chain, E-inbill always supports your business. 
                   Hardware, software, payments, and technical support are unified under one E-inbill solution.
                 </div>
-                <div>
-                  The E-inbill framework ensures that the entire ecosystem works seamlessly together. 
-                  That is the E-inbill goal - to provide the best user experience for you and your customers.
+                <div className='flex justify-center'>
+                  <div className='w-[830px]'>
+                    The E-inbill framework ensures that the entire ecosystem works seamlessly together. 
+                    That is the E-inbill goal - to provide the best user experience for you and your customers.
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,7 +140,7 @@ const Home = () => {
             </div>
             
             <div className='flex flex-col gap-[50px]'>
-              <div className='grid grid-cols-2 md:grid-cols-3 gap-[50px]'>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-[50px]'>
                 {/* g1 */}
                 <div className="relative w-[300px] h-[600px] border-2 border-[#00A6CA] rounded-lg flex flex-col items-center gap-8 px-[25px] py-8">
                   <div className='absolute -top-5 inset-x-0 flex justify-center'>
@@ -211,7 +204,7 @@ const Home = () => {
               </div>
 
               <div className="flex items-center justify-center">
-                <button className="w-[400px] h-[60px] rounded-[31px] border-2 border-black shadow-2xl flex items-center justify-center gap-[30px]">
+                <button className="w-[400px] h-[60px] rounded-[31px] border-2 border-black shadow-submit flex items-center justify-center gap-[30px]">
                   <div className="text-black text-center text-[20px] font-semibold">See all products details</div>
                   <div>
                     <Arrow />
@@ -229,9 +222,7 @@ const Home = () => {
         <video autoPlay loop playsInline muted className='w-full'>
           <source src={Video2} type="video/mp4" />
         </video>
-        {/* Centering Container */}
         <div className="absolute inset-0 flex justify-center items-center">
-          {/* Centered Text with max-width of 1000px */}
           <div className="text-white/80 text-center text-[64px] font-bold leading-tight w-full max-w-[1000px]">
             Don't let tedious steps hinder your business progress
           </div>
@@ -255,8 +246,8 @@ const Home = () => {
             </div>
           </div>
           {/* 4.2 */}
-          <div className='flex flex-col gap-[100px]'>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[50px]">
+          <div className='flex flex-col gap-[50px]'>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px]">
               <div className="relative w-[300px] h-[200px] flex-shrink-0">
                   <div
                       className="absolute inset-0 bg-cover bg-center "
@@ -358,7 +349,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <button className="w-[400px] h-[60px] rounded-[31px] border-2 border-black shadow-2xl flex items-center justify-center gap-[30px]">
+              <button className="w-[400px] h-[60px] rounded-[31px] border-2 border-black shadow-submit flex items-center justify-center gap-[30px]">
                 <div className="text-black text-center text-[20px] font-semibold">See all products details</div>
                 <div>
                   <Arrow />
@@ -384,11 +375,11 @@ const Home = () => {
             </div>
             {/* 5.1.2 */}
             <div className='flex flex-col gap-[100px]'>
-              <div className='flex flex-col gap-[50px]'>
+              <form className='flex flex-col gap-[50px]'>
                 {/* Full name */}
                 <div className='flex flex-col gap-[10px]'>
                   <div className="text-[#000] text-base font-bold text-left" htmlFor="fullname">
-                    Full name<span className="text-[#F00] text-base  font-bold">*</span>
+                    Full name<span className="text-[#F00] text-base font-bold">*</span>
                   </div>
                   <input
                     type="text"
@@ -451,17 +442,17 @@ const Home = () => {
                     className="w-full h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[10px] focus:outline-none focus:border-blue-600"
                   />
                 </div>
-              </div>
-            </div>
-            {/* 5.1.3 */}
-            <div className="flex items-center justify-center">
-              <button className="w-[600px] h-[60px] rounded-[31px] border-2 border-black" type="submit">
-                <div className='flex justify-center'>
-                  <div className="w-[530px] text-black text-center text-xl font-semibold leading-tight">
-                    Leave your contact to schedule a complimentary demo
-                  </div>
+                {/* Submit */}
+                <div className="flex items-center justify-center">
+                  <button className="w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
+                    <div className='flex justify-center'>
+                      <div className="w-[530px] text-black text-center text-xl font-semibold leading-tight">
+                        Leave your contact to schedule a complimentary demo
+                      </div>
+                    </div>
+                  </button>
                 </div>
-              </button>
+              </form>
             </div>
           </div>
         </div>
