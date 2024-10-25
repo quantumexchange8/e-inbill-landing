@@ -19,7 +19,7 @@ const whyeinbill = () => {
           <div className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
             <HomeGroup1 className="w-[50px] h-[45px]" />
             <div className="text-[#0046BA] text-center text-sm font-bold leading-normal w-[120px] ">
-              Leave your contact here
+              Leave your Contact
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ const whyeinbill = () => {
                   e-inbill Ecosystem
                 </div>
                 <div className='text-left w-[320px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem. <br className='md:hidden'/> 
+                  Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem.
                   With a robust core POS system, customisable expansion modules, and seamless integration across various technologies, 
                   you can empower every facet of your business operations for optimal performance and success.
                 </div>
@@ -95,7 +95,7 @@ const whyeinbill = () => {
                 </div>
                 <div className='text-left w-[320px] md:w-[810px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
                   We continuously analyse market trends and integrate our findings into developing new products. 
-                  Our goal is to help restaurants adapt to the evolving catering landscape quickly. <br className='md:hidden'/>
+                  Our goal is to help restaurants adapt to the evolving catering landscape quickly.
                   Our R&D team introduces products aligned with industry trends, incorporating user feedback. 
                   All new features undergo rigorous testing. 
                   Our commitment to updates ensures both speed and quality.
@@ -171,7 +171,7 @@ const whyeinbill = () => {
           <div className='flex flex-col gap-[50px] md:gap-[100px]'>
             {/* 2.2.1 */}
             <div className="flex flex-col gap-[30px] md:gap-[100px]">
-              <div className='flex flex-col w-[290px] md:w-[1000px] justify-center text-left text-[#0046BA] text-xl md:text-5xl  font-bold leading-tight'>
+              <div className='flex flex-col w-[290px] md:w-[930px] justify-center text-left text-[#0046BA] text-xl md:text-5xl  font-bold leading-tight'>
                 Our system is fully equipped to match the characteristics of your industry, making us the ideal choice for you.
               </div>
               {/* 2.2.2 */}
@@ -283,93 +283,100 @@ const whyeinbill = () => {
             <div className='h-[1px] bg-[#0046BA] w-full'></div>
           </div>
           {/* 2.3 */}
-          <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center'>
-            {/* 2.3.1 */}
-            <div className="flex justify-center">
-              <div className='w-[300px] md:w-[720px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
-                Leave your contact information to discover how E-inbill empowers merchants to achieve more.
-              </div>
-            </div>
-            {/* 2.3.2 */}
-            <div className='flex flex-col gap-[100px]'>
-              <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                {/* Full name */}
-                <div className='flex flex-col gap-[10px]'>
-                  <div className="text-[#000] text-base font-bold text-left" htmlFor="fullname">
-                    Full name<span className="text-[#F00] text-base  font-bold">*</span>
-                  </div>
-                  <input
-                    type="text"
-                    id="fullname"
-                    className="w-full h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[10px] focus:outline-none focus:border-blue-600"
-                  />
-                </div>
-                {/* Company name */}
-                <div className='flex flex-col gap-[10px]'> 
-                  <label className="block text-[#000] text-base font-bold text-left " htmlFor="companyname">
-                    Company name<span className="text-[#F00] text-base  font-bold">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="companyname"
-                    className="w-full h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[10px] focus:outline-none focus:border-blue-600"
-                  />
-                </div>
-                {/* Contact number */}
-                <div className='flex flex-col gap-[10px]'>
-                  <label className="block text-[#000] text-base  font-bold text-left " htmlFor="contactnumber">
-                    Contact number<span className="text-[#F00] text-base  font-bold">*</span>
-                  </label>
-                  <input
-                    type="tel"
-                    id="contactnumber"
-                    className="w-full h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[10px] focus:outline-none focus:border-blue-600"
-                  />
-                </div>
-                {/* Email-address */}
-                <div className='flex flex-col gap-[10px]'>
-                  <label className="block text-[#000] text-base  font-bold text-left " htmlFor="email">
-                    Email address<span className="text-[#F00] text-base  font-bold">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[10px] focus:outline-none focus:border-blue-600"
-                  />
-                </div>
-                {/* Your state or location */}
-                <div className='flex flex-col gap-[10px]'>
-                  <label className="block text-[#000] text-base  font-bold text-left " htmlFor="location">
-                    Your state or location<span className="text-[#F00] text-base  font-bold">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="location"
-                    className="w-full h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[10px] focus:outline-none focus:border-blue-600"
-                  />
-                </div>
-                {/* Your business sector */}
-                <div className='flex flex-col gap-[10px]'>
-                  <label className="block text-[#000] text-base  font-bold text-left " htmlFor="sector">
-                    Your business sector<span className="text-[#F00] text-base  font-bold">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="sector"
-                    className="w-full h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[10px] focus:outline-none focus:border-blue-600"
-                  />
-                </div>
-              </div>
-            </div>
-            {/* 2.3.3 */}
-            <div className="flex items-center justify-center">
-              <button className="w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
-                <div className='flex justify-center'>
-                  <div className="md:w-[530px] w-[243px] text-black text-center md:text-xl text-base font-semibold leading-tight">
-                    Leave your contact to schedule a complimentary demo
+          <div className='w-full flex justify-center'>
+            <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] w-full'>
+              <div className='flex flex-col gap-[100px] justify-center'>
+                {/* 2.3.1 */}
+                <div className="flex justify-center">
+                  <div className='w-[300px] md:w-[720px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
+                    Leave your contact information to discover how E-inbill empowers merchants to achieve more.
                   </div>
                 </div>
-              </button>
+                {/* 2.3.2 */}
+                <div className='flex flex-col gap-[100px]'>
+                  <form className='flex flex-col gap-[100px]'>
+                    {/* Content */}
+                    <div className='flex flex-col gap-[50px]'>
+                      {/* Full name */}
+                      <div className='flex flex-col gap-[10px]'>
+                        <div className="text-[#000] text-sm md:text-base font-bold text-left" htmlFor="fullname">
+                          Full name<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                        </div>
+                        <input
+                          type="text"
+                          id="fullname"
+                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                        />
+                      </div>
+                      {/* Company name */}
+                      <div className='flex flex-col gap-[10px]'> 
+                        <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="companyname">
+                          Company name<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="companyname"
+                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                        />
+                      </div>
+                      {/* Contact number */}
+                      <div className='flex flex-col gap-[10px]'>
+                        <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="contactnumber">
+                          Contact number<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                        </label>
+                        <input
+                          type="tel"
+                          id="contactnumber"
+                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                        />
+                      </div>
+                      {/* Email-address */}
+                      <div className='flex flex-col gap-[10px]'>
+                        <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="email">
+                          Email address<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                        />
+                      </div>
+                      {/* Your state or location */}
+                      <div className='flex flex-col gap-[10px]'>
+                        <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="location">
+                          Your state or location<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="location"
+                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                        />
+                      </div>
+                      {/* Your business sector */}
+                      <div className='flex flex-col gap-[10px]'>
+                        <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="sector">
+                          Your business sector<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="sector"
+                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                        />
+                      </div>
+                    </div>
+                    {/* Submit */}
+                    <div className="flex items-center justify-center">
+                      <button className="w-[333px] md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
+                        <div className='flex justify-center'>
+                          <div className="w-[243px] md:w-[530px] text-black text-center md:text-xl text-base font-semibold leading-tight">
+                            Leave your contact to schedule a complimentary demo
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>

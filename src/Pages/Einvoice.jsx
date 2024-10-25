@@ -20,7 +20,7 @@ const Einvoice = () => {
           <div className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
             <HomeGroup1 className="w-[50px] h-[45px]" />
             <div className="text-[#0046BA] text-center text-sm font-bold leading-normal w-[120px] ">
-              Leave your contact here
+              Leave your Contact
             </div>
           </div>
         </div>
@@ -268,7 +268,7 @@ const Einvoice = () => {
             {/* LHDN E-Invoice */}
             <div className='flex flex-col gap-5'>
               <div className='w-[313px] md:w-[732px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                LHDN E-Invoice:<br /> What Are The Penalties For Non-Compliance?
+                LHDN E-Invoice: What Are The Penalties For Non-Compliance?
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-[30px]'>
                 <div className='w-[333px] md:w-[850px]'>
@@ -276,7 +276,7 @@ const Einvoice = () => {
                   Here's what you need to be aware of:
                 </div>
                 <div className='pl-7'>
-                  <ul className='flex flex-col gap-4 list-disc w-[323px] md:w-[900px]'>
+                  <ul className='flex flex-col gap-4 list-disc w-[323px] md:w-[950px]'>
                     <li>
                       Penalties: Non-compliance with e-invoice regulations can incur substantial financial penalties, ranging from RM200 to RM20,000.
                     </li>
@@ -322,20 +322,7 @@ const Einvoice = () => {
                 </div>
                 <div className='w-[333px] md:w-[920px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px]'>
                   <ul>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
-                        </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
-                        </div>
-                      </div>
-                      <li>
-                        Associations.
-                      </li>
-                    </div>
-                    <div>
+                    <li>
                       <div className='flex gap-1 md:gap-2'>
                         <div className='transform scale-y-[-1] flex items-center'>
                           <div className='hidden md:block'>
@@ -345,167 +332,206 @@ const Einvoice = () => {
                             <ArrowFlipForwardS />
                           </div>
                         </div>
-                        <li>
+                        <div>
+                          Associations.
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
+                        </div>
+                        <div>
                           Body of persons.
-                        </li>
-                      </div>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
-                        </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
-                        Branches.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
                         </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
+                        <div>
+                          Branches.
                         </div>
-                      </div>
-                      <li>
-                        Business trusts.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
+                      </div>  
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
                         </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
-                        </div>
-                      </div>
-                      <li>
-                        Co-operative societies.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
-                        </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
+                        <div>
+                          Business trusts.
                         </div>
                       </div>
-                      <li>
-                        Corporations.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
                         </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
+                        <div>
+                          Co-operative societies.
                         </div>
-                      </div>
-                      <li>
-                        Limited liability partnerships.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
+                      </div>  
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
                         </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
-                        </div>
-                      </div>
-                      <li>
-                        Partnerships.
-                      </li>
-                    </div >
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
-                        </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
+                        <div>
+                          Corporations.
                         </div>
                       </div>
-                      <li>
-                        Property trust funds.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
                         </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
-                        </div>
-                      </div>
-                      <li>
-                        Property trusts.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
-                        </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
+                        <div>
+                          Limited liability partnerships.
                         </div>
                       </div>
-                      <li>
-                        Real estate investment trusts.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
                         </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
+                        <div>
+                          Partnerships.
                         </div>
-                      </div>
-                      <li>
-                        Representative offices and regional offices.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
+                      </div >
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
                         </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
-                        </div>
-                      </div>
-                      <li>
-                        Trust bodies.
-                      </li>
-                    </div>
-                    <div className='flex gap-1 md:gap-2'>
-                      <div className='transform scale-y-[-1] flex items-center'>
-                        <div className='hidden md:block'>
-                          <ArrowFlipForward />
-                        </div>
-                        <div className='md:hidden'>
-                          <ArrowFlipForwardS />
+                        <div>
+                          Property trust funds.
                         </div>
                       </div>
-                      <li>
-                        Unit trusts.
-                      </li>
-                    </div>
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
+                        </div>
+                        <div>
+                          Property trusts.
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
+                        </div>
+                        <div>
+                          Real estate investment trusts.
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
+                        </div>
+                        <div>
+                          Representative offices and regional offices.
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
+                        </div>
+                        <div>
+                          Trust bodies.
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='flex gap-1 md:gap-2'>
+                        <div className='transform scale-y-[-1] flex items-center'>
+                          <div className='hidden md:block'>
+                            <ArrowFlipForward />
+                          </div>
+                          <div className='md:hidden'>
+                            <ArrowFlipForwardS />
+                          </div>
+                        </div>
+                        <div>
+                          Unit trusts.
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -516,7 +542,7 @@ const Einvoice = () => {
                 </div>
                 <div className='w-[333px] md:w-[940px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px]'>
                   <ul>
-                    <div className='flex gap-1 md:gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -525,11 +551,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Ruler and Ruling Chief.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -538,11 +564,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Former Ruler and Ruling Chief.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-end md:items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -551,11 +577,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Consort of a Ruler of a State with specified titles.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-end md:items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -564,11 +590,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Consort of a Former Ruler of a State with specified titles Government.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -577,11 +603,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         State Government and State authority.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -590,11 +616,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Government authority.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -603,11 +629,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Local authority.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -616,11 +642,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Statutory authority and Statutory Body.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -629,11 +655,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Property trust funds.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-end'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -642,11 +668,11 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Facilities provided by the above Government, authority, or Body Consular offices and diplomatic officers, Consular officers, and Consular employees.
-                      </li>
-                    </div>
-                    <div className='flex gap-2'>
+                      </div>
+                    </li>
+                    <li className='flex gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -655,10 +681,10 @@ const Einvoice = () => {
                           <ArrowFlipForwardS />
                         </div>
                       </div>
-                      <li>
+                      <div>
                         Individual who is not conducting Business.
-                      </li>
-                    </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
