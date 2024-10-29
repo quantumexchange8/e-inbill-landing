@@ -5,10 +5,10 @@ import LHDN from '../Asset/Images/LHDN_logo1.png';
 
 const Einvoice = () => {
   return (
-    <div className='pt-[113px] md:pb-[100px] pb-[75px] flex flex-col gap-[50px] md:gap-[100px]'>
+    <div className='pt-[54px] md:pt-[113px] md:pb-[100px] pb-[75px] flex flex-col gap-[50px] md:gap-[100px]'>
       {/* 1 */}
       <div className="relative text-white">
-        <video autoPlay loop playsInline muted className='w-full rounded-br-[500px]'>
+        <video autoPlay loop playsInline muted className='w-full rounded-br-[150px] md:rounded-br-[500px]'>
           <source src={Video1} type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex justify-center items-center">
@@ -278,6 +278,7 @@ const Einvoice = () => {
                 <div className='pl-7'>
                   <ul className='flex flex-col gap-4 list-disc w-[323px] md:w-[950px]'>
                     <li>
+            
                       Penalties: Non-compliance with e-invoice regulations can incur substantial financial penalties, ranging from RM200 to RM20,000.
                     </li>
                     <li>

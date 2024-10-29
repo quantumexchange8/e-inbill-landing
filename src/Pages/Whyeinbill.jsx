@@ -4,10 +4,10 @@ import { HomeGroup1, WhyGroup1, WhyGroup1S, Group13, Group13S, Group71, Group71S
 
 const whyeinbill = () => {
   return (
-    <div className='pt-[113px] md:pb-[100px] pb-[75px] flex flex-col gap-[50px] md:gap-[100px]'>
+    <div className='pt-[54px] md:pt-[113px] pb-[75px] md:pb-[100px] flex flex-col gap-[50px] md:gap-[100px]'>
       {/* 1 */}
       <div className="relative text-white">
-        <video autoPlay loop playsInline muted className='w-full rounded-br-[500px]'>
+        <video autoPlay loop playsInline muted className='w-full rounded-br-[150px] md:rounded-br-[500px]'>
           <source src={Video1} type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex justify-center items-center">
@@ -165,7 +165,7 @@ const whyeinbill = () => {
               </div>
             </div>
             {/* 2.1.8 */}
-            <div className='h-[1px] bg-[#0046BA] w-full'></div>
+            <div className='h-[1px] bg-[#0046BA] w-[333px] md:w-full'></div>
           </div>
           {/* 2.2 */}
           <div className='flex flex-col gap-[50px] md:gap-[100px]'>
@@ -280,12 +280,12 @@ const whyeinbill = () => {
               </div>
             </div>
             {/* 2.2.7 */}
-            <div className='h-[1px] bg-[#0046BA] w-full'></div>
+            <div className='h-[1px] bg-[#0046BA] w-[333px] md:w-full'></div>
           </div>
           {/* 2.3 */}
           <div className='w-full flex justify-center'>
             <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] w-full'>
-              <div className='flex flex-col gap-[100px] justify-center'>
+              <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center'>
                 {/* 2.3.1 */}
                 <div className="flex justify-center">
                   <div className='w-[300px] md:w-[720px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
@@ -294,9 +294,9 @@ const whyeinbill = () => {
                 </div>
                 {/* 2.3.2 */}
                 <div className='flex flex-col gap-[100px]'>
-                  <form className='flex flex-col gap-[100px]'>
+                  <form className='flex flex-col gap-[50px] md:gap-[100px]'>
                     {/* Content */}
-                    <div className='flex flex-col gap-[50px]'>
+                    <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                       {/* Full name */}
                       <div className='flex flex-col gap-[10px]'>
                         <div className="text-[#000] text-sm md:text-base font-bold text-left" htmlFor="fullname">

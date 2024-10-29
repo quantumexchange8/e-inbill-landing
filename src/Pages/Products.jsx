@@ -16,10 +16,10 @@ import { HomeGroup1, Vector, Vector2, Vector3, Group111, Group111S, Group119, Gr
 
 const Home = () => {
   return (
-    <div className='pt-[113px] pb-[75px] md:pb-[100px] flex flex-col gap-[50px] md:gap-[100px]'>
+    <div className='pt-[54px] md:pt-[113px] pb-[50px] md:pb-[100px] flex flex-col gap-[50px] md:gap-[100px]'>
       {/* 1 */} 
       <div className="relative text-white">
-        <video autoPlay loop playsInline muted className='w-full rounded-br-[500px]'>
+        <video autoPlay loop playsInline muted className='w-full rounded-br-[150px] md:rounded-br-[500px]'>
           <source src={Video1} type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex justify-center items-center">
@@ -852,7 +852,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Icons */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-11">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-11">
                   <div className="justify-center">
                     <div className="grid grid-cols-4 gap-7 md:gap-11">
                       <div className='flex flex-col gap-[10px] items-center'>
@@ -1058,7 +1058,7 @@ const Home = () => {
       {/* 6 */}
       <div className='w-full flex justify-center'>
         <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] w-full'>
-          <div className='flex flex-col gap-[100px] justify-center'>
+          <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center'>
             {/* 6.1 */}
             <div className="flex justify-center">
               <div className='w-[300px] md:w-[720px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
@@ -1067,9 +1067,9 @@ const Home = () => {
             </div>
             {/* 6.2 */}
             <div className='flex flex-col gap-[100px]'>
-              <form className='flex flex-col gap-[100px]'>
+              <form className='flex flex-col gap-[50px] md:gap-[100px]'>
                 {/* Content */}
-                <div className='flex flex-col gap-[50px]'>
+                <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                   {/* Full name */}
                   <div className='flex flex-col gap-[10px]'>
                     <div className="text-[#000] text-sm md:text-base font-bold text-left" htmlFor="fullname">
