@@ -9,7 +9,7 @@ const Header = () => {
   return (
       <div className='fixed w-full z-30 flex flex-col'>
         {/* 1 */}
-        <div className='hidden bg-[#0046BA] w-full md:flex justify-center py-3'>
+        <div className='hidden bg-[#0046BA] w-full md:flex justify-center py-3 '>
           <div className='w-[1000px] flex justify-end gap-[175px]'>
             <div className='text-white text-xs text-center font-medium leading-tight'>
               Only RM1.99/day for your business to accept cashless payments with E-invoice. Try free demo now!
@@ -22,7 +22,7 @@ const Header = () => {
           </div>
         </div>
         {/* 2 */}
-        <div className='bg-[#0046BA] md:bg-[#0060FF] w-full flex justify-center'>
+        <div className='bg-[#0046BA] md:bg-[#0060FF] w-full flex justify-center px-[30px] md:px-0'>
           <div className='max-w-[1000px] flex justify-between items-center w-full'>
             {/* 2.1 */}
             <div className="hidden md:flex items-center">

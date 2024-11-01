@@ -1,5 +1,6 @@
 import React from 'react';
 import Video1 from '../Asset/Videos/whyEinbillVideo1.mp4';
+import ScrollToTopButton from '../Components/ScrollToTopButton';
 import { HomeGroup1, WhyGroup1, WhyGroup1S, Group13, Group13S, Group71, Group71S, Group72, Group72S, Group73, Group73S, Group74, Group74S, Group18, Group18S, Group84, Group84S, Group85, Group85S, Group86, Group86S, Group87, Group87S } from '../Components/Outline.jsx';
 
 const whyeinbill = () => {
@@ -25,7 +26,7 @@ const whyeinbill = () => {
         </div>
       </div>
       {/* 2 */}
-      <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center px-[30px] md:px-0'>
         <div className='flex flex-col gap-[75px] md:gap-[100px] justify-center max-w-[1000px] w-full'>
           {/* 2.1 */}
           <div className='flex flex-col gap-[50px] md:gap-[100px]'> 
@@ -72,10 +73,19 @@ const whyeinbill = () => {
                 <div className='text-left w-[127px] md:w-[218px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
                   e-inbill Ecosystem
                 </div>
-                <div className='text-left w-[320px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                <div className='hidden md:block text-left w-[320px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
                   Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem.
                   With a robust core POS system, customisable expansion modules, and seamless integration across various technologies, 
                   you can empower every facet of your business operations for optimal performance and success.
+                </div>
+                <div className='md:hidden text-left w-[320px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div>
+                    Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem.
+                  </div>
+                  <div>
+                    With a robust core POS system, customisable expansion modules, and seamless integration across various technologies, 
+                    you can empower every facet of your business operations for optimal performance and success.
+                  </div>
                 </div>
               </div>
             </div>
@@ -93,12 +103,25 @@ const whyeinbill = () => {
                 <div className='text-left w-[193px] md:w-[553px] text-[#000] text-sm md:text-2xl font-bold leading-tight'>
                   Keeping Pace with Innovation and Optimisation
                 </div>
-                <div className='text-left w-[320px] md:w-[810px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                <div className='hidden md:block text-left w-[320px] md:w-[810px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
                   We continuously analyse market trends and integrate our findings into developing new products. 
                   Our goal is to help restaurants adapt to the evolving catering landscape quickly.
                   Our R&D team introduces products aligned with industry trends, incorporating user feedback. 
                   All new features undergo rigorous testing. 
                   Our commitment to updates ensures both speed and quality.
+                </div>
+                <div>
+                  <div className='md:hidden text-left w-[320px] md:w-[810px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                    <div>
+                      We continuously analyse market trends and integrate our findings into developing new products. 
+                      Our goal is to help restaurants adapt to the evolving catering landscape quickly.
+                    </div>
+                    <div>
+                      Our R&D team introduces products aligned with industry trends, incorporating user feedback. 
+                      All new features undergo rigorous testing. 
+                      Our commitment to updates ensures both speed and quality.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -136,11 +159,27 @@ const whyeinbill = () => {
                 <div className='text-left w-[178px] md:w-[242px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
                   Suitable for All Sizes
                 </div>
-                <div className='text-left w-[333px] md:w-[821px] text-[#000] text-sm md:text-xl  font-medium leading-tight'>
-                  No matter if you run a single restaurant, a small or medium-sized chain, or an enterprise, implementing E-inbill's restaurant solution is easy and customisable. 
-                  Our system supports different structures for restaurant groups, enabling remote monitoring of operational data for individual stores. 
-                  You can track revenue, average order value, foot traffic, inventory, and more through comprehensive reports. 
-                  Plus, you can manage multiple brands and locations effortlessly, empowering your restaurant's growth painlessly.
+                <div className='hidden md:block text-left w-[333px] md:w-[821px] text-[#000] text-sm md:text-xl  font-medium leading-tight'>
+                  <div>
+                    No matter if you run a single restaurant, a small or medium-sized chain, or an enterprise, implementing E-inbill's restaurant solution is easy and customisable. 
+                    Our system supports different structures for restaurant groups, enabling remote monitoring of operational data for individual stores. 
+                    You can track revenue, average order value,  
+                  </div>
+                  <div>
+                    foot traffic, inventory, and more through comprehensive reports. 
+                    Plus, you can manage multiple brands and locations effortlessly, empowering your restaurant's growth painlessly.
+                  </div>
+                </div>
+                <div className='md:hidden text-left w-[333px] md:w-[821px] text-[#000] text-sm md:text-xl  font-medium leading-tight'>
+                  <div>
+                    No matter if you run a single restaurant,  
+                  </div>
+                  <div>
+                    a small or medium-sized chain, or an enterprise, implementing E-inbill's restaurant solution is easy and customisable. 
+                    Our system supports different structures for restaurant groups, enabling remote monitoring of operational data for individual stores. 
+                    You can track revenue, average order value, foot traffic, inventory, and more through comprehensive reports. 
+                    Plus, you can manage multiple brands and locations effortlessly, empowering your restaurant's growth painlessly.
+                  </div>
                 </div>
               </div>
             </div>
@@ -305,7 +344,7 @@ const whyeinbill = () => {
                         <input
                           type="text"
                           id="fullname"
-                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                         />
                       </div>
                       {/* Company name */}
@@ -316,7 +355,7 @@ const whyeinbill = () => {
                         <input
                           type="text"
                           id="companyname"
-                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                         />
                       </div>
                       {/* Contact number */}
@@ -327,7 +366,7 @@ const whyeinbill = () => {
                         <input
                           type="tel"
                           id="contactnumber"
-                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                         />
                       </div>
                       {/* Email-address */}
@@ -338,7 +377,7 @@ const whyeinbill = () => {
                         <input
                           type="email"
                           id="email"
-                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                         />
                       </div>
                       {/* Your state or location */}
@@ -349,7 +388,7 @@ const whyeinbill = () => {
                         <input
                           type="text"
                           id="location"
-                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                         />
                       </div>
                       {/* Your business sector */}
@@ -360,13 +399,13 @@ const whyeinbill = () => {
                         <input
                           type="text"
                           id="sector"
-                          className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                         />
                       </div>
                     </div>
                     {/* Submit */}
                     <div className="flex items-center justify-center">
-                      <button className="w-[333px] md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
+                      <button className="w-full md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
                         <div className='flex justify-center'>
                           <div className="w-[243px] md:w-[530px] text-black text-center md:text-xl text-base font-semibold leading-tight">
                             Leave your contact to schedule a complimentary demo
@@ -380,7 +419,12 @@ const whyeinbill = () => {
             </div>
           </div>
         </div>
+
+        <div className='bg-opacity-20'>
+          <ScrollToTopButton />
+        </div>
       </div>
+
     </div>
   );
 };

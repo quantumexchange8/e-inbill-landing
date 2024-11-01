@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTopButton from '../Components/ScrollToTopButton';
 import Video1 from '../Asset/Videos/productVideo1.mp4';
 import Product1 from '../Asset/Images/product1.png';
 import Product2 from '../Asset/Images/product2.png';
@@ -38,11 +39,11 @@ const Home = () => {
       </div>
 
       {/* 2 */}
-      <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center px-[30px] md:px-0'>
         <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] w-full '>
           <div className="flex flex-col gap-[30px] md:gap-5 text-left">
-            <div className='text-[#0046BA] w-[333px] md:w-[800px] text-xl md:text-5xl font-bold'>
-              Switch to E-inbill and ensure your business stays compliant with LHDN E Invocie.
+            <div className='text-[#0046BA] w-[333px] md:w-[800px] text-xl md:text-5xl font-bold leading-tight'>
+              Switch to E-inbill and ensure your business stays compliant with LHDN E Invoice.
             </div>
             <div className='text-[#0060FF] w-[333px] md:w-[900px] text-sm md:text-2xl font-medium leading-tight'>
               Comprehensive Solution: Integrated Cash Collection, Inventory Management, and Business Intelligence.
@@ -52,7 +53,7 @@ const Home = () => {
       </div>
 
       {/* 3 */}
-      <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center px-[30px] md:px-0'>
         <div className='flex flex-col max-w-[1000px] h-[1152px] md:h-[841px] w-[333px] md:w-full bg-gradient-to-b from-white/50 from-30% to-[#01A7CA80] to-100% outline outline-1 outline-[#00A6CA] rounded-[10px]'>
           <div>
             {/* 3.1 */}
@@ -270,7 +271,7 @@ const Home = () => {
       </div>
   
       {/* 4 */}
-      <div className='w-full h-[1372px] md:h-[1017px] flex justify-center'>
+      <div className='w-full h-[1372px] md:h-[1017px] flex justify-center px-[30px] md:px-0'>
         <div className='flex flex-col max-w-[1000px] h-[1372px] md:h-[1020px] w-[333px] md:w-full bg-gradient-to-b from-white/50 from-30% to-[#0073F680] to-100% outline outline-1 outline-[#0073F6] rounded-[10px]'>
           <div>
             {/* 4.1 */}
@@ -609,7 +610,7 @@ const Home = () => {
       </div>
 
       {/* 5 */}
-      <div className='w-full h-[1495px] md:h-[1129px] flex justify-center'>
+      <div className='w-full h-[1495px] md:h-[1129px] flex justify-center px-[30px] md:px-0'>
         <div className='flex flex-col max-w-[1000px] h-[1495px] md:h-[1129px] w-[333px] md:w-full bg-gradient-to-b from-white/50 from-30% to-[#0046BA80] to-100% outline outline-1 outline-[#0046BA] rounded-[10px]'>
           <div>
             {/* 5.1 */}
@@ -1056,7 +1057,7 @@ const Home = () => {
       </div>
 
       {/* 6 */}
-      <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center px-[30px] md:px-0'>
         <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] w-full'>
           <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center'>
             {/* 6.1 */}
@@ -1078,7 +1079,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="fullname"
-                      className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                     />
                   </div>
                   {/* Company name */}
@@ -1089,7 +1090,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="companyname"
-                      className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                     />
                   </div>
                   {/* Contact number */}
@@ -1100,7 +1101,7 @@ const Home = () => {
                     <input
                       type="tel"
                       id="contactnumber"
-                      className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                     />
                   </div>
                   {/* Email-address */}
@@ -1111,7 +1112,7 @@ const Home = () => {
                     <input
                       type="email"
                       id="email"
-                      className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                     />
                   </div>
                   {/* Your state or location */}
@@ -1122,7 +1123,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="location"
-                      className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                     />
                   </div>
                   {/* Your business sector */}
@@ -1133,13 +1134,13 @@ const Home = () => {
                     <input
                       type="text"
                       id="sector"
-                      className="w-[300px] md:w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
                     />
                   </div>
                 </div>
                 {/* Submit */}
                 <div className="flex items-center justify-center">
-                  <button className="w-[333px] md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
+                  <button className="w-full md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
                     <div className='flex justify-center'>
                       <div className="w-[243px] md:w-[530px] text-black text-center md:text-xl text-base font-semibold leading-tight">
                         Leave your contact to schedule a complimentary demo
@@ -1150,6 +1151,10 @@ const Home = () => {
               </form>
             </div>
           </div>
+        </div>
+
+        <div className='bg-opacity-20'>
+          <ScrollToTopButton />
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTopButton from '../Components/ScrollToTopButton';
 import Video1 from '../Asset/Videos/eInvoiceVideo1.mp4';
 import { HomeGroup1, EGroup, EGroupS, ArrowFlipForward, ArrowFlipForwardS } from '../Components/Outline.jsx';
 import LHDN from '../Asset/Images/LHDN_logo1.png';
@@ -27,18 +28,30 @@ const Einvoice = () => {
       </div>
       {/* 2 */}
       <div className='w-full flex justify-center'>
-        <div className='flex flex-col justify-center max-w-[1000px] w-full'>
+        <div className='flex flex-col justify-center max-w-[1000px] w-full px-[30px] md:px-0'>
           {/* 2.1 */}
           <div className='flex flex-col gap-[20px] justify-center max-w-[1000px] w-full'>
-            <div className='flex flex-col w-[333px] md:w-[1000px] justify-center text-left text-[#0046BA] text-xl md:text-5xl not-italic font-bold leading-tight'>
+            <div className='flex flex-col w-[295px] md:w-[1000px] justify-center text-left text-[#0046BA] text-xl md:text-5xl not-italic font-bold leading-tight'>
               Simplify your Malaysian business's electronic invoicing process with E-Inbill.
             </div>
-            <div className='w-[333px] md:w-[955px] text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight'>
+            <div className="hidden md:flex w-[955px] text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight">
               The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. 
               E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. 
               The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply by August 1, 2024. 
               By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. 
               Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.
+            </div>
+            <div className='md:hidden flex flex-col md:flex-row text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight'>
+              <div className='w-[317px]'>
+                The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. 
+                E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. 
+                The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply
+              </div>
+              <div className='w-[325px]'>
+                by August 1, 2024. 
+                By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. 
+                Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.
+              </div>
             </div>
           </div>
           {/* 2.2 */}
@@ -80,10 +93,10 @@ const Einvoice = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[#0060FF] text-sm md:text-xl leading-tight flex flex-col gap-[10px] md:gap-[20px] w-[333px] md:w-full'>
-                  <div className='pl-7 flex flex-col gap-[10px] md:gap-5'>
+                <div className='text-[#0060FF] text-sm md:text-xl leading-tight flex flex-col gap-[20px] w-[333px] md:w-full'>
+                  <div className='pl-7 flex flex-col gap-5'>
                     <ul>
-                      <li className='list-disc list-outside font-bold md:font-semibold'>
+                      <li className='w-[240px] md:w-full list-disc list-outside font-bold md:font-semibold'>
                         For taxpayers with audited financial statements: 
                       </li>
                       <div className='font-medium'>
@@ -91,7 +104,7 @@ const Einvoice = () => {
                       </div>
                     </ul>
                     <ul>
-                      <li className='list-disc list-outside font-bold md:font-semibold'>
+                      <li className='w-[240px] md:w-full list-disc list-outside font-bold md:font-semibold'>
                         For taxpayers without audited financial statements:
                       </li>
                       <div className='font-medium'>
@@ -159,7 +172,7 @@ const Einvoice = () => {
                         <ArrowFlipForwardS />
                       </div>
                     </div>
-                    <div className='font-medium'>
+                    <div className='w-[280px] md:w-full font-medium'>
                       Taxpayers with an annual turnover or revenue of more than RM25 million and up to RM100 million.
                     </div>
                   </div>
@@ -217,15 +230,26 @@ const Einvoice = () => {
               </div>
             </div>
             {/* IRBM MyInvois System */}
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-[10px] md:gap-5'>
               <div className='w-[160px] md:w-[266px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                 IRBM MyInvois System
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium'>
                 <ul className='list-disc flex flex-col gap-4 pl-6'>
                   <li className='w-[305px] md:w-[900px]'>
-                    To support the growth of the digital economy, the Government intends to implement e-Invoice in stages in an effort to enhance the efficiency of Malaysia’s tax administration management. 
-                    This initiative is aligned with the Twelfth Malaysia Plan, which aims to strengthen the digital services infrastructure and modernise the tax administration system through digitalisation.
+                   <div className='hidden md:block '>
+                      To support the growth of the digital economy, the Government intends to implement e-Invoice in stages in an effort to enhance the efficiency of Malaysia’s tax administration management. 
+                      This initiative is aligned with the Twelfth Malaysia Plan, which aims to strengthen the digital services infrastructure and modernise the tax administration system through digitalisation.
+                   </div>
+                   <div className='md:hidden'>
+                    <div>
+                      To support the growth of the digital economy, the Government intends to implement
+                    </div> 
+                    <div className='w-[320px]'>
+                      e-Invoice in stages in an effort to enhance the efficiency of Malaysia’s tax administration management. 
+                      This initiative is aligned with the Twelfth Malaysia Plan, which aims to strengthen the digital services infrastructure and modernise the tax administration system through digitalisation.
+                    </div>
+                   </div>
                   </li>
                   <li className='w-[305px] md:w-[950px]'>
                     The e-Invoice will enable near real-time validation and storage of transactions, catering to Business-to-Business (B2B), Business-to-Consumer (B2C) and Business-to-Government (B2G) transactions.
@@ -234,7 +258,7 @@ const Einvoice = () => {
               </div>
             </div>
             {/* Benefits of Adopting e-Invoice */}
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-[10px] md:gap-5'>
               <div className='w-[209px] md:w-[358px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                 Benefits of Adopting e-Invoice
               </div>
@@ -245,19 +269,19 @@ const Einvoice = () => {
                 <div>
                   Overall benefits of adopting e-Invoice include:
                 </div>
-                <div className='px-7'>
+                <div className='pl-4 md:pl-7'>
                   <ul className='list-decimal flex flex-col gap-5'>
-                    <li>
+                    <li className='w-[312px] md:w-[950px]'>
                       Unified invoicing process through the streamlining of transaction document creation, and submission of data electronically to IRBM. 
                       The automation of data entry for transactions reduces manual efforts and human errors;
                     </li>
-                    <li>
+                    <li className='md:w-[900px]'>
                       Facilitate tax return filing through seamless system integration for efficient and accurate tax reporting;
                     </li>
-                    <li>
+                    <li className='w-[315px] md:w-[950px]'>
                       For larger businesses, the adoption of e-Invoice enables the streamlining of operations, resulting enhanced efficiency and significant time as well as cost savings through automated processes, seamless data integration, and improved invoice management; and
                     </li>
-                    <li>
+                    <li className='w-[305px] md:w-[950px]'>
                       For micro, small and medium-sized enterprises (MSMEs), the phased implementation offers a progressive and manageable transition to e-Invoice, allowing MSMEs to align their financial reporting and processes to be digitalised with industry standards, 
                       ensuring that MSMEs to adapt over a longer period and mitigating potential disruptions.
                     </li>
@@ -267,13 +291,29 @@ const Einvoice = () => {
             </div>
             {/* LHDN E-Invoice */}
             <div className='flex flex-col gap-5'>
-              <div className='w-[313px] md:w-[732px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
+              <div className='hidden md:flex w-[313px] md:w-[732px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                 LHDN E-Invoice: What Are The Penalties For Non-Compliance?
               </div>
+              <div className='md:hidden w-[313px] md:w-[732px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
+                <div>
+                  LHDN E-Invoice: 
+                </div>
+                <div>
+                  What Are The Penalties For Non-Compliance?
+                </div>
+              </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-[30px]'>
-                <div className='w-[333px] md:w-[850px]'>
+                <div className='hidden md:block w-[333px] md:w-[850px]'>
                   Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant consequences for your business. 
                   Here's what you need to be aware of:
+                </div>
+                <div className='md:hidden w-[333px]'>
+                  <div>
+                    Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant
+                  </div>
+                  <div className='w-[335px]'>
+                    consequences for your business. Here's what you need to be aware of:
+                  </div>
                 </div>
                 <div className='pl-7'>
                   <ul className='flex flex-col gap-4 list-disc w-[323px] md:w-[950px]'>
@@ -700,8 +740,8 @@ const Einvoice = () => {
                   The below documents must be issued in electronic format under Malaysia e-Invoice:
                 </div>
               </div>
-              <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px] w-[333px] md:w-full'>
-                <ul className='list-disc px-6 flex flex-col gap-4'>
+              <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px] w-[333px] md:w-[980px]'>
+                <ul className='list-disc pl-4 md:pl-6 flex flex-col gap-4'>
                   <li>
                     <b>Invoices:</b> It is generally used to record transactions between supplier and buyer. 
                     Invoices also include a self-billed invoice issued for tracking expenses.
@@ -721,7 +761,12 @@ const Einvoice = () => {
             </div>
           </div>
         </div>
+
+        <div className='bg-opacity-20'>
+          <ScrollToTopButton />
+        </div>
       </div>
+
     </div>
   );
 };

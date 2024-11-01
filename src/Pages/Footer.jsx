@@ -51,6 +51,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* Mobile */}
       <div className='md:hidden bg-[#0060FF] w-full flex justify-center items-center h-[551px]'>
         <div className='flex flex-col gap-[50px]'>
           {/* 1 */}
@@ -69,7 +70,7 @@ const Header = () => {
             </div>
           </div> 
           {/* 2 */}
-          <div className="flex justify-center list-none gap-[30px] w-[333px] md:hidden">
+          <div className="flex justify-center gap-[30px] md:hidden">
             <div>
               <AppStoreS />
             </div>
