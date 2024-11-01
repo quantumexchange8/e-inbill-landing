@@ -375,10 +375,10 @@ const Home = () => {
         <div className="absolute inset-0 md:flex justify-center items-center hidden">
           <div className="text-white/80 text-center text-[64px] font-bold leading-tight w-full max-w-[1000px]">
             <div>
-              Don't let tedious steps
+              {t('tedious_steps')}Don't let tedious steps
             </div> 
             <div>
-              hinder your business progress
+              {t('hinder_your')}hinder your business progress
             </div>
           </div>
         </div>
