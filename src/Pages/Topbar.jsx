@@ -1,10 +1,13 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../Header.css';
 import { Group, GroupS, GroupWorld, GroupLines, Message, MessageL, Facebook, FacebookL, Instagram, InstagramL, AppStore, Playstore, Translate,Triangle } from '../Components/Outline.jsx';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
 const Header = () => {
+
+  const { t, i18n } = useTranslation();
 
   return (
       <div className='fixed w-full z-30 flex flex-col'>
@@ -12,7 +15,7 @@ const Header = () => {
         <div className='hidden bg-[#0046BA] w-full md:flex justify-center py-3 '>
           <div className='w-[1000px] flex justify-end gap-[175px]'>
             <div className='text-white text-xs text-center font-medium leading-tight'>
-              Only RM1.99/day for your business to accept cashless payments with E-invoice. Try free demo now!
+              {t('only_RM1.99')}
             </div>
             <div className="flex gap-[10px]">
               <Message />
@@ -25,32 +28,34 @@ const Header = () => {
         <div className='bg-[#0046BA] md:bg-[#0060FF] w-full flex justify-center px-[30px] md:px-0'>
           <div className='max-w-[1000px] flex justify-between items-center w-full'>
             {/* 2.1 */}
-            <div className="hidden md:flex items-center">
-              <Group />
-            </div>
-            <div className="md:hidden">
-              <GroupS />
+            <div>
+              <div className="hidden md:flex items-center">
+                <Group />
+              </div>
+              <div className="md:hidden">
+                <GroupS />
+              </div>
             </div>
             {/* 2.2 */}
-            <div className="hidden md:flex items-center gap-[35px] text-white">
+            <div className="hidden md:flex items-center gap-[28px] text-white">
               <div>
                 <NavLink to="/" className={({ isActive }) => `px-[7px] py-[2px] ${isActive ? 'rounded-md border border-white' : ''}`}>
-                  Home
+                  {t('home')}
                 </NavLink>
               </div>
               <div>
                 <NavLink to="/whyeinbill" className={({ isActive }) => `px-[7px] py-[2px] ${isActive ? 'rounded-md border border-white' : ''}`}>
-                  Why E-inbill
+                  {t('why_einbill')}
                 </NavLink>
               </div>
               <div>
                 <NavLink to="/einvoice" className={({ isActive }) => `px-[7px] py-[2px] ${isActive ? 'rounded-md border border-white' : ''}`}>
-                  E-invoice
+                  {t('e_invoice')}
                 </NavLink>
               </div>
               <div>
                 <NavLink to="/products" className={({ isActive }) => `px-[7px] py-[2px] ${isActive ? 'rounded-md border border-white' : ''}`}>
-                  Products
+                  {t('products')}
                 </NavLink>
               </div>
             </div>
@@ -83,17 +88,17 @@ const Header = () => {
                     </MenuItem>
                     <MenuItem>
                       <a href="#" className="">
-                        English
+                        {t('english')}
                       </a>
                     </MenuItem>
                     <MenuItem>
                       <a href="#" className="">
-                        Malay
+                        {t('malay')}
                       </a>
                     </MenuItem>
                     <MenuItem>
                       <a href="#" className="">
-                        简体中文
+                        {t('chinese')}
                       </a>
                     </MenuItem>
                   </div>
@@ -119,16 +124,16 @@ const Header = () => {
                       </a>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/">Home</Link>
+                      <Link to="/">{t('home')}</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/whyeinbill">Why E-inbill</Link>
+                      <Link to="/whyeinbill">{t('why_einbill')}</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/einvoice">E-invoice</Link>
+                      <Link to="/einvoice">{t('e_invoice')}</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/products">Products</Link>
+                      <Link to="/products">{t('products')}</Link>
                     </MenuItem>
                   </div>
                 </MenuItems>

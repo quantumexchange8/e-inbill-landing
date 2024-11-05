@@ -1,10 +1,13 @@
 import React from 'react';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 import Video1 from '../Asset/Videos/eInvoiceVideo1.mp4';
+import { useTranslation } from 'react-i18next';
 import { HomeGroup1, EGroup, EGroupS, ArrowFlipForward, ArrowFlipForwardS } from '../Components/Outline.jsx';
 import LHDN from '../Asset/Images/LHDN_logo1.png';
 
 const Einvoice = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='pt-[54px] md:pt-[113px] md:pb-[100px] pb-[75px] flex flex-col gap-[50px] md:gap-[100px]'>
       {/* 1 */}
@@ -15,15 +18,15 @@ const Einvoice = () => {
         <div className="absolute inset-0 flex justify-center items-center">
           <div className="w-full max-w-[1000px] flex justify-center">
             <div className="w-[239px] md:w-[638px] flex justify-center text-white/80 text-center text-2xl md:text-[64px] font-bold leading-tight">
-              What is an E-invoice
+              {t('what_is_an_e_invoice')}
             </div>
           </div>
-          <div className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
+          <button className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
             <HomeGroup1 className="w-[50px] h-[45px]" />
             <div className="text-[#0046BA] text-center text-sm font-bold leading-normal w-[120px] ">
-              Leave your Contact
+              {t('leave_your_contact')}
             </div>
-          </div>
+          </button>
         </div>
       </div>
       {/* 2 */}
@@ -32,31 +35,23 @@ const Einvoice = () => {
           {/* 2.1 */}
           <div className='flex flex-col gap-[20px] justify-center max-w-[1000px] w-full'>
             <div className='flex flex-col w-[295px] md:w-[1000px] justify-center text-left text-[#0046BA] text-xl md:text-5xl not-italic font-bold leading-tight'>
-              Simplify your Malaysian business's electronic invoicing process with E-Inbill.
+              {t('simplify_your_malaysian')}
             </div>
             <div className="hidden md:flex w-[955px] text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight">
-              The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. 
-              E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. 
-              The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply by August 1, 2024. 
-              By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. 
-              Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.
+              {t('the_malaysian_inland_revenue_board')}
             </div>
             <div className='md:hidden flex flex-col md:flex-row text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight'>
               <div className='w-[317px]'>
-                The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. 
-                E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. 
-                The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply
+                {t('m_the_malaysian_inland_revenue_board')}
               </div>
               <div className='w-[325px]'>
-                by August 1, 2024. 
-                By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. 
-                Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.
+                {t('m_by_august_1')}
               </div>
             </div>
           </div>
           {/* 2.2 */}
           <div className='py-[100px] md:py-[200px] flex justify-center'>
-            {/* Medium and above */}
+            {/* Web */}
             <div className="hidden md:flex items-center gap-[200px]">
               <div className="bg-blue-800 flex flex-col items-center rounded-[30px] w-[200px] h-[200px] justify-center">
                 <div className="flex flex-col gap-[16.31px]">
@@ -67,7 +62,7 @@ const Einvoice = () => {
                 <img src={LHDN} alt="flexLHDN Logo" className="w-[256px] h-[200px] flex-shrink-0" />
               </div>
             </div>
-            {/* Small */}
+            {/* Mobile */}
             <div className="md:hidden flex items-center gap-[50px]">
               <div className="bg-blue-800 flex flex-col items-center rounded-[30px] w-[100px] h-[100px] justify-center">
                 <div className="flex flex-col gap-[8.15px]">
@@ -85,11 +80,10 @@ const Einvoice = () => {
             <div className='flex flex-col gap-[50px]'>
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='w-[213px] md:w-[594px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                  Start Implementing E-Invoicing For Your Business?
+                  {t('start_implementing_e_invoicing')}
                 </div>
                 <div className='w-[333px] md:w-[950px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight'>
-                  The implementating of E-invoice will be phased to ensure a smooth transition. 
-                  The criteria for determining the annual turnover or revenue thresholds for E-Invoice implementation are as follows:
+                  {t('the_implementating_of_e_invoice')}
                 </div>
               </div>
               <div>
@@ -97,24 +91,23 @@ const Einvoice = () => {
                   <div className='pl-7 flex flex-col gap-5'>
                     <ul>
                       <li className='w-[240px] md:w-full list-disc list-outside font-bold md:font-semibold'>
-                        For taxpayers with audited financial statements: 
+                        {t('for_taxpayers_with_audited')}
                       </li>
                       <div className='font-medium'>
-                        The annual turnover or revenue will be determined based on the figures stated in the statement of comprehensive income in the audited financial statements for the financial year 2022.
+                        {t('the_annual_turnover_or_revenue')}
                       </div>
                     </ul>
                     <ul>
                       <li className='w-[240px] md:w-full list-disc list-outside font-bold md:font-semibold'>
-                        For taxpayers without audited financial statements:
+                        {t('for_taxpayers_without_audited')}
                       </li>
                       <div className='font-medium'>
-                        The annual revenue will be determined based on the figures reported in the tax return for the year of assessment 2022.
+                        {t('the_annual_revenue')}
                       </div>
                     </ul>
                   </div>
                   <div className='font-medium w-[319px] md:w-[980px]'>
-                    In the event of a change in the accounting year-end for the financial year 2022, 
-                    the taxpayer’s turnover or revenue will be pro-rated to a 12-month period to accurately determine the e-Invoice implementation date.
+                    {t('in_the_event_of')}
                   </div>
                 </div>
               </div>
@@ -122,12 +115,12 @@ const Einvoice = () => {
             {/* E-Invoice */}
             <div className='flex flex-col gap-[10px] md:gap-5'>
               <div className='w-[242px] md:w-[415px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                E-Invoice Implementing Timeline:
+                {t('e_invoice_implementing_timeline')}
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl leading-tight md:leading-[30px] flex flex-col gap-[15px] md:gap-[30px] w-[333px] md:w-full'>
                 <ul className='list-disc flex flex-col pl-6'>
                   <li className='font-bold md:font-semibold'>
-                    Target Taxpayers:
+                    {t('target_taxpayers')}
                   </li>
                   <div className='flex gap-1 md:gap-2'>
                     <div className='transform scale-y-[-1] flex items-end md:items-center'>
@@ -139,11 +132,11 @@ const Einvoice = () => {
                       </div>
                     </div>
                     <div className='font-medium'>
-                      Taxpayers with an annual turnover or revenue of more than RM100 million.
+                      {t('taxpayers_with_100')}
                     </div>
                   </div>
                   <li className='font-bold md:font-semibold'>
-                    Implementation Date:
+                    {t('implementation_date')}
                   </li>
                   <div className='flex gap-1 md:gap-2'>
                     <div className='transform scale-y-[-1] flex items-end md:items-center'>
@@ -155,13 +148,13 @@ const Einvoice = () => {
                       </div>
                     </div>
                     <div className='font-medium'>
-                      1 August 2024
+                      {t('1_august_2024')}
                     </div>
                   </div>
                 </ul>
                 <ul className='list-disc flex flex-col pl-6'>
                   <li className='font-bold md:font-semibold'>
-                    Target Taxpayers:
+                    {t('target_taxpayers')}
                   </li>
                   <div className='flex gap-1 md:gap-2'>
                     <div className='transform scale-y-[-1] flex items-end md:items-center'>
@@ -173,11 +166,11 @@ const Einvoice = () => {
                       </div>
                     </div>
                     <div className='w-[280px] md:w-full font-medium'>
-                      Taxpayers with an annual turnover or revenue of more than RM25 million and up to RM100 million.
+                      {t('taxpayers_with_25_100')}
                     </div>
                   </div>
                   <li className='font-bold md:font-semibold'>
-                    Implementation Date:
+                    {t('implementation_date')}
                   </li>
                   <div className='flex gap-1 md:gap-2'>
                     <div className='transform scale-y-[-1] flex items-end md:items-center'>
@@ -189,13 +182,13 @@ const Einvoice = () => {
                       </div>
                     </div>
                     <div className='font-medium'>
-                      1 January 2025
+                      {t('1_january_2025')}
                     </div>
                   </div>
                 </ul>
                 <ul className='list-disc flex flex-col pl-6'>
                   <li className='font-bold md:font-semibold'>
-                    Target Taxpayers:
+                    {t('target_taxpayers')}
                   </li>
                   <div className='flex gap-1 md:gap-2'>
                     <div className='transform scale-y-[-1] flex items-end md:items-center'>
@@ -207,11 +200,11 @@ const Einvoice = () => {
                       </div>
                     </div>
                     <div className='font-medium'>
-                      Taxpayers with an annual turnover or revenue of less than RM25 million.
+                      {t('taxpayers_with_25')}
                     </div>
                   </div>
                   <li className='font-bold md:font-semibold'>
-                    Implementation Date:
+                    {t('implementation_date')}
                   </li>
                   <div className='flex gap-1 md:gap-2'>
                     <div className='transform scale-y-[-1] flex items-end md:items-center'>
@@ -223,7 +216,7 @@ const Einvoice = () => {
                       </div>
                     </div>
                     <div className='font-medium'>
-                      1 July 2025
+                      {t('1_july_2025')}
                     </div>
                   </div>
                 </ul>
@@ -232,27 +225,25 @@ const Einvoice = () => {
             {/* IRBM MyInvois System */}
             <div className='flex flex-col gap-[10px] md:gap-5'>
               <div className='w-[160px] md:w-[266px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                IRBM MyInvois System
+                {t('irbm_myinvoice_system')}
               </div>
-              <div className='text-[#0060FF] text-sm md:text-xl font-medium'>
+              <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight'>
                 <ul className='list-disc flex flex-col gap-4 pl-6'>
                   <li className='w-[305px] md:w-[900px]'>
                    <div className='hidden md:block '>
-                      To support the growth of the digital economy, the Government intends to implement e-Invoice in stages in an effort to enhance the efficiency of Malaysia’s tax administration management. 
-                      This initiative is aligned with the Twelfth Malaysia Plan, which aims to strengthen the digital services infrastructure and modernise the tax administration system through digitalisation.
+                    {t('to_support_the_growth')}
                    </div>
                    <div className='md:hidden'>
                     <div>
-                      To support the growth of the digital economy, the Government intends to implement
+                      {t('m_to_support_the_growth')}
                     </div> 
                     <div className='w-[320px]'>
-                      e-Invoice in stages in an effort to enhance the efficiency of Malaysia’s tax administration management. 
-                      This initiative is aligned with the Twelfth Malaysia Plan, which aims to strengthen the digital services infrastructure and modernise the tax administration system through digitalisation.
+                      {t('e_invoice_in_stages')}
                     </div>
                    </div>
                   </li>
                   <li className='w-[305px] md:w-[950px]'>
-                    The e-Invoice will enable near real-time validation and storage of transactions, catering to Business-to-Business (B2B), Business-to-Consumer (B2C) and Business-to-Government (B2G) transactions.
+                    {t('the_e_invoice')}
                   </li>
                 </ul>
               </div>
@@ -260,30 +251,28 @@ const Einvoice = () => {
             {/* Benefits of Adopting e-Invoice */}
             <div className='flex flex-col gap-[10px] md:gap-5'>
               <div className='w-[209px] md:w-[358px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                Benefits of Adopting e-Invoice
+                {t('benefits_of_adopting_e_invoice')}
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-5 w-[333px] md:w-full'>
                 <div>
-                  The implementation of e-Invoice not only provides seamless experience to taxpayers, but also improves business efficiency and increases tax compliance.
+                  {t('the_implementation_of_e_Invoice')}
                 </div>
                 <div>
-                  Overall benefits of adopting e-Invoice include:
+                  {t('overall_benefits')}
                 </div>
                 <div className='pl-4 md:pl-7'>
                   <ul className='list-decimal flex flex-col gap-5'>
                     <li className='w-[312px] md:w-[950px]'>
-                      Unified invoicing process through the streamlining of transaction document creation, and submission of data electronically to IRBM. 
-                      The automation of data entry for transactions reduces manual efforts and human errors;
+                      {t('unified_invoicing_process')}
                     </li>
                     <li className='md:w-[900px]'>
-                      Facilitate tax return filing through seamless system integration for efficient and accurate tax reporting;
+                      {t('facilitate_tax_return_filing')}
                     </li>
                     <li className='w-[315px] md:w-[950px]'>
-                      For larger businesses, the adoption of e-Invoice enables the streamlining of operations, resulting enhanced efficiency and significant time as well as cost savings through automated processes, seamless data integration, and improved invoice management; and
+                      {t('for_larger_businesses')}
                     </li>
                     <li className='w-[305px] md:w-[950px]'>
-                      For micro, small and medium-sized enterprises (MSMEs), the phased implementation offers a progressive and manageable transition to e-Invoice, allowing MSMEs to align their financial reporting and processes to be digitalised with industry standards, 
-                      ensuring that MSMEs to adapt over a longer period and mitigating potential disruptions.
+                      {t('for_micro')}
                     </li>
                   </ul>
                 </div>
@@ -292,53 +281,50 @@ const Einvoice = () => {
             {/* LHDN E-Invoice */}
             <div className='flex flex-col gap-5'>
               <div className='hidden md:flex w-[313px] md:w-[732px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                LHDN E-Invoice: What Are The Penalties For Non-Compliance?
+                {t('lhdn_e_invoice_what_are')}
               </div>
               <div className='md:hidden w-[313px] md:w-[732px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                 <div>
-                  LHDN E-Invoice: 
+                  {t('lhdn_e_invoice')}
                 </div>
                 <div>
-                  What Are The Penalties For Non-Compliance?
+                  {t('what_are_the_penalties')}
                 </div>
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-[30px]'>
                 <div className='hidden md:block w-[333px] md:w-[850px]'>
-                  Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant consequences for your business. 
-                  Here's what you need to be aware of:
+                  {t('adhering_to_the_lhdn_title')}
                 </div>
                 <div className='md:hidden w-[333px]'>
                   <div>
-                    Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant
+                    {t('adhering_to_the_lhdn')}
                   </div>
                   <div className='w-[335px]'>
-                    consequences for your business. Here's what you need to be aware of:
+                    {t('consequences_for_your_business')}
                   </div>
                 </div>
                 <div className='pl-7'>
                   <ul className='flex flex-col gap-4 list-disc w-[323px] md:w-[950px]'>
                     <li>
-            
-                      Penalties: Non-compliance with e-invoice regulations can incur substantial financial penalties, ranging from RM200 to RM20,000.
+                      {t('penalties')}
                     </li>
                     <li>
-                      Legal Consequences: Failure to comply may also result in imprisonment for a maximum period of six months. 
-                      This underscores the gravity of the LHDN mandate.
+                      {t('legal_consequences')}
                     </li>
                     <ul className='flex flex-col md:flex-row gap-1 list-disc'>
                       <li>
-                        For more info:
+                        {t('for_more_info')}
                       </li> 
                       <a href="\" target="_blank" className="underline text-blue-600">
-                        (LHDN) Offences, Fines and Penalties.
+                        {t('lhdn_offences')}
                       </a>
                     </ul>
                     <ul className='flex flex-col md:flex-row gap-1 list-disc'>
                       <li>
-                        E-Invoice Customer Feedback Form: 
+                        {t('customer_feedback_form')}
                       </li>
                       <a href="\" target="_blank" className="underline text-blue-600">
-                        Following link.
+                        {t('following_link')}
                       </a>
                     </ul>
                   </ul>
@@ -350,16 +336,16 @@ const Einvoice = () => {
               {/* Who */}
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='w-[266px] md:w-[606px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                  Who Needs to Comply with e-Invoicing in Malaysia?
+                  {t('who_needs_to_comply')}
                 </div>
                 <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-[30px] w-[333px] md:w-[920px]'>
-                  LHDN has released guidelines outlining which entities, individuals, and businesses are required to adhere to e-invoicing rules, as well as those exempt from them.
+                  {t('lhdn_has_released_guidelines')}
                 </div>
               </div>
               {/* Entities Required */}
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='w-[304px] md:w-[658px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                  Entities Required to Comply with e-Invoicing in Malaysia
+                  {t('entities_required')}
                 </div>
                 <div className='w-[333px] md:w-[920px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px]'>
                   <ul>
@@ -374,7 +360,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Associations.
+                          {t('associations')}
                         </div>
                       </div>
                     </li>
@@ -389,7 +375,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Body of persons.
+                          {t('body_of_persons')}
                         </div>
                       </div>
                     </li>
@@ -404,7 +390,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Branches.
+                          {t('branches')}
                         </div>
                       </div>  
                     </li>
@@ -419,7 +405,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Business trusts.
+                          {t('business_trusts')}
                         </div>
                       </div>
                     </li>
@@ -434,7 +420,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Co-operative societies.
+                          {t('co_operative_societies')}
                         </div>
                       </div>  
                     </li>
@@ -449,7 +435,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Corporations.
+                          {t('corporations')}
                         </div>
                       </div>
                     </li>
@@ -464,7 +450,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Limited liability partnerships.
+                          {t('limited_liability')}
                         </div>
                       </div>
                     </li>
@@ -479,7 +465,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Partnerships.
+                          {t('partnerships')}
                         </div>
                       </div >
                     </li>
@@ -494,7 +480,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Property trust funds.
+                          {t('property_trust_funds')}
                         </div>
                       </div>
                     </li>
@@ -509,7 +495,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Property trusts.
+                          {t('property_trusts')}
                         </div>
                       </div>
                     </li>
@@ -524,7 +510,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Real estate investment trusts.
+                          {t('real_estate')}
                         </div>
                       </div>
                     </li>
@@ -539,7 +525,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Representative offices and regional offices.
+                          {t('representative_offices')}
                         </div>
                       </div>
                     </li>
@@ -554,7 +540,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Trust bodies.
+                          {t('trust_bodies')}
                         </div>
                       </div>
                     </li>
@@ -569,7 +555,7 @@ const Einvoice = () => {
                           </div>
                         </div>
                         <div>
-                          Unit trusts.
+                          {t('unit_trusts')}
                         </div>
                       </div>
                     </li>
@@ -579,7 +565,7 @@ const Einvoice = () => {
               {/* Entities exempt */}
               <div className="flex flex-col gap-[10px] md:gap-5">
                 <div className="w-[333px] md:w-[382px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight">
-                  Entities exempt from e-Invoicing
+                  {t('entities_exempt')}
                 </div>
                 <div className='w-[333px] md:w-[940px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px]'>
                   <ul>
@@ -593,7 +579,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Ruler and Ruling Chief.
+                        {t('ruler_and_ruling_chief')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -606,7 +592,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Former Ruler and Ruling Chief.
+                        {t('former_ruler')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -619,7 +605,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Consort of a Ruler of a State with specified titles.
+                        {t('consort_of_a_ruler')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -632,7 +618,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Consort of a Former Ruler of a State with specified titles Government.
+                        {t('consort_of_a_former')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -645,7 +631,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        State Government and State authority.
+                        {t('state_government')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -658,7 +644,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Government authority.
+                        {t('government_authority')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -671,7 +657,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Local authority.
+                        {t('local_authority')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -684,7 +670,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Statutory authority and Statutory Body.
+                        {t('statutory_authority')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -697,7 +683,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Property trust funds.
+                        {t('property_trust')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -710,7 +696,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Facilities provided by the above Government, authority, or Body Consular offices and diplomatic officers, Consular officers, and Consular employees.
+                        {t('facilities_provided')}
                       </div>
                     </li>
                     <li className='flex gap-2'>
@@ -723,7 +709,7 @@ const Einvoice = () => {
                         </div>
                       </div>
                       <div>
-                        Individual who is not conducting Business.
+                        {t('individual_who')}
                       </div>
                     </li>
                   </ul>
@@ -743,18 +729,16 @@ const Einvoice = () => {
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px] w-[333px] md:w-[980px]'>
                 <ul className='list-disc pl-4 md:pl-6 flex flex-col gap-4'>
                   <li>
-                    <b>Invoices:</b> It is generally used to record transactions between supplier and buyer. 
-                    Invoices also include a self-billed invoice issued for tracking expenses.
+                    <b>{t('invoices')}</b> {t('it_is_generally_used')}
                   </li>
                   <li>
-                    <b>Credit notes:</b> A credit note is a document issued by sellers to make corrections to an e-Invoice issued previously mainly to lower the original invoice's value without returning money to the Buyer. 
-                    It is generally used to adjust errors, apply discounts, or account for returned items. 
+                    <b>{t('credit_notes')}</b> {t('a_credit_note_is')}
                   </li>
                   <li>
-                    <b>Debit notes:</b> In contrast to credit notes, debit notes are issued to record additional costs related to a previously issued e-Invoice.
+                    <b>{t('debit_notes')}</b> {t('in_constrast_to')}
                   </li>
                   <li>
-                    <b>Refund notes:</b> A refund e-Invoice is an official document issued by a Seller to record refund issued to the Buyer.
+                    <b>{t('refund_notes')}</b> {t('a_refund_notes_is')}
                   </li>
                 </ul>
               </div>

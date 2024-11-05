@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useTranslation } from 'react-i18next';
 import { HomeGroup1, GroupM, GroupMS, Tablet, TabletS, KFGroup1, KFGroup1S, Pos, PosS, Group11, Group11S, Group12, Group12S, Group6, Group6S, KFGroup2, KFGroup2S, Startup, StartupS, Arrow, ArrowS } from '../Components/Outline.jsx';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
@@ -23,7 +24,6 @@ import Video2 from '../Asset/Videos/homeVideo2.mp4';
 const Home = () => {
 
   const { t, i18n } = useTranslation();
-  // {t('we_are_einbill')}
 
   return (
     <div className='pt-[54px] md:pt-[113px] pb-[75px] md:pb-[100px] flex flex-col gap-[75px] md:gap-[100px]'>
@@ -45,15 +45,15 @@ const Home = () => {
                 </div>
               </div>
               <div className="md:hidden w-[218px] flex flex-col justify-center text-white/80 text-center text-2xl font-bold leading-tight">
-                A solution to make payments easier
+                {t('m_a_solution_to')}
               </div>
             </div>
-            <div className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
+            <button className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
               <HomeGroup1 className="w-[50px] h-[45px]" />
               <div className="text-[#0046BA] text-center text-sm  font-bold leading-normal w-[120px] ">
-              {t('a_solution_to')}
+              {t('leave_your_contact')}
               </div>
-            </div>
+            </button>
           </div>
         </div>
         {/* 1.2 */}
@@ -61,7 +61,7 @@ const Home = () => {
           <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center max-w-[1000px] md:w-full '>
             {/* About Us */}
             <div className='flex flex-col gap-[10px] md:gap-5 px-[29px] md:px-0 max-w-[1000px] md:w-full'>
-                <div className='text-[#0046BA] w-[91px] md:w-[218px] text-xl md:text-5xl font-bold'>
+                <div className='text-[#0046BA] w-[91px] md:w-[218px] text-xl md:text-5xl font-bold leading-tight'>
                   {t('about_us')}
                 </div>
                 <div className='text-[#0060FF] md:w-[960px] text-base md:text-2xl font-medium text-left leading-tight flex flex-col gap-5 md:gap-10'> 
@@ -75,12 +75,10 @@ const Home = () => {
                   </div>
                   <div className='md:hidden'>
                     <div>
-                      We are E-inbill, a division of
+                      {t('m_we_are_einbill')}
                     </div> 
                     <div>
-                      Current Tech Industries Sdn Bhd.
-                      As a technology-driven company, our core mission at E-inbill is to simplify financial processes and foster connectivity among businesses. 
-                      Our objective is to streamline financial operations and facilitate seamless interactions between companies.
+                      {t('current_tech')}
                     </div>
                   </div>
                   <div className='hidden md:block'>
@@ -88,20 +86,16 @@ const Home = () => {
                   </div>
                   <div className='md:hidden'>
                     <div>
-                      In Malaysia, we have introduced
+                      {t('m_in_malaysia')}
                     </div> 
                     <div>
-                      e-invoicing products that comply with LHDN standards, serving over 300 businesses. 
-                      Our clientele spans various sectors, from retail to manufacturing, 
+                      {t('m_e_invoicing_products')} 
                     </div>
                     <div>
-                      with a focus on providing support to small businesses and medium-sized tech enterprises. 
-                      Our solutions adhere to 
+                      {t('m_with_a_focus')}
                     </div>
                     <div>
-                      LHDN regulations, PEPPOL, and MDEC compliance requirements. 
-                      Through close collaboration with regulatory bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. 
-                      Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.
+                      {t('m_lhdn_regulations')}
                     </div>
                   </div>
                 </div>
@@ -114,7 +108,7 @@ const Home = () => {
                     {t('key_features')}
                   </div>
                   <div>
-                    {t('of_our_product')}
+                    {t('of_our_products')}
                   </div> 
                 </div> 
               </div>
@@ -232,9 +226,9 @@ const Home = () => {
       {/* 2 */}
       <div className='w-full flex justify-center'>
         <div className='flex flex-col gap-[75px] md:gap-[100px] justify-center max-w-[1000px] md:w-full '>
-          {/* 2.3 */}
+          {/* 2.1 */}
           <div className="flex flex-col gap-[75px] md:gap-[150px]">
-            {/* 2.3.1 */}
+            {/* 2.1.1 */}
             <div className='flex flex-col gap-[10px] md:gap-[30px]'>
               <div className='flex justify-center'>
                 <div className='w-[170px] md:w-[779px] text-[#0046BA] text-xl md:text-5xl font-bold text-center '>
@@ -256,7 +250,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* 2.3.2 */}
+            {/* 2.1.2 */}
             <div className='flex flex-col justify-center gap-[50px] md:gap-[100px]'>
               <div className='w-full flex justify-center'>
                 <div className='w-[300px] md:w-[744px] text-[#0060FF] text-base md:text-[32px] font-semibold text-center leading-tight'>
@@ -298,7 +292,7 @@ const Home = () => {
                     <div className='hidden md:flex flex-col gap-3 md:gap-[11px] text-black text-base font-bold text-left leading-tight'>
                       <div>
                         <div>
-                          {t('For_small_to_medium_sized')}
+                          {t('for_small_to_medium_sized')}
                         </div>
                         <div className='w-[247px]'>
                           {t('a_comfortable_experience')}
@@ -314,17 +308,17 @@ const Home = () => {
                     <div className='md:hidden text-black text-base font-bold text-left leading-tight flex flex-col gap-3 md:gap-[11px]'>
                       <div>
                         <div className='w-[280px]'>
-                        {t('key_features')}For small to medium-sized food and beverage establishments, we understand that providing a 
+                        {t('m_for_small_to_medium_sized')}
                         </div>
                         <div className='w-[247px]'>
-                        {t('key_features')}comfortable experience for customers is absolutely crucial.
+                        {t('m_a_comfortable_experience')}
                         </div>
                       </div>
                       <div className='w-[298px]'> 
-                      {t('key_features')}The Standard plan fully addresses this concern. 
+                        {t('the_standard_plan')}
                       </div>
                       <div className='w-[300px]'>
-                      {t('key_features')}With mobile devices, customers can complete their payments without the hassle of waiting in long lines.
+                        {t('with_mobile_devices')}
                       </div>
                     </div>
                   </div>
@@ -375,10 +369,10 @@ const Home = () => {
         <div className="absolute inset-0 md:flex justify-center items-center hidden">
           <div className="text-white/80 text-center text-[64px] font-bold leading-tight w-full max-w-[1000px]">
             <div>
-              {t('tedious_steps')}Don't let tedious steps
+              {t('tedious_steps')}
             </div> 
             <div>
-              {t('hinder_your')}hinder your business progress
+              {t('hinder_your')}
             </div>
           </div>
         </div>
@@ -396,7 +390,7 @@ const Home = () => {
                   {t('you_cannot_resist')}
                 </div>
               </div>
-              <div className='w-[333px] md:w-full text-black text-base md:text-2xl font-medium leading-tight'>
+              <div className='w-[333px] md:w-[970px] text-black text-base md:text-2xl font-medium leading-tight'>
                 {t('we_offer')}
               </div>
             </div>

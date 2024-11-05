@@ -1,9 +1,14 @@
 import React from 'react';
 import Video1 from '../Asset/Videos/whyEinbillVideo1.mp4';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
+import { useTranslation } from 'react-i18next';
+
 import { HomeGroup1, WhyGroup1, WhyGroup1S, Group13, Group13S, Group71, Group71S, Group72, Group72S, Group73, Group73S, Group74, Group74S, Group18, Group18S, Group84, Group84S, Group85, Group85S, Group86, Group86S, Group87, Group87S } from '../Components/Outline.jsx';
 
-const whyeinbill = () => {
+const Whyeinbill = () => {
+
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='pt-[54px] md:pt-[113px] pb-[75px] md:pb-[100px] flex flex-col gap-[50px] md:gap-[100px]'>
       {/* 1 */}
@@ -14,15 +19,15 @@ const whyeinbill = () => {
         <div className="absolute inset-0 flex justify-center items-center">
           <div className="w-full max-w-[1000px] flex justify-center">
             <div className="w-[279px] md:w-[870px] flex justify-center text-white/80 text-center text-2xl md:text-[64px] font-bold leading-tight">
-              Choose us because you believe in our expertise
+              {t('choose_us')}
             </div>
           </div>
-          <div className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
+          <button className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
             <HomeGroup1 className="w-[50px] h-[45px]" />
             <div className="text-[#0046BA] text-center text-sm font-bold leading-normal w-[120px] ">
-              Leave your Contact
+              {t('leave_your_contact')}
             </div>
-          </div>
+          </button>
         </div>
       </div>
       {/* 2 */}
@@ -33,10 +38,10 @@ const whyeinbill = () => {
             {/* 2.1.1 */}
             <div className='flex flex-col gap-[30px] md:gap-[100px]'>
               <div className='flex flex-col w-[320px] md:w-[900px] justify-center text-left text-[#0046BA] text-xl md:text-5xl font-bold leading-tight'>
-                We can elevate your business to new heights, helping you achieve your goals with ease.
+                {t('we_can_elevate')}
               </div>
               <div className='w-[256px] md:w-[512px] text-left text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
-                Why You Should Choose E-inbill?
+                {t('why_you_should')}
               </div>
             </div>
             {/* 2.1.2 */}
@@ -211,11 +216,10 @@ const whyeinbill = () => {
             {/* 2.2.1 */}
             <div className="flex flex-col gap-[30px] md:gap-[100px]">
               <div className='flex flex-col w-[290px] md:w-[930px] justify-center text-left text-[#0046BA] text-xl md:text-5xl  font-bold leading-tight'>
-                Our system is fully equipped to match the characteristics of your industry, making us the ideal choice for you.
+                {t('our_system_is_fully_equipped')}
               </div>
-              {/* 2.2.2 */}
               <div className='w-[141px] md:w-[512px] text-left text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
-                Our point of sales.
+                {t('our_point_of_sales')}
               </div>
             </div>
             {/* 2.2.2 */}
@@ -230,11 +234,10 @@ const whyeinbill = () => {
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='text-left w-[47px] md:w-[107px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  Interface
+                  {t('interface')}
                 </div>
                 <div className='text-left w-[333px] md:w-[800px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  Tailor the layout to your preferences, including product descriptions, customisable options, tax regulations, receipts, categories, and more. 
-                  Enjoy complete control over your interface, ensuring it perfectly aligns with your business needs.
+                  {t('tailor_the_layout')}
                 </div>
               </div>
             </div>
@@ -250,11 +253,10 @@ const whyeinbill = () => {
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='text-left w-[47px] md:w-[99px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  Security
+                  {t('security')}
                 </div>
                 <div className='text-left w-[310px] md:w-[800px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  Safely store all your data on a local drive, ensuring it's accessible at any time, whether you have an internet connection or not. 
-                  This guarantees that your information remains secure and readily available whenever you need it, providing peace of mind and uninterrupted access.
+                  {t('this_guarantees_that')}
                 </div>
               </div>
             </div>
@@ -270,11 +272,10 @@ const whyeinbill = () => {
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='text-left w-[47px] md:w-[103px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  Receipts
+                  {t('receipts')}
                 </div>
                 <div className='text-left w-[310px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  Provide your customers with the option to choose between environmentally-friendly digital receipts or classic printed ones. 
-                  This flexibility caters to diverse customer preferences, promoting sustainability while still accommodating those who prefer traditional methods.
+                  {t('provide_your_customers')}
                 </div>
               </div>
             </div>
@@ -290,11 +291,10 @@ const whyeinbill = () => {
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='text-left w-[47px] md:w-[104px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  Payment
+                  {t('payment')}
                 </div>
                 <div className='text-left w-[314px] md:w-[830px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  Offer your customers a range of payment options, including cash, credit/debit cards, and eWallets. 
-                  This diverse selection ensures convenience and flexibility for your customers, allowing them to choose the method that best suits their preferences and needs.
+                  {t('offer_your_customers')}
                 </div>
               </div>
             </div>
@@ -310,16 +310,15 @@ const whyeinbill = () => {
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='text-left w-[47px] md:w-[80px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  Offline
+                  {t('offline')}
                 </div>
                 <div className='text-left w-[310px] md:w-[830px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  Keep your operations running smoothly even in the face of an unstable internet connection. 
-                  Your data will be automatically saved and synchronised once the connection is reestablished, ensuring seamless continuity and minimizing disruptions to your workflow.
+                  {t('keep_your_operations')}
                 </div>
               </div>
             </div>
             {/* 2.2.7 */}
-            <div className='h-[1px] bg-[#0046BA] w-[333px] md:w-full'></div>
+            <div className='h-[1px] bg-[#0046BA] w-[333px] md:w-full'/>
           </div>
           {/* 2.3 */}
           <div className='w-full flex justify-center'>
@@ -328,7 +327,7 @@ const whyeinbill = () => {
                 {/* 2.3.1 */}
                 <div className="flex justify-center">
                   <div className='w-[300px] md:w-[720px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
-                    Leave your contact information to discover how E-inbill empowers merchants to achieve more.
+                    {t('leave_your_contact_info')}
                   </div>
                 </div>
                 {/* 2.3.2 */}
@@ -339,7 +338,7 @@ const whyeinbill = () => {
                       {/* Full name */}
                       <div className='flex flex-col gap-[10px]'>
                         <div className="text-[#000] text-sm md:text-base font-bold text-left" htmlFor="fullname">
-                          Full name<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                          {t('full_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </div>
                         <input
                           type="text"
@@ -350,7 +349,7 @@ const whyeinbill = () => {
                       {/* Company name */}
                       <div className='flex flex-col gap-[10px]'> 
                         <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="companyname">
-                          Company name<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                          {t('company_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
                           type="text"
@@ -361,7 +360,7 @@ const whyeinbill = () => {
                       {/* Contact number */}
                       <div className='flex flex-col gap-[10px]'>
                         <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="contactnumber">
-                          Contact number<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                          {t('contact_number')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
                           type="tel"
@@ -372,7 +371,7 @@ const whyeinbill = () => {
                       {/* Email-address */}
                       <div className='flex flex-col gap-[10px]'>
                         <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="email">
-                          Email address<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                          {t('email_address')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
                           type="email"
@@ -383,7 +382,7 @@ const whyeinbill = () => {
                       {/* Your state or location */}
                       <div className='flex flex-col gap-[10px]'>
                         <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="location">
-                          Your state or location<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                          {t('your_state')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
                           type="text"
@@ -394,7 +393,7 @@ const whyeinbill = () => {
                       {/* Your business sector */}
                       <div className='flex flex-col gap-[10px]'>
                         <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="sector">
-                          Your business sector<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
+                          {t('your_business_sector')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
                           type="text"
@@ -408,7 +407,7 @@ const whyeinbill = () => {
                       <button className="w-full md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
                         <div className='flex justify-center'>
                           <div className="w-[243px] md:w-[530px] text-black text-center md:text-xl text-base font-semibold leading-tight">
-                            Leave your contact to schedule a complimentary demo
+                            {t('leave_your_contact_to')}
                           </div>
                         </div>
                       </button>
@@ -429,4 +428,4 @@ const whyeinbill = () => {
   );
 };
 
-export default whyeinbill;
+export default Whyeinbill;

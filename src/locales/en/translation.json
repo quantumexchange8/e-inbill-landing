@@ -1,7 +1,29 @@
 {
+  "only_RM1.99": "Only RM1.99/day for your business to accept cashless payments with E-invoice. Try free demo now!",
+
+  "home": "Home",
+
+  "why_einbill": "Why E-inbill",
+
+  "e_invoice": "E-invoice",
+
+  "products": "Products",
+
+  "english": "English",
+
+  "malay": "Malay",
+
+  "chinese": "简体中文",
+
+  "powered_by": "Powered by Current Tech Industries Sdn Bhd.",
+
+
+
   "a_solution_to": "A solution to",
   
   "make_payments_easier": "make payments easier",
+
+  "m_a_solution_to": "A solution to make payments easier",
 
   "leave_your_contact": "Leave your Contact",
 
@@ -11,11 +33,23 @@
 
   "as_a_technology_driven_company": "As a technology-driven company, our core mission at E-inbill is to simplify financial processes and foster connectivity among businesses. Our objective is to streamline financial operations and facilitate seamless interactions between companies.",
 
+  "m_we_are_einbill": "We are E-inbill, a division of",
+
+  "current_tech": "Current Tech Industries Sdn Bhd.As a technology-driven company, our core mission at E-inbill is to simplify financial processes and foster connectivity among businesses. Our objective is to streamline financial operations and facilitate seamless interactions between companies.",
+
   "in_malaysia": "In Malaysia, we have introduced e-invoicing products that comply with LHDN standards, serving over 300 businesses. Our clientele spans various sectors, from retail to manufacturing, with a focus on providing support to small businesses and medium-sized tech enterprises. Our solutions adhere to LHDN regulations, PEPPOL, and MDEC compliance requirements. Through close collaboration with regulatory bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.", 
+
+  "m_in_malaysia": "In Malaysia, we have introduced",
+
+  "m_e_invoicing_products": "e-invoicing products that comply with LHDN standards, serving over 300 businesses. Our clientele spans various sectors, from retail to manufacturing,",
+  
+  "m_with_a_focus": "with a focus on providing support to small businesses and medium-sized tech enterprises. Our solutions adhere to ",
+
+  "m_lhdn_regulations": "LHDN regulations, PEPPOL, and MDEC compliance requirements. Through close collaboration with regulatory bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.",
 
   "key_features": "Key Features",
 
-  "of_our_product": "of Our Product",
+  "of_our_products": "of Our Products",
 
   "completing_the_transaction": "Completing the transaction requires just a few clicks.",
 
@@ -53,9 +87,13 @@
 
   "standard": "Standard",
 
-  "For_small_to_medium_sized": "For small to medium-sized food and beverage establishments, we understand that providing ",
+  "for_small_to_medium_sized": "For small to medium-sized food and beverage establishments, we understand that providing ",
 
   "a_comfortable_experience": "a comfortable experience for customers is absolutely crucial.",
+
+  "m_for_small_to_medium_sized": "For small to medium-sized food and beverage establishments, we understand that providing a ",
+
+  "m_a_comfortable_experience": "comfortable experience for customers is absolutely crucial.",
 
   "the_standard_plan": "The Standard plan fully addresses this concern.",
 
@@ -127,9 +165,363 @@
 
   "your_business_sector": "Your business sector",
 
-  "leave_your_contact_to": "Leave your contact to schedule a complimentary demo"
-
+  "leave_your_contact_to": "Leave your contact to schedule a complimentary demo",
 
   
   
+  
+  "choose_us": "Choose us because you believe in our expertise",
+
+  "we_can_elevate": "We can elevate your business to new heights, helping you achieve your goals with ease.",
+
+  "why_you_should": "Why You Should Choose E-inbill?",
+
+  "our_system_is_fully_equipped": "Our system is fully equipped to match the characteristics of your industry, making us the ideal choice for you.",
+
+  "our_point_of_sales": "Our point of sales.",
+
+  "interface": "Interface",
+
+  "tailor_the_layout": "Tailor the layout to your preferences, including product descriptions, customisable options, tax regulations, receipts, categories, and more. Enjoy complete control over your interface, ensuring it perfectly aligns with your business needs.",
+
+  "security": "Security",
+
+  "this_guarantees_that": "Safely store all your data on a local drive, ensuring it's accessible at any time, whether you have an internet connection or not. This guarantees that your information remains secure and readily available whenever you need it, providing peace of mind and uninterrupted access.",
+
+  "receipts": "Receipts",
+
+  "provide_your_customers": "Provide your customers with the option to choose between environmentally-friendly digital receipts or classic printed ones. This flexibility caters to diverse customer preferences, promoting sustainability while still accommodating those who prefer traditional methods.",
+
+  "payment": "Payment",
+
+  "offer_your_customers": "Offer your customers a range of payment options, including cash, credit/debit cards, and eWallets. This diverse selection ensures convenience and flexibility for your customers, allowing them to choose the method that best suits their preferences and needs.",
+
+  "offline": "Offline",
+
+  "keep_your_operations": "Keep your operations running smoothly even in the face of an unstable internet connection. Your data will be automatically saved and synchronised once the connection is reestablished, ensuring seamless continuity and minimizing disruptions to your workflow.",
+
+  "leave_your_contact_info": "Leave your contact information to discover how E-inbill empowers merchants to achieve more.",
+
+
+
+  
+  "what_is_an_e_invoice": "What is an E-invoice",
+
+  "simplify_your_malaysian": "Simplify your Malaysian business's electronic invoicing process with E-Inbill.",
+
+  "the_malaysian_inland_revenue_board": "The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply by August 1, 2024. By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.",
+
+  "m_the_malaysian_inland_revenue_board": "The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply",
+
+  "m_by_august_1": "by August 1, 2024. By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.",
+
+  "start_implementing_e_invoicing": "Start Implementing E-Invoicing For Your Business?",
+
+  "the_implementating_of_e_invoice": "The implementating of E-invoice will be phased to ensure a smooth transition. The criteria for determining the annual turnover or revenue thresholds for E-Invoice implementation are as follows:",
+
+  "for_taxpayers_with_audited": "For taxpayers with audited financial statements: ",
+
+  "the_annual_turnover_or_revenue": "The annual turnover or revenue will be determined based on the figures stated in the statement of comprehensive income in the audited financial statements for the financial year 2022.",
+
+  "for_taxpayers_without_audited": "For taxpayers without audited financial statements:",
+
+  "the_annual_revenue": "The annual revenue will be determined based on the figures reported in the tax return for the year of assessment 2022.",
+
+  "in_the_event_of": "In the event of a change in the accounting year-end for the financial year 2022, the taxpayer’s turnover or revenue will be pro-rated to a 12-month period to accurately determine the e-Invoice implementation date.",
+
+  "e_invoice_implementing_timeline": "E-Invoice Implementing Timeline:",
+
+  "target_taxpayers": "Target Taxpayers:",
+
+  "taxpayers_with_100": "Taxpayers with an annual turnover or revenue of more than RM100 million.",
+
+  "implementation_date": "Implementation Date:",
+
+  "1_august_2024": "1 August 2024",
+
+  "taxpayers_with_25_100": "Taxpayers with an annual turnover or revenue of more than RM25 million and up to RM100 million.",
+
+  "1_january_2025": "1 January 2025",
+
+  "taxpayers_with_25": "Taxpayers with an annual turnover or revenue of less than RM25 million.",
+
+  "1_july_2025": "1 July 2025",
+
+  "irbm_myinvoice_system": "IRBM MyInvois System",
+
+  "to_support_the_growth": "To support the growth of the digital economy, the Government intends to implement e-Invoice in stages in an effort to enhance the efficiency of Malaysia’s tax administration management. This initiative is aligned with the Twelfth Malaysia Plan, which aims to strengthen the digital services infrastructure and modernise the tax administration system through digitalisation.",
+
+  "m_to_support_the_growth": "To support the growth of the digital economy, the Government intends to implement.",
+
+  "e_invoice_in_stages": "e-Invoice in stages in an effort to enhance the efficiency of Malaysia’s tax administration management. This initiative is aligned with the Twelfth Malaysia Plan, which aims to strengthen the digital services infrastructure and modernise the tax administration system through digitalisation.",
+
+  "the_e_invoice": "The e-Invoice will enable near real-time validation and storage of transactions, catering to Business-to-Business (B2B), Business-to-Consumer (B2C) and Business-to-Government (B2G) transactions.",
+
+  "benefits_of_adopting_e_invoice": "Benefits of Adopting e-Invoice",
+
+  "the_implementation_of_e_Invoice": "The implementation of e-Invoice not only provides seamless experience to taxpayers, but also improves business efficiency and increases tax compliance.",
+
+  "overall_benefits": "Overall benefits of adopting e-Invoice include:",
+
+  "unified_invoicing_process": "Unified invoicing process through the streamlining of transaction document creation, and submission of data electronically to IRBM. The automation of data entry for transactions reduces manual efforts and human errors;",
+
+  "facilitate_tax_return_filing": "Facilitate tax return filing through seamless system integration for efficient and accurate tax reporting;",
+
+  "for_larger_businesses": "For larger businesses, the adoption of e-Invoice enables the streamlining of operations, resulting enhanced efficiency and significant time as well as cost savings through automated processes, seamless data integration, and improved invoice management; and",
+
+  "for_micro": "For micro, small and medium-sized enterprises (MSMEs), the phased implementation offers a progressive and manageable transition to e-Invoice, allowing MSMEs to align their financial reporting and processes to be digitalised with industry standards, ensuring that MSMEs to adapt over a longer period and mitigating potential disruptions.",
+
+  "lhdn_e_invoice_what_are": "LHDN E-Invoice: What Are The Penalties For Non-Compliance?",
+
+  "lhdn_e_invoice": "LHDN E-Invoice:",
+
+  "what_are_the_penalties": "What Are The Penalties For Non-Compliance?",
+
+  "adhering_to_the_lhdn_title": "Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant consequences for your business. Here's what you need to be aware of:",
+
+  "adhering_to_the_lhdn": "Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant",
+
+  "consequences_for_your_business": "consequences for your business. Here's what you need to be aware of:",
+
+  "penalties": "Penalties: Non-compliance with e-invoice regulations can incur substantial financial penalties, ranging from RM200 to RM20,000.",
+
+  "legal_consequences": "Legal Consequences: Failure to comply may also result in imprisonment for a maximum period of six months. This underscores the gravity of the LHDN mandate.",
+
+  "for_more_info": "For more info:",
+
+  "lhdn_offences": "(LHDN) Offences, Fines and Penalties.",
+
+  "customer_feedback_form": "E-Invoice Customer Feedback Form: ",
+
+  "following_link.": "Following link.",
+
+  "who_needs_to_comply": "Who Needs to Comply with e-Invoicing in Malaysia?",
+
+  "lhdn_has_released_guidelines": "LHDN has released guidelines outlining which entities, individuals, and businesses are required to adhere to e-invoicing rules, as well as those exempt from them.",
+
+  "entities_required": "Entities Required to Comply with e-Invoicing in Malaysia",
+
+  "associations": "Associations.",
+
+  "body_of_persons": "Body of persons.",
+
+  "branches": "Branches.",
+
+  "business_trusts": "Business trusts.",
+
+  "co_operative_societies": "Co-operative societies.",
+
+  "corporations": "Corporations.",
+
+  "limited_liability": "Limited liability partnerships.",
+
+  "partnerships": "Partnerships.",
+
+  "property_trust_funds": "Property trust funds.",
+
+  "property_trusts": "Property trusts.",
+
+  "real_estate": "Real estate investment trusts.",
+
+  "representative_offices": "Representative offices and regional offices.",
+
+  "trust_bodies": "Trust bodies.",
+
+  "unit_trusts": "Unit trusts.",
+
+  "entities_exempt": "Entities exempt from e-Invoicing",
+
+  "ruler_and_ruling_chief": "Ruler and Ruling Chief.",
+
+  "former_ruler": "Former Ruler and Ruling Chief.",
+
+  "consort_of_a_ruler": "Consort of a Ruler of a State with specified titles.",
+
+  "consort_of_a_former": "Consort of a Former Ruler of a State with specified titles Government.",
+
+  "state_government": "State Government and State authority.",
+
+  "government_authority": "Government authority.",
+
+  "local_authority": "Local authority.",
+
+  "statutory_authority": "Statutory authority and Statutory Body.",
+
+  "property_trust": "Property trust funds.",
+
+  "facilities_provided": "Facilities provided by the above Government, authority, or Body Consular offices and diplomatic officers, Consular officers, and Consular employees.",
+
+  "individual_who": "Individual who is not conducting Business.",
+
+  "invoices": "Invoices:",
+
+  "it_is_generally_used": "It is generally used to record transactions between supplier and buyer. Invoices also include a self-billed invoice issued for tracking expenses.",
+
+  "credit_notes": "Credit notes:",
+
+  "a_credit_note_is": "A credit note is a document issued by sellers to make corrections to an e-Invoice issued previously mainly to lower the original invoice's value without returning money to the Buyer. It is generally used to adjust errors, apply discounts, or account for returned items. ",
+
+  "debit_notes": "Debit notes:",
+
+  "in_constrast_to": "In contrast to credit notes, debit notes are issued to record additional costs related to a previously issued e-Invoice.",
+
+  "refund_notes": "Refund notes:",
+
+  "a_refund_notes_is": "A refund e-Invoice is an official document issued by a Seller to record refund issued to the Buyer.",
+
+
+
+
+  "tools_to_enhance": "Tools to Enhance Your Business Model",
+
+  "switch_to_e_inbill": "Switch to E-inbill and ensure your business stays compliant with LHDN E Invoice.",
+
+  "comprehensive_solution": "Comprehensive Solution: Integrated Cash Collection, Inventory Management, and Business Intelligence.",
+
+  "suitable_for_small_business": "(Suitable for Small Business)",
+
+  "lhdn_e_invoice_compliance": "LHDN E-INVOICE Compliance",
+
+  "bundle_promo_price": "Bundle Promo Price:",
+
+  "rm3": "RM3.01",
+
+  "rm1": "RM1",
+
+  "99day": ".99 / day",
+
+  "included": "included:",
+
+  "software_license": "Software license.",
+
+  "rm726": "(RM726.35)",
+
+  "mobile_printer": "Mobile printer.",
+
+  "free_x_10": "Free X 10 paper roll.",
+
+  "li_oin_battery": "7.4V Li-ion battery, 1800mAh",
+
+  "ps_ac": "PS AC 100V-240V 50/60HZ",
+
+  "weight": "Weight 0.48 KG",
+
+  "thickness": "Thickness 0.053 ~ 0.15mm",
+
+  "mobile_pos_device_suitable": "(Mobile POS Device Suitable for Growing Business）",
+
+  "rm4": "RM4.10",
+
+  "rm2": "RM2",
+
+  "application": "Application:",
+
+  "customisable_menu": "Customisable Menu",
+
+  "biometric_lock": "Biometric Lock",
+
+  "unlimited_invoices": "Unlimited Invoices",
+
+  "cloud_storage": "Cloud Storage",
+
+  "training_and_support": "Training & Support",
+
+  "mobile_pos_device": "Mobile POS Device.",
+
+  "mobile_pos_device2": "Mobile POS Device:",
+
+  "standard_display": "6.5″, 720*1600 Display",
+
+  "camera_rear": "Camera Rear 5MP QR Scan",
+
+  "express_printing": "Express Printing",
+
+  "usb_c_bluetooh_or_wifi": "USB-C + Bluetooth / Wifi",
+
+  "nfc": "NFC Compatible (Optional)",
+
+  "ultra_large": "Ultra Large Printing Roll",
+
+  "58mm_width": "58mm width & 50mm diameter",
+
+  "removable_battery": "Removable Battery",
+
+  "battery_capacity": "battery capacity 3350mAh",
+
+  "standard_ps_ac": "PS AC 100V-240V 50/60HZ",
+
+  "charging_dock": "* Charging dock sold separately",
+
+  "octa_core": "Octa-Core Cortex 2.0GH",
+
+  "android_13": "Android 13",
+
+  "2_gb_ram": "2GB RAM 32GB ROM",
+
+  "nfc_compatible": "NFC Compatible (Optional)",
+
+  "bluetooth_5": "Bluetooth 5.0",
+
+  "support_wifi": "Support Wifi",
+
+  "support_qr": "Support QR Scan",
+
+  "up_to_10hrs": "Up to 10hrs Single Charge",
+
+  "rm8": "RM8.15",
+
+  "smart_pos_device_suitable": "(Smart POS Device Suitable for Retail & Business)",
+
+  "rm6": "RM6",
+
+  "11day": ".11 / day",
+
+  "rm1095": "(RM1,095.00)",
+
+  "smart_pos_device": "Smart POS Device.",
+  
+  "smart_pos_device2": "Smart POS Device:",
+
+  "advanced_display": "10.1\", 1280 x 800 HD Display",
+
+  "secondary_screen": "Secondary Screen",
+
+  "seiko_thermal_printer": "Seiko Thermal Printer",
+
+  "multiple_peripheral_port": "Multiple Peripheral Port",
+
+  "nfc_and_qr": "NFC Compatible + QR Scan",
+
+  "camera": "Camera 1D + 2D Barcode Scan",
+
+  "standard_roll": "80*80mm Standard Roll",
+
+  "automatic_cutter": "Automatic Cutter",
+
+  "printing_speed": "250mm/s Printing Speed",
+
+  "power_bank": "Compatible with Power Bank",
+
+  "100v_240v": "100V-240V ~ 24V / 2.5A",
+
+  "support_2g_3g_4g_lte": "Support 2G / 3G / 4G / LTE",
+
+  "android_11": "Android 11",
+
+  "hd_touch_pane": "10.1\" HD Touch Pane",
+
+  "advanced_print_speed": "250mm/s Print Speed",
+
+  "icon_support_2g": "Support 2G/3G/4G/LTE",
+
+  "mono_speaker": "1.5 Mono Speaker",
+
+  "nanosim": "NanoSim (Optional)",
+
+  "power_adaptor": "Power Adaptor 100 ~ 240V",
+
+  "2_nd_screen": "2nd Screen 2.4” LED",
+
+  "advanced_weight": "Weight 1.785 KG"
+
 }
