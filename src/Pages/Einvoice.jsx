@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
+import Leaveyourcontact from '../Components/Leaveyourcontact.jsx';
 import Video1 from '../Asset/Videos/eInvoiceVideo1.mp4';
 import { useTranslation } from 'react-i18next';
 import { HomeGroup1, EGroup, EGroupS, ArrowFlipForward, ArrowFlipForwardS } from '../Components/Outline.jsx';
 import LHDN from '../Asset/Images/LHDN_logo1.png';
 
 const Einvoice = () => {
+
   const { t, i18n } = useTranslation();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className='pt-[54px] md:pt-[113px] md:pb-[100px] pb-[75px] flex flex-col gap-[50px] md:gap-[100px]'>
@@ -21,30 +27,62 @@ const Einvoice = () => {
               {t('what_is_an_e_invoice')}
             </div>
           </div>
-          <button className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
+          <button onClick={openModal} className="absolute bottom-10 right-10 md:flex flex-col items-center gap-[10px] hidden">
             <HomeGroup1 className="w-[50px] h-[45px]" />
-            <div className="text-[#0046BA] text-center text-sm font-bold leading-normal w-[120px] ">
-              {t('leave_your_contact')}
+            <div className="text-[#0046BA] text-center text-sm font-bold leading-normal">
+              <div className='leading-[18px]'>
+                {t('leave_your')}
+              </div>
+              <div className='leading-[18px]'>
+                {t('contact')}
+              </div>
             </div>
           </button>
+          <Leaveyourcontact isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </div>
       {/* 2 */}
       <div className='w-full flex justify-center'>
-        <div className='flex flex-col justify-center max-w-[1000px] w-full px-[30px] md:px-0'>
+        <div className='flex flex-col justify-center max-w-[1000px] w-full px-[29px] md:px-0'>
           {/* 2.1 */}
           <div className='flex flex-col gap-[20px] justify-center max-w-[1000px] w-full'>
-            <div className='flex flex-col w-[295px] md:w-[1000px] justify-center text-left text-[#0046BA] text-xl md:text-5xl not-italic font-bold leading-tight'>
-              {t('simplify_your_malaysian')}
+            <div className='flex flex-col md:w-[1000px] justify-center gap-[10px] text-left text-[#0046BA] text-xl md:text-5xl not-italic font-bold leading-tight'>
+              <div className='hidden md:flex flex-col leading-tight'>
+                <div>
+                  {t('simplify_your_malaysian')}
+                </div>
+                <div> 
+                  {t('electronic_invoicing')}
+                </div>
+                <div> 
+                  {t('e_inbill')}
+                </div>
+              </div>
+              <div className="w-[300px] md:hidden">
+                <div>
+                  {t('m_simplify_your_malaysian')}
+                </div>
+                <div> 
+                  {t('m_invoicing_process')}
+                </div>
+              </div>
             </div>
-            <div className="hidden md:flex w-[955px] text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight">
-              {t('the_malaysian_inland_revenue_board')}
+            <div className="hidden md:flex md:flex-col text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight">
+              <div>
+                {t('the_malaysian_inland_revenue_board')}
+              </div>
+              <div>
+                {t('for_tax_purpose')}
+              </div>
+              <div className='w-[950px]'>
+                {t('by_july_1')}
+              </div>
             </div>
             <div className='md:hidden flex flex-col md:flex-row text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight'>
-              <div className='w-[317px]'>
+              <div>
                 {t('m_the_malaysian_inland_revenue_board')}
               </div>
-              <div className='w-[325px]'>
+              <div className='w-[323px]'>
                 {t('m_by_august_1')}
               </div>
             </div>
@@ -79,46 +117,88 @@ const Einvoice = () => {
             {/* Start Implementing E-Invoicing */}
             <div className='flex flex-col gap-[50px]'>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='w-[213px] md:w-[594px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                  {t('start_implementing_e_invoicing')}
+                <div className='text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
+                  <div className='hidden md:flex'>
+                    <div>
+                      {t('start_implementing_e_invoicing')}
+                    </div>
+                  </div>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_start_implementing_e_invoicing')}
+                    </div>
+                    <div>
+                      {t('m_for_your_business')}
+                    </div>
+                  </div>
                 </div>
-                <div className='w-[333px] md:w-[950px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight'>
+                <div className='md:w-[970px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight'>
                   {t('the_implementating_of_e_invoice')}
                 </div>
               </div>
               <div>
                 <div className='text-[#0060FF] text-sm md:text-xl leading-tight flex flex-col gap-[20px] w-[333px] md:w-full'>
-                  <div className='pl-7 flex flex-col gap-5'>
+                  <div className='pl-6 md:pl-7 flex flex-col gap-5'>
                     <ul>
-                      <li className='w-[240px] md:w-full list-disc list-outside font-bold md:font-semibold'>
-                        {t('for_taxpayers_with_audited')}
+                      <li className='list-disc list-outside font-bold md:font-semibold'>
+                        <div className='hidden md:flex'>
+                          {t('for_taxpayers_with_audited')}
+                        </div>
+                        <div className='md:hidden'>
+                          <div>
+                            {t('m_for_taxpayers_with_audited')}
+                          </div>
+                          <div>
+                            {t('financail_statement')}
+                          </div>
+                        </div>
                       </li>
-                      <div className='font-medium'>
+                      <div className='md:w-[950px] font-medium'>
                         {t('the_annual_turnover_or_revenue')}
                       </div>
                     </ul>
                     <ul>
-                      <li className='w-[240px] md:w-full list-disc list-outside font-bold md:font-semibold'>
-                        {t('for_taxpayers_without_audited')}
+                      <li className='list-disc list-outside font-bold md:font-semibold'>
+                        <div className='hidden md:flex'>
+                          {t('for_taxpayers_without_audited')}
+                        </div>
+                        <div className='md:hidden'>
+                          <div>
+                            {t('m_for_taxpayers_without_audited')}
+                          </div>
+                          <div>
+                            {t('financail_statement')}
+                          </div>
+                        </div>
                       </li>
                       <div className='font-medium'>
                         {t('the_annual_revenue')}
                       </div>
                     </ul>
                   </div>
-                  <div className='font-medium w-[319px] md:w-[980px]'>
-                    {t('in_the_event_of')}
+                  <div className='md:w-[970px] font-medium'>
+                    <div className="hidden md:flex">
+                      {t('in_the_event_of')}
+                    </div>
+                    <div className="md:hidden">
+                      <div>
+                        {t('m_in_the_event_of')}
+                      </div>
+                      <div className='w-[320px]'>
+                        {t('m_year_end')}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             {/* E-Invoice */}
             <div className='flex flex-col gap-[10px] md:gap-5'>
-              <div className='w-[242px] md:w-[415px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
+              <div className='text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                 {t('e_invoice_implementing_timeline')}
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl leading-tight md:leading-[30px] flex flex-col gap-[15px] md:gap-[30px] w-[333px] md:w-full'>
-                <ul className='list-disc flex flex-col pl-6'>
+                <ul className='list-disc flex flex-col pl-5 md:pl-6'>
                   <li className='font-bold md:font-semibold'>
                     {t('target_taxpayers')}
                   </li>
@@ -157,7 +237,7 @@ const Einvoice = () => {
                     {t('target_taxpayers')}
                   </li>
                   <div className='flex gap-1 md:gap-2'>
-                    <div className='transform scale-y-[-1] flex items-end md:items-center'>
+                    <div className='transform scale-y-[-1] flex items-end'>
                       <div className='hidden md:block'>
                         <ArrowFlipForward />
                       </div>
@@ -165,8 +245,18 @@ const Einvoice = () => {
                         <ArrowFlipForwardS />
                       </div>
                     </div>
-                    <div className='w-[280px] md:w-full font-medium'>
-                      {t('taxpayers_with_25_100')}
+                    <div className='md:w-full font-medium'>
+                      <div className='hidden md:flex'>
+                        {t('taxpayers_with_25_100')}
+                      </div>
+                      <div className="md:hidden">
+                        <div>
+                          {t('m_taxpayers_with_25_100')}
+                        </div>
+                        <div>
+                          {t('m_up_to_100')}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <li className='font-bold md:font-semibold'>
@@ -228,8 +318,8 @@ const Einvoice = () => {
                 {t('irbm_myinvoice_system')}
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight'>
-                <ul className='list-disc flex flex-col gap-4 pl-6'>
-                  <li className='w-[305px] md:w-[900px]'>
+                <ul className='list-disc flex flex-col gap-4 pl-5 md:pl-6'>
+                  <li className='md:w-[961px]'>
                    <div className='hidden md:block '>
                     {t('to_support_the_growth')}
                    </div>
@@ -242,7 +332,7 @@ const Einvoice = () => {
                     </div>
                    </div>
                   </li>
-                  <li className='w-[305px] md:w-[950px]'>
+                  <li className='w-[315px] md:w-[950px]'>
                     {t('the_e_invoice')}
                   </li>
                 </ul>
@@ -250,7 +340,7 @@ const Einvoice = () => {
             </div>
             {/* Benefits of Adopting e-Invoice */}
             <div className='flex flex-col gap-[10px] md:gap-5'>
-              <div className='w-[209px] md:w-[358px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
+              <div className='text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                 {t('benefits_of_adopting_e_invoice')}
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-5 w-[333px] md:w-full'>
@@ -262,17 +352,29 @@ const Einvoice = () => {
                 </div>
                 <div className='pl-4 md:pl-7'>
                   <ul className='list-decimal flex flex-col gap-5'>
-                    <li className='w-[312px] md:w-[950px]'>
+                    <li className='w-[312px] md:w-[960px]'>
                       {t('unified_invoicing_process')}
                     </li>
                     <li className='md:w-[900px]'>
                       {t('facilitate_tax_return_filing')}
                     </li>
-                    <li className='w-[315px] md:w-[950px]'>
+                    <li className='w-[313px] md:w-[965px]'>
                       {t('for_larger_businesses')}
                     </li>
-                    <li className='w-[305px] md:w-[950px]'>
-                      {t('for_micro')}
+                    <li className='w-[312px] md:w-[965px]'>
+                      <div className='hidden md:flex'>
+                        <div>
+                          {t('for_micro')}
+                        </div>
+                      </div>
+                      <div className="md:hidden">
+                        <div>
+                          {t('m_for_micro')}
+                        </div>
+                        <div>
+                          {t('m_over_a_longer_period')}
+                        </div>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -292,8 +394,13 @@ const Einvoice = () => {
                 </div>
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-[30px]'>
-                <div className='hidden md:block w-[333px] md:w-[850px]'>
-                  {t('adhering_to_the_lhdn_title')}
+                <div className='hidden md:block w-[333px] md:w-[981px]'>
+                  <div>
+                    {t('adhering_to_the_lhdn_title')}
+                  </div>
+                  <div className='w-[850px]'>
+                    {t('and_non_compliance')}
+                  </div>
                 </div>
                 <div className='md:hidden w-[333px]'>
                   <div>
@@ -303,9 +410,9 @@ const Einvoice = () => {
                     {t('consequences_for_your_business')}
                   </div>
                 </div>
-                <div className='pl-7'>
-                  <ul className='flex flex-col gap-4 list-disc w-[323px] md:w-[950px]'>
-                    <li>
+                <div className='pl-5 md:pl-8'>
+                  <ul className='flex flex-col gap-4 list-disc md:w-[950px]'>
+                    <li className='w-[310px] md:w-full'>
                       {t('penalties')}
                     </li>
                     <li>
@@ -315,7 +422,7 @@ const Einvoice = () => {
                       <li>
                         {t('for_more_info')}
                       </li> 
-                      <a href="\" target="_blank" className="underline text-blue-600">
+                      <a href="#" onClick={(e) => e.preventDefault() } className="underline text-blue-600">
                         {t('lhdn_offences')}
                       </a>
                     </ul>
@@ -323,7 +430,7 @@ const Einvoice = () => {
                       <li>
                         {t('customer_feedback_form')}
                       </li>
-                      <a href="\" target="_blank" className="underline text-blue-600">
+                      <a href="#" onClick={(e) => e.preventDefault() } className="underline text-blue-600">
                         {t('following_link')}
                       </a>
                     </ul>
@@ -335,17 +442,47 @@ const Einvoice = () => {
             <div className="flex flex-col gap-[75px] md:gap-[50px]">
               {/* Who */}
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='w-[266px] md:w-[606px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                  {t('who_needs_to_comply')}
+                <div className='w-[293px] md:w-full text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
+                  <div className='hidden md:flex '>
+                    {t('who_needs_to_comply')}
+                  </div>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_who_needs_to_comply')}
+                    </div>
+                    <div>
+                      {t('m_in_malaysia')}
+                    </div>
+                  </div>
                 </div>
-                <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-[30px] w-[333px] md:w-[920px]'>
-                  {t('lhdn_has_released_guidelines')}
+                <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight flex flex-col gap-[30px]'>
+                  <div className='hidden md:flex flex-col'>
+                    <div>
+                      {t('lhdn_has_released_guidelines')}
+                    </div>
+                    <div>
+                      {t('adhere_to')}
+                    </div>
+                  </div>
+                  <div className='md:hidden'>
+                    {t('m_lhdn_has_released_guidelines')}
+                  </div>
                 </div>
               </div>
               {/* Entities Required */}
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='w-[304px] md:w-[658px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                  {t('entities_required')}
+                  <div className="hidden md:flex">
+                    {t('entities_required')}
+                  </div>
+                  <div className="md:hidden">
+                    <div>
+                      {t('m_entities_required')}
+                    </div>
+                    <div>
+                      {t('m_malaysia')}
+                    </div>
+                  </div>
                 </div>
                 <div className='w-[333px] md:w-[920px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px]'>
                   <ul>
@@ -564,7 +701,7 @@ const Einvoice = () => {
               </div>
               {/* Entities exempt */}
               <div className="flex flex-col gap-[10px] md:gap-5">
-                <div className="w-[333px] md:w-[382px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight">
+                <div className="text-[#0046BA] text-sm md:text-2xl font-bold leading-tight">
                   {t('entities_exempt')}
                 </div>
                 <div className='w-[333px] md:w-[940px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px]'>
@@ -582,7 +719,7 @@ const Einvoice = () => {
                         {t('ruler_and_ruling_chief')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -595,7 +732,7 @@ const Einvoice = () => {
                         {t('former_ruler')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-end md:items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -608,7 +745,7 @@ const Einvoice = () => {
                         {t('consort_of_a_ruler')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-end md:items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -621,7 +758,7 @@ const Einvoice = () => {
                         {t('consort_of_a_former')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -634,7 +771,7 @@ const Einvoice = () => {
                         {t('state_government')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -647,7 +784,7 @@ const Einvoice = () => {
                         {t('government_authority')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -660,7 +797,7 @@ const Einvoice = () => {
                         {t('local_authority')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -673,7 +810,7 @@ const Einvoice = () => {
                         {t('statutory_authority')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -686,7 +823,7 @@ const Einvoice = () => {
                         {t('property_trust')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-end'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -699,7 +836,7 @@ const Einvoice = () => {
                         {t('facilities_provided')}
                       </div>
                     </li>
-                    <li className='flex gap-2'>
+                    <li className='flex gap-1 md:gap-2'>
                       <div className='transform scale-y-[-1] flex items-center'>
                         <div className='hidden md:block'>
                           <ArrowFlipForward />
@@ -719,19 +856,19 @@ const Einvoice = () => {
             {/* Type of e-invoices */}
             <div className="flex flex-col gap-[30px] md:gap-5">
               <div className="flex flex-col gap-[10px] md:gap-5">
-                <div className='w-[210px] md:w-[354px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
-                  Type of e-invoices in Malaysia
+                <div className='text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
+                  {t('type_of_e_invoice')}
                 </div>
                 <div className='w-[333px] md:w-full text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px]'>
-                  The below documents must be issued in electronic format under Malaysia e-Invoice:
+                  {t('below_documents')}
                 </div>
               </div>
-              <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px] w-[333px] md:w-[980px]'>
-                <ul className='list-disc pl-4 md:pl-6 flex flex-col gap-4'>
+              <div className='text-[#0060FF] text-sm md:text-xl font-medium leading-tight md:leading-[30px] w-[333px] md:w-[990px]'>
+                <ul className='list-disc pl-[18px] md:pl-8 flex flex-col gap-4'>
                   <li>
                     <b>{t('invoices')}</b> {t('it_is_generally_used')}
                   </li>
-                  <li>
+                  <li className='md:w-[955px]'>
                     <b>{t('credit_notes')}</b> {t('a_credit_note_is')}
                   </li>
                   <li>

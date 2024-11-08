@@ -14,19 +14,26 @@ const Header = () => {
       {/* Web */}
       <div className='hidden md:block'>
         <div className='bg-[#0046BA] w-full flex justify-center py-3'>
-          <div className='w-[1000px] flex justify-end gap-[134px]'>
-            <div className='text-white text-xs text-center font-medium leading-tight'>
+          <div className='relative w-[1000px] flex justify-end items-center'>
+            <div className='w-full absolute left-1/2 transform -translate-x-1/2 text-white text-xs text-center font-medium leading-tight'>
               {t('only_RM1.99')}
             </div>
-            <div className="flex gap-[10px]">
-              <Message />
-              <Facebook />
-              <Instagram />
+            <div className="flex gap-[10px] z-50">
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <Message />
+              </a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <Facebook />
+              </a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <Instagram />
+              </a>
             </div>
           </div>
+
         </div>
         <div className='bg-[#0060FF] w-full flex justify-center'>
-          <div className='w-[1000px] flex justify-between items-center gap-[192px]'>
+          <div className='w-[1000px] flex justify-between items-center'>
             <div className="flex gap-[11.35px]">
               <div>
                 <img src={currentTech} alt='logo' className="h-4 w-5 flex-shrink-0 flex"/>
@@ -49,8 +56,12 @@ const Header = () => {
                 </div>
               </div> 
               <div className="flex list-none gap-[10px] py-[18px]">
-                <AppStore />
-                <Playstore />
+                <a href="#" onClick={(e) => e.preventDefault()}>
+                  <AppStore />
+                </a>
+                <a href="#" onClick={(e) => e.preventDefault()}>
+                  <Playstore />
+                </a>
               </div>
             </div>
           </div>
@@ -76,24 +87,24 @@ const Header = () => {
           </div> 
           {/* 2 */}
           <div className="flex justify-center gap-[30px] md:hidden">
-            <div>
+            <a href="#" onClick={(e) => e.preventDefault()}>
               <AppStoreS />
-            </div>
-            <div>
+            </a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
               <PlaystoreS />
-            </div>
+            </a>
           </div>
           {/* 3 */}
           <div className="flex justify-center gap-[30px] md:hidden">
-              <div>
-                <MessageS />
-              </div>
-              <div>
-                <FacebookS />
-              </div>
-              <div>
-                <InstagramS />
-              </div>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              <MessageS />
+            </a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              <FacebookS />
+            </a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              <InstagramS />
+            </a>
           </div>
           {/* 4 */}
           <div className="flex justify-center gap-[11.35px]">

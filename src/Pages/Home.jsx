@@ -1,8 +1,10 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { HomeGroup1, GroupM, GroupMS, Tablet, TabletS, KFGroup1, KFGroup1S, Pos, PosS, Group11, Group11S, Group12, Group12S, Group6, Group6S, KFGroup2, KFGroup2S, Startup, StartupS, Arrow, ArrowS } from '../Components/Outline.jsx';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
+import Leaveyourcontact from '../Components/Leaveyourcontact.jsx';
+import Product from './Products.jsx';
 import beautyImage from '../Asset/Images/beautician-with-brush-applies-white-moisturizing-mask-face-young-girl-client-spa-beauty-salon-1.png';
 import barista from '../Asset/Images/young-woman-barista-working-modern-coffee-shop-1.png';
 import food from '../Asset/Images/couple-enjoying-food-restaurant-1.png';
@@ -21,9 +23,16 @@ import advancedS from '../Asset/Images/advancedS.png';
 import Video1 from '../Asset/Videos/homeVideo1.mp4';
 import Video2 from '../Asset/Videos/homeVideo2.mp4';
 
+
 const Home = () => {
 
   const { t, i18n } = useTranslation();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  const navigate = useNavigate();
 
   return (
     <div className='pt-[54px] md:pt-[113px] pb-[75px] md:pb-[100px] flex flex-col gap-[75px] md:gap-[100px]'>
@@ -36,7 +45,7 @@ const Home = () => {
           </video>
           <div className="absolute inset-0 flex justify-center items-center">
             <div className="w-full max-w-[1000px] flex justify-center">
-              <div className="w-[218px] md:w-[704px] hidden md:flex flex-col justify-center text-white/80 text-center text-2xl md:text-[64px] font-bold leading-tight">
+              <div className="hidden md:flex flex-col justify-center text-white/80 text-center text-[64px] font-bold leading-tight">
                 <div>
                   {t('a_solution_to')}
                 </div> 
@@ -44,16 +53,27 @@ const Home = () => {
                   {t('make_payments_easier')}
                 </div>
               </div>
-              <div className="md:hidden w-[218px] flex flex-col justify-center text-white/80 text-center text-2xl font-bold leading-tight">
-                {t('m_a_solution_to')}
+              <div className="md:hidden flex flex-col justify-center text-white/80 text-center text-2xl font-bold leading-tight">
+                <div>
+                  {t('m_a_solution_to')}
+                </div>
+                <div>
+                  {t('m_payments_easier')}
+                </div>
               </div>
             </div>
-            <button className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
+            <button onClick={openModal} className="absolute bottom-10 right-10 md:flex flex-col items-center gap-[10px] hidden">
               <HomeGroup1 className="w-[50px] h-[45px]" />
-              <div className="text-[#0046BA] text-center text-sm  font-bold leading-normal w-[120px] ">
-              {t('leave_your_contact')}
+              <div className="text-[#0046BA] text-center text-sm font-bold leading-normal">
+                <div className='leading-[18px]'>
+                  {t('leave_your')}
+                </div>
+                <div className='leading-[18px]'>
+                  {t('contact')}
+                </div>
               </div>
             </button>
+            <Leaveyourcontact isOpen={isModalOpen} onClose={closeModal} />
           </div>
         </div>
         {/* 1.2 */}
@@ -61,10 +81,10 @@ const Home = () => {
           <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center max-w-[1000px] md:w-full '>
             {/* About Us */}
             <div className='flex flex-col gap-[10px] md:gap-5 px-[29px] md:px-0 max-w-[1000px] md:w-full'>
-                <div className='text-[#0046BA] w-[91px] md:w-[218px] text-xl md:text-5xl font-bold leading-tight'>
+                <div className='text-[#0046BA] text-xl md:text-5xl font-bold text-left leading-tight'>
                   {t('about_us')}
                 </div>
-                <div className='text-[#0060FF] md:w-[960px] text-base md:text-2xl font-medium text-left leading-tight flex flex-col gap-5 md:gap-10'> 
+                <div className='text-[#0060FF] text-base md:text-2xl font-medium text-left leading-tight flex flex-col gap-5 md:gap-10'> 
                   <div className='hidden md:block'>
                     <div>
                       {t('we_are_einbill')}
@@ -82,11 +102,28 @@ const Home = () => {
                     </div>
                   </div>
                   <div className='hidden md:block'>
-                    {t('in_malaysia')}
+                    <div>
+                      {t('in_malaysia')}
+                    </div>
+                    <div>
+                      {t('standard_serving')}
+                    </div>
+                    <div>
+                      {t('retail_to_manufacturing')}
+                    </div>
+                    <div>
+                      {t('medium_size')}
+                    </div>
+                    <div>
+                      {t('and_mdec')}
+                    </div>
+                    <div>
+                      {t('bodies_we')}
+                    </div>
                   </div>
                   <div className='md:hidden'>
                     <div>
-                      {t('m_in_malaysia')}
+                      {t('m_in_malaysia_we')}
                     </div> 
                     <div>
                       {t('m_e_invoicing_products')} 
@@ -103,16 +140,21 @@ const Home = () => {
             {/* Key Features */}
             <div className='flex flex-col gap-[50px] md:gap-[100px] items-center px-[30px] md:px-0 max-w-[1000px] md:w-full'>
               <div className='flex justify-center'>
-                <div className='md:w-[685px] text-[#0046BA] text-xl md:text-5xl font-bold text-center flex flex-col md:flex-row md:gap-3'>
-                  <div>
+                <div className='md:w-[685px] text-[#0046BA] text-xl md:text-5xl font-bold text-center flex flex-col md:flex-row justify-center'>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_key_features')}
+                    </div>
+                    <div>
+                      {t('m_of_our_products')}
+                    </div> 
+                  </div>
+                  <div className='hidden md:flex'>
                     {t('key_features')}
                   </div>
-                  <div>
-                    {t('of_our_products')}
-                  </div> 
                 </div> 
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-[50px] md:gap-[200px] w-[300px] md:w-full">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-[39px] md:gap-[120px] w-[300px] md:w-full">
                 <div className="order-2 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
                   <div className="hidden md:block">
                     <Tablet />
@@ -120,8 +162,16 @@ const Home = () => {
                   <div className="md:hidden">
                     <TabletS />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[119px] md:w-[198px]">
-                    {t('completing_the_transaction')}
+                  <div className="text-black text-center text-xs md:text-xl font-bold ">
+                    <div className='md:leading-[23px]'>
+                      {t('completing')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('transaction')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('just')}
+                    </div>
                   </div>
                 </div>
                 <div className="order-3 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
@@ -131,8 +181,16 @@ const Home = () => {
                   <div className="md:hidden">
                     <KFGroup1S />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[100px] md:w-[149px]">
-                    {t('fully_complaint')}
+                  <div className="text-black text-center text-xs md:text-xl font-bold">
+                    <div className='md:leading-[23px]'>
+                      {t('fully_complaint')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('tax_e_invoice')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('functionality')}
+                    </div>
                   </div>
                 </div>
                 <div className="order-4 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
@@ -142,8 +200,16 @@ const Home = () => {
                   <div className='md:hidden'>
                     <PosS />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[84px] md:w-[140px]">
-                    {t('fully_support')}
+                  <div className="text-black text-center text-xs md:text-xl font-bold">
+                    <div className='md:leading-[23px]'>
+                      {t('fully_support')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('all_payment')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('methods')}
+                    </div>
                   </div>
                 </div>
                 <div className="order-5 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
@@ -153,12 +219,15 @@ const Home = () => {
                   <div className="md:hidden">
                     <Group11S />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[95px] md:w-[157px]">
-                    <div>
+                  <div className="text-black text-center text-xs md:text-xl font-bold">
+                    <div className='md:leading-[23px]'>
                       {t('Unbeatable')}
                     </div> 
-                    <div>
+                    <div className='md:leading-[23px]'>
                       {t('low_prices')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('would_not')}
                     </div>
                   </div>
                 </div>
@@ -179,8 +248,16 @@ const Home = () => {
                   <div className="md:hidden">
                     <Group12S />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[131px] md:w-[218px]">
-                    {t('absolutely_secure')}
+                  <div className="text-black text-center text-xs md:text-xl font-bold">
+                    <div className='md:leading-[23px]'>
+                      {t('absolutely_secure')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('cloud_synchrnization')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('and_storage')}
+                    </div>
                   </div>
                 </div>
                 <div className="order-7 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
@@ -190,8 +267,16 @@ const Home = () => {
                   <div className="md:hidden">
                     <Group6S />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[104px] md:w-[173px]">
-                    {t('user_friendly')}
+                  <div className="text-black text-center text-xs md:text-xl font-bold">
+                    <div className='md:leading-[23px]'>
+                      {t('user_friendly')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('easy_to_use')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('key_interface')}
+                    </div>
                   </div>
                 </div>
                 <div className="order-8 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
@@ -201,8 +286,16 @@ const Home = () => {
                   <div className="md:hidden">
                     <KFGroup2S />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[87px] md:w-[145px]">
-                    {t('set_up_and_start')}
+                  <div className="text-black text-center text-xs md:text-xl font-bold">
+                    <div className='md:leading-[23px]'>
+                      {t('set_up')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('start_selling')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('within_minutes')}
+                    </div>
                   </div>
                 </div>
                 <div className="order-9 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
@@ -212,8 +305,16 @@ const Home = () => {
                   <div className="md:hidden">
                     <StartupS />
                   </div>
-                  <div className="text-black text-center text-xs md:text-xl font-bold leading-tight w-[119px] md:w-[198px]">
-                    {t('customer_support')}
+                  <div className="text-black text-center text-xs md:text-xl font-bold">
+                    <div className='md:leading-[23px]'>
+                      {t('customer_support')}
+                    </div>
+                    <div className='md:leading-[23px]'> 
+                      {t('seven_days')}
+                    </div>
+                    <div className='md:leading-[23px]'>
+                      {t('for_quick_assistance')}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -224,43 +325,90 @@ const Home = () => {
       </div>
 
       {/* 2 */}
-      <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center px-[29px]'>
         <div className='flex flex-col gap-[75px] md:gap-[100px] justify-center max-w-[1000px] md:w-full '>
           {/* 2.1 */}
           <div className="flex flex-col gap-[75px] md:gap-[150px]">
             {/* 2.1.1 */}
             <div className='flex flex-col gap-[10px] md:gap-[30px]'>
               <div className='flex justify-center'>
-                <div className='w-[170px] md:w-[779px] text-[#0046BA] text-xl md:text-5xl font-bold text-center '>
-                  {t('no_matter')}
+                <div className='flex flex-col md:gap-3 text-[#0046BA] text-xl md:text-5xl font-bold text-center leading-tight '>
+                  <div className='hidden md:flex flex-col'>
+                    <div>
+                      {t('no_matter')}
+                    </div>
+                    <div>
+                      {t('anda_berada')}
+                    </div>
+                  </div>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_no_matter')}
+                    </div>
+                    <div>
+                      {t('m_industry_you_are')}
+                    </div>
+                  </div>
                 </div>
               </div>
               <div>
                 <div className='text-black text-base md:text-2xl font-medium text-center leading-tight flex flex-col gap-6'>
-                  <div className='flex justify-center'>
-                    <div className='w-[333px] md:w-[960px]'>
-                      {t('whether_a_small_street_vendor')}
-                    </div>
+                  <div className='flex flex-col justify-center'>
+                  <div className='hidden md:flex justify-center'>
+                        {t('whether_a_small_street_vendor')}
+                      </div>
+                      <div className='hidden md:flex justify-center'>
+                        {t('di_bawah_satu')}
+                      </div>
+                      <div className='md:hidden'>
+                        <div>
+                          {t('m_whether_a_small_street_vendor')}
+                        </div>
+                        <div>
+                          {t('m_unified')}
+                        </div>
+                      </div>
                   </div>
                   <div className='flex justify-center'>
-                    <div className='w-[300px] md:w-[830px]'>
-                      {t('the_e_inbill_framework')}
+                    <div>
+                      <div>
+                        {t('the_e_inbill_framework')}
+                      </div>
+                      <div>
+                        {t('together')}
+                      </div>
+                      <div>
+                        {t('you_and_your')}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             {/* 2.1.2 */}
-            <div className='flex flex-col justify-center gap-[50px] md:gap-[100px]'>
-              <div className='w-full flex justify-center'>
-                <div className='w-[300px] md:w-[744px] text-[#0060FF] text-base md:text-[32px] font-semibold text-center leading-tight'>
-                  {t('The_e_inbill_solution')}
+            <div className='flex flex-col gap-[50px] md:gap-[100px]'>
+              <div className='flex justify-center'>
+                <div className='text-[#0060FF] text-base md:text-[32px] font-semibold text-center leading-tight'>
+                  <div className='hidden md:flex justify-center'>
+                    {t('the_e_inbill_solution')}
+                  </div>
+                  <div className='hidden md:flex justify-center'>
+                    {t('your_business')}
+                  </div>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_the_e_inbill_solution')}
+                    </div>
+                    <div>
+                      {t('m_your_business')}
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-[50px]'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-[50px] justify-items-center'>
                   {/* g1 */}
-                  <div className="relative w-[333px] md:w-[300px] h-[501px] md:h-[600px] border-2 border-[#00A6CA] rounded-lg flex flex-col items-center gap-10 md:gap-[62px] px-[17px] md:px-[25px] pt-[60px] pb-[40px] md:pt-[65px] md:pb-[124px]">
+                  <div className="relative w-[333px] md:w-[300px] md:max-h-[620px] border-2 border-[#00A6CA] rounded-lg flex flex-col items-center gap-10 md:gap-[62px] px-[15px] md:px-[24px] pt-[60px] pb-[40px] md:pt-[65px] md:pb-[100px]">
                     <div className='absolute -top-5 inset-x-0 flex justify-center'>
                       <div className=" bg-[#00A6CA] text-white text-xl font-semibold leading-tight rounded-[10px] py-2 w-[200px] flex justify-center">{t('basic')}</div>
                     </div>
@@ -268,20 +416,41 @@ const Home = () => {
                       <img src={basic} alt="Basic Plan" className="hidden md:block w-[200px]" />
                       <img src={basicS} alt="Basic Plan" className="md:hidden w-[243px]" />
                     </div>
-                    <div className='md:w-[240px] text-black text-base font-bold text-left leading-tight flex flex-col gap-[13px] md:gap-[13px]'>
-                      <div>
-                        {t('for_small_shops_or_stalls')}
+                    <div className='text-black text-base font-bold text-left leading-tight flex flex-col gap-[13px] md:gap-[13px]'>
+                      <div className='hidden md:flex flex-col'>
+                        <div>
+                          {t('for_small_shops_or_stalls')}
+                        </div>
+                        <div>
+                          {t('is_undoubtedly')}
+                        </div>
+                      </div>
+                      <div className='md:hidden flex flex-col'>
+                        <div>
+                          {t('m_for_small_shops_or_stalls')}
+                        </div>
+                        <div>
+                          {t('m_is_undoubtedly')}
+                        </div>
                       </div>
                       <div>
                         {t('the_basic_plan')}
                       </div>
-                      <div>
-                        {t('merchants_simply')}
+                      <div className='hidden md:flex flex-col'>
+                        <div>
+                          {t('merchants_simply')}
+                        </div>
+                        <div className='w-[230px]'>
+                          {t('in_to_account')}
+                        </div>
+                      </div>
+                      <div className="md:hidden">
+                        {t('m_merchants_simply')}
                       </div>
                     </div>
                   </div>
                   {/* g2 */}
-                  <div className="relative w-[333px] md:w-[300px] h-[525px] md:h-[600px] border-2 border-[#0073F6] rounded-lg flex flex-col items-center gap-10 md:gap-[27px] px-[16px] md:px-[25px] pt-[60px] pb-[40px] md:pt-10 md:pb-[86px]">
+                  <div className="relative w-[333px] md:w-[300px] h-auto md:max-h-[620px] border-2 border-[#0073F6] rounded-lg flex flex-col items-center gap-10 md:gap-[27px] px-[15px] md:px-[24px] pt-[60px] pb-[40px] md:pt-10 md:pb-[86px]">
                     <div className='absolute -top-5 inset-x-0 flex justify-center'>
                       <div className=" bg-[#0073F6] text-white text-xl font-semibold leading-tight rounded-[10px] py-2 w-[200px] flex justify-center">{t('standard')}</div>
                     </div>
@@ -294,36 +463,44 @@ const Home = () => {
                         <div>
                           {t('for_small_to_medium_sized')}
                         </div>
-                        <div className='w-[247px]'>
+                        <div>
                           {t('a_comfortable_experience')}
                         </div>
                       </div>
                       <div>
                         {t('the_standard_plan')} 
                       </div>
-                      <div className='w-[240px]'>
-                        {t('with_mobile_devices')}
+                      <div className='w-[250px]'>
+                        <div>
+                          {t('with_mobile_devices')}
+                        </div>
+                        <div className='w-[240px]'>
+                          {t('customers_can')}
+                        </div>
                       </div>
                     </div>
                     <div className='md:hidden text-black text-base font-bold text-left leading-tight flex flex-col gap-3 md:gap-[11px]'>
                       <div>
-                        <div className='w-[280px]'>
-                        {t('m_for_small_to_medium_sized')}
+                        <div>
+                          {t('m_for_small_to_medium_sized')}
                         </div>
-                        <div className='w-[247px]'>
-                        {t('m_a_comfortable_experience')}
+                        <div>
+                          {t('m_a_comfortable_experience')}
+                        </div>
+                        <div>
+                          {t('m_customer_is')}
                         </div>
                       </div>
-                      <div className='w-[298px]'> 
+                      <div className=''> 
                         {t('the_standard_plan')}
                       </div>
-                      <div className='w-[300px]'>
-                        {t('with_mobile_devices')}
+                      <div className=''>
+                        {t('m_with_mobile_devices')}
                       </div>
                     </div>
                   </div>
                   {/* g3 */}
-                  <div className="relative w-[333px] md:w-[300px] h-[534px] md:h-[600px] border-2 border-[#0046BA] rounded-lg flex flex-col items-center gap-10 md:gap-8 px-[17px] md:px-[25px] pt-[61px] pb-[40px] md:pt-[35px] md:pb-[26px]">
+                  <div className="relative w-[333px] md:w-[300px] h-auto md:max-h-[620px] border-2 border-[#0046BA] rounded-lg flex flex-col items-center gap-10 md:gap-8 px-[15px] md:px-[24px] pt-[61px] pb-[40px] md:pt-[35px] md:pb-[26px]">
                     <div className='absolute -top-5 inset-x-0 flex justify-center'>
                       <div className=" bg-[#0046BA] text-white text-xl font-semibold leading-tight rounded-[10px] py-2 w-[200px] flex justify-center">{t('advanced')}</div>
                     </div>
@@ -335,8 +512,16 @@ const Home = () => {
                       <div>
                         {t('restaurant_management')}
                       </div>
-                      <div>
-                        {t('cross_departmental_communication')}
+                      <div className='hidden md:flex flex-col'>
+                        <div>
+                          {t('cross_departmental_communication')}
+                        </div>
+                        <div>
+                          {t('ke_dalam_genggaman')}
+                        </div>
+                      </div>
+                      <div className='md:hidden'>
+                        {t('m_cross_departmental_communication')}
                       </div>
                       <div>
                         {t('enabling_you')}
@@ -345,8 +530,10 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <button className="w-[260px] md:w-[400px] h-[40px] md:h-[60px] rounded-[31px] border-2 border-black shadow-submit flex items-center justify-center gap-[20px] md:gap-[30px]">
-                    <div className="w-[181px] md:w-[226px] text-black text-center text-base md:text-[20px] font-semibold">{t('see_all')}</div>
+                  <button onClick={() => navigate('/products')} className="w-auto rounded-[31px] border-2 border-black shadow-submit flex items-center justify-between px-[25px] md:px-[58px] py-[10px] md:py-[18px] gap-[20px] md:gap-[30px]">
+                    <div className="text-black text-center text-base md:text-[20px] font-semibold">
+                      {t('see_all')}
+                    </div>
                     <div className='hidden md:block'>
                       <Arrow />
                     </div>
@@ -366,13 +553,21 @@ const Home = () => {
         <video autoPlay loop playsInline muted className='w-full'>
           <source src={Video2} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 md:flex justify-center items-center hidden">
-          <div className="text-white/80 text-center text-[64px] font-bold leading-tight w-full max-w-[1000px]">
+        <div className="absolute inset-0 flex justify-center items-center">
+          <div className="hidden md:flex flex-col text-white/80 text-center text-[64px] font-bold leading-tight w-full max-w-[1000px]">
             <div>
               {t('tedious_steps')}
             </div> 
             <div>
               {t('hinder_your')}
+            </div>
+          </div>
+          <div className="md:hidden flex flex-col items-center justify-center text-white/80 text-center text-2xl font-bold leading-tight w-full max-w-[1000px]">
+            <div className='flex items-center'>
+              {t('m_tedious_steps')}
+            </div> 
+            <div className='flex items-center'>
+              {t('m_hinder_your')}
             </div>
           </div>
         </div>
@@ -386,16 +581,44 @@ const Home = () => {
             {/* 4.1.1 */}
             <div className='flex flex-col gap-[10px] md:gap-[30px]'>
               <div className='flex justify-center'>
-                <div className='w-[327px] md:w-[784px] text-[#0046BA] text-center text-xl md:text-5xl font-bold leading-tight'>
-                  {t('you_cannot_resist')}
+                <div className='text-[#0046BA] text-center text-xl md:text-5xl font-bold leading-tight flex flex-col md:gap-[10px]'>
+                  <div className='hidden md:flex flex-col md:gap-[10px]'>
+                    <div>
+                      {t('you_cannot_resist')}
+                    </div>
+                    <div>
+                      {t('that_the_product')}
+                    </div>
+                  </div>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_you_cannot_resist')}
+                    </div>
+                    <div>
+                      {t('m_advantages')}
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className='w-[333px] md:w-[970px] text-black text-base md:text-2xl font-medium leading-tight'>
-                {t('we_offer')}
+              <div className='md:w-[970px] text-black text-base md:text-2xl font-medium leading-tight'>
+                <div className='hidden md:flex flex-col'>
+                  <div>
+                    {t('we_offer')}
+                  </div>
+                  <div>
+                    {t('be_customised_for')}
+                  </div>
+                  <div>
+                    {t('have_choosing')}
+                  </div>
+                </div>
+                <div className='md:hidden'>
+                  {t('m_we_offer')}
+                </div>
               </div>
             </div>
             {/* 4.1.2 */}
-            <div className='flex flex-col gap-[30px] md:gap-[50px]'>
+            <div className='flex flex-col items-center gap-[30px] md:gap-[50px]'>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] md:gap-[50px]">
                 <div className="relative w-[333px] md:w-[300px] h-[100px] md:h-[200px] flex-shrink-0">
                     <div
@@ -403,12 +626,17 @@ const Home = () => {
                         style={{ backgroundImage: `url(${beautyImage})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('beauty')}
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className="hidden md:flex flex-col">
+                            <div>
+                              {t('beauty')}
+                            </div>
+                            <div>
+                              {t('salon_spas')}
+                            </div>
                           </div>
-                          <div>
-                            {t('salon_spas')}
+                          <div className='md:hidden'>
+                            {t('m_beauty')}
                           </div>
                         </div>
                     </div>
@@ -419,12 +647,17 @@ const Home = () => {
                         style={{ backgroundImage: `url(${barista})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('cafes')}
-                          </div> 
-                          <div>
-                            {t('quick_service')}
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className="hidden md:flex flex-col">
+                            <div>
+                              {t('cafes')}
+                            </div> 
+                            <div>
+                              {t('quick_service')}
+                            </div>
+                          </div>
+                          <div className='md:hidden'>
+                            {t('m_cafes')}
                           </div>
                         </div>
                     </div>
@@ -435,12 +668,17 @@ const Home = () => {
                         style={{ backgroundImage: `url(${food})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('food')}
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className="hidden md:flex flex-col">
+                            <div>
+                              {t('food')}
+                            </div>
+                            <div>
+                              {t('bar')}
+                            </div>
                           </div>
-                          <div>
-                            {t('bar')}
+                          <div className='md:hidden'>
+                            {t('m_food')}
                           </div>
                         </div>
                     </div>
@@ -451,12 +689,17 @@ const Home = () => {
                         style={{ backgroundImage: `url(${dentist})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('health')}
-                          </div> 
-                          <div>
-                            {t('medical')}
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className='hidden md:flex flex-col'>
+                            <div>
+                              {t('health')}
+                            </div> 
+                            <div>
+                              {t('medical')}
+                            </div>
+                          </div>
+                          <div className="md:hidden">
+                            {t('m_health')}
                           </div>
                         </div>
                     </div>
@@ -478,12 +721,17 @@ const Home = () => {
                         style={{ backgroundImage: `url(${pets})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('pets')}
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className='hidden md:flex flex-col'>
+                            <div>
+                              {t('pets')}
+                            </div>
+                            <div>
+                              {t('grooming')}
+                            </div>
                           </div>
-                          <div>
-                            {t('grooming')}
+                          <div className='md:hidden'>
+                            {t('m_pets')}
                           </div>
                         </div>
                     </div>
@@ -494,12 +742,17 @@ const Home = () => {
                         style={{ backgroundImage: `url(${education})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('courses')} 
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className="hidden md:flex flex-col">
+                            <div>
+                              {t('courses')} 
+                            </div>
+                            <div>
+                              {t('education')}
+                            </div>
                           </div>
-                          <div>
-                            {t('education')}
+                          <div className="md:hidden">
+                            {t('m_courses')} 
                           </div>
                         </div>
                     </div>
@@ -510,13 +763,18 @@ const Home = () => {
                         style={{ backgroundImage: `url(${service})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('automotive')} 
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className="hidden md:flex flex-col">
+                            <div>
+                              {t('automotive')} 
+                            </div>
+                            <div>
+                              {t('service')}
+                            </div>
                           </div>
-                          <div>
-                            {t('service')}
-                          </div>
+                          <div className="md:hidden">
+                              {t('m_automotive')} 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -526,20 +784,27 @@ const Home = () => {
                         style={{ backgroundImage: `url(${stock})` }}
                     />
                     <div className="absolute inset-0 flex justify-center items-center">
-                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight gap-[3px] md:gap-0">
-                          <div>
-                            {t('wholesales')}
-                          </div> 
-                          <div>
-                            {t('stock')}
+                        <div className="flex md:flex-col text-white text-center text-sm md:text-xl font-bold leading-tight md:gap-0">
+                          <div className='hidden md:flex flex-col'>
+                            <div>
+                              {t('wholesales')}
+                            </div> 
+                            <div>
+                              {t('stock')}
+                            </div>
+                          </div>
+                          <div className="md:hidden">
+                            {t('m_wholesales')}
                           </div>
                         </div>
                     </div>
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <button className="w-[260px] md:w-[400px] h-10 md:h-[60px] rounded-[31px] border-2 border-black shadow-submit flex items-center justify-center gap-5 md:gap-[30px]">
-                  <div className="text-black text-center text-base md:text-xl font-semibold">{t('see_all')}</div>
+                <button onClick={() => navigate('/products')} className="w-auto h-10 md:h-[60px] rounded-[31px] border-2 border-black shadow-submit flex items-center justify-between gap-[20px] md:gap-[30px] px-[18px] md:px-[58px] md:py-[18px]">
+                  <div className="text-black text-center text-base md:text-xl font-semibold">
+                    {t('see_all')}
+                  </div>
                   <div className='hidden md:block'>
                     <Arrow />
                   </div>
@@ -561,13 +826,28 @@ const Home = () => {
           <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center'>
             {/* 5.1 */}
             <div className="flex justify-center">
-              <div className='w-[280px] md:w-[763px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
-                {t('join_millions')}
+              <div className='w-full md:w-[763px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
+                <div className='hidden md:flex flex-col'>
+                  <div>
+                    {t('join_millions')}
+                  </div>
+                  <div>
+                    {t('usher_in')}
+                  </div>
+                </div>
+                <div className='md:hidden'>
+                  <div>
+                    {t('m_join_millions')}
+                  </div>
+                  <div>
+                    {t('m_for_your')}
+                  </div>
+                </div>
               </div>
             </div>
             {/* 5.2 */}
             <div className='flex flex-col'>
-              <form className='flex flex-col gap-[50px] md:gap-[100px]'>
+              <form onSubmit={(e) => e.preventDefault()} className='flex flex-col gap-[50px] md:gap-[100px]'>
                 {/* Content */}
                 <div className='flex flex-col items-center gap-[30px] md:gap-[50px]'>
                   {/* Full name */}
@@ -578,7 +858,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="fullname"
-                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA]"
+                      className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
                     />
                   </div>
                   {/* Company name */}
@@ -589,7 +869,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="companyname"
-                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA]"
+                      className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
                     />
                   </div>
                   {/* Contact number */}
@@ -600,7 +880,7 @@ const Home = () => {
                     <input
                       type="tel"
                       id="contactnumber"
-                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA]"
+                      className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
                     />
                   </div>
                   {/* Email-address */}
@@ -611,7 +891,7 @@ const Home = () => {
                     <input
                       type="email"
                       id="email"
-                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA]"
+                      className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
                     />
                   </div>
                   {/* Your state or location */}
@@ -622,7 +902,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="location"
-                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA]"
+                      className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
                     />
                   </div>
                   {/* Your business sector */}
@@ -633,16 +913,24 @@ const Home = () => {
                     <input
                       type="text"
                       id="sector"
-                      className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA]"
+                      className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
                     />
                   </div>
                 </div>
                 {/* Submit */}
                 <div className="flex items-center justify-center">
-                  <button className="w-full md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
-                    <div className='flex justify-center'>
-                      <div className="w-[243px] md:w-[530px] text-black text-center md:text-xl text-base font-semibold leading-tight">
+                  <button className="w-auto h-auto rounded-[31px] border-2 border-black shadow-submit px-9 py-[10px]" type="submit">
+                    <div className="w-auto text-black text-center md:text-xl text-base font-semibold leading-tight">
+                      <div className='hidden md:flex'>
                         {t('leave_your_contact_to')}
+                      </div>
+                      <div className='md:hidden'>
+                        <div>
+                          {t('m_leave_your_contact_to')}
+                        </div>
+                        <div>
+                          {t('m_a_complimentary')}
+                        </div>
                       </div>
                     </div>
                   </button>

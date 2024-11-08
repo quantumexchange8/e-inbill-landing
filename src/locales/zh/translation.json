@@ -1,3 +1,883 @@
 {
+    "only_RM1.99": "每天仅需 RM1.99, 您的企业即可通过电子发票接受无现金支付. 立即试用免费演示!",
   
-}
+    "home": "首页",
+  
+    "why_einbill": "选择 E-inbill",
+  
+    "e_invoice": "电子发票",
+  
+    "products": "产品",
+  
+    "english": "English",
+  
+    "malay": "Malay",
+  
+    "chinese": "简体中文",
+  
+    "powered_by": "Powered by Current Tech Industries Sdn Bhd.",
+  
+  
+  
+    "a_solution_to": "一个让支付变得",
+    
+    "make_payments_easier": "更轻松的解决方案",
+  
+    "m_a_solution_to": "一个让支付变得",
+
+    "m_payments_easier": "更轻松的解决方案",
+  
+    "leave_your": "留下您的",
+
+    "contact": "联系方式",
+  
+    "about_us": "关于我们",
+  
+    "we_are_einbill": "我们是 E-inbill, Current Tech Industries Sdn Bhd 的一部分. 作为一家以技术驱动的公司, ",
+  
+    "as_a_technology_driven_company": "E-inbill 的核心使命是简化财务流程并促进企业间的连接. 我们的目标是优化财务运营, 促进公司间无缝互动.",
+  
+    "m_we_are_einbill": "我们是 E-inbill,",
+  
+    "current_tech": "Current Tech Industries Sdn Bhd 的一部分. 作为一家以技术驱动的公司, E-inbill 的核心使命是简化财务流程并促进企业间的连接. 我们的目标是优化财务运营, 促进公司间无缝互动.",
+  
+    "in_malaysia": "在马来西亚, 我们推出了符合LHDN标准的电子发票产品, 服务超过300家企业. 我们的客户涵盖各个行业, 从零售到制造业, 重点支持小型企业和中型科技企业. 我们的解决方案遵循LHDN法", 
+  
+    "standard_serving": "规, PEPPOL 和 MDEC 合规要求. 通过与监管机构的密切合作, 我们在电子发票实施的第一阶段取得了成功, 使我们成为为数不多的为第二阶段做好准备的公司之一. 我们在马来西亚托管的云基础设施确保了数据安全和合规.",
+
+    "retail_to_manufacturing": "",
+
+    "medium_size": "",
+
+    "and_mdec": "",
+
+    "bodies_we": "",
+
+    "m_in_malaysia_we": "在马来西亚, 我们推出了符合LHDN标准的电子发票产品, 服务超过300家企业. 我们的客户涵盖各个行业, 从零售到制造业, 重点支持小型企业和中型科技企业. 我们的解决方案遵循LHDN法规, PEPPOL 和 MDEC 合规要求. 通过与监管机构的密切合作, 我们在电子发票实施的第一阶段取得了成功, 使我们成为为数不多的为第二阶段做好准备的公司之一. 我们在马来西亚托管的云基础设施确保了数据安全和合规.",
+  
+    "m_e_invoicing_products": "",
+    
+    "m_with_a_focus": "",
+  
+    "m_lhdn_regulations": "",
+
+    "key_features": "我们产品的主要特点 ",
+  
+    "m_key_features": "我们产品的",
+  
+    "m_of_our_products": "主要特点",
+  
+    "completing": "完成交易只需",
+
+    "transaction": "点击几下即可",
+
+    "just": "",
+    
+    "fully_complaint": "完全合规的税务",
+
+    "tax_e_invoice": "电子发票功能",
+
+    "functionality": "",
+
+    "fully_support": "全面支持",
+
+    "all_payment": "所有支付方式",
+
+    "methods": "",
+
+    "Unbeatable": "出乎意料",
+
+    "low_prices": "的价格",
+
+    "would_not": "",
+
+    "absolutely_secure": "绝对安全的",
+
+    "cloud_synchrnization": "云同步和存储",
+
+    "and_storage": "",
+
+    "user_friendly": "用户友好且",
+
+    "easy_to_use": "易于使用的界面",
+
+    "key_interface": "",
+
+    "set_up": "在几分钟内完成",
+    
+    "start_selling": "设置并开始销售",
+
+    "within_minutes": "",
+
+    "customer_support": "每周七天提供客户",
+
+    "seven_days": "支持以快速协助",
+
+    "for_quick_assistance": "",
+  
+    "no_matter": "无论您在哪个行业",
+
+    "anda_berada": "",
+    
+    "m_no_matter": "无论您在哪个行业",
+
+    "m_industry_you_are": "",
+  
+    "whether_a_small_street_vendor": "无论是小巷摊贩还是大型连锁餐厅, E-inbill 始终支持您的业务. ",
+  
+    "di_bawah_satu": "硬件, 软件, 支付和技术支持统一在一个E-inbill解决方案下.",
+
+    "m_whether_a_small_street_vendor": "无论是小巷摊贩还是大型连锁餐厅, E-inbill 始终支持您的业务. 硬件, 软件, 支付和技术支持",
+
+    "m_unified": "统一在一个E-inbill解决方案下.",
+
+    "the_e_inbill_framework": "E-inbill 框架确保整个生态系统无缝协作.",
+  
+    "together": "这就是E-inbill的目标 - 为您和您的客户提供最佳的用户体验.",
+
+    "you_and_your": "",
+
+    "the_e_inbill_solution": "E-inbill 强大的解决方案足以支持",
+  
+    "your_business": "您的业务从小到大的成长",
+
+    "m_the_e_inbill_solution": "E-inbill 强大的解决方案足以支持",
+    
+    "m_your_business": "您的业务从小到大的成长",
+
+    "basic": "基础入门",
+    
+    "for_small_shops_or_stalls": "",
+
+    "is_undoubtedly": "",
+    
+    "m_for_small_shops_or_stalls": "",
+
+    "m_is_undoubtedly": "",
+  
+    "the_basic_plan": "对于小店铺或摊位来说, 这无疑是个好消息. 基础计划非常方便实用.",
+  
+    "merchants_simply": "商家只需下载 E-inbill应用, 登录账户, 并连接蓝牙收据打印机, 即可立即开始使用.",
+  
+    "in_to_account": "",
+
+    "m_merchants_simply": "商家只需下载 E-inbill应用, 登录账户, 并连接蓝牙收据打印机, 即可立即开始使用.",
+
+    "standard": "标准模式",
+  
+    "for_small_to_medium_sized": "对于中小型餐饮场所而言, 我们深知为顾客提供舒适体验的重要性. ",
+  
+    "a_comfortable_experience": "标准计划完全解决了这一问题.",
+  
+    "m_for_small_to_medium_sized": "对于中小型餐饮场所而言, 我们深知为顾客提供舒适体验的重要性. 标准计划完全解决了这一问题.",
+  
+    "m_a_comfortable_experience": "",
+
+    "m_customer_is": "",
+  
+    "the_standard_plan": "",
+  
+    "with_mobile_devices": "顾客可以通过移动设备完成支付, 无需排长队等待.",
+
+    "m_with_mobile_devices": "顾客可以通过移动设备完成支付, 无需排长队等待.",
+  
+    "customers_can": "",
+    
+    "advanced": "进阶门户",
+  
+    "restaurant_management": "餐厅管理需要选择一个整合所有功能的POS系统.",
+  
+    "cross_departmental_communication": "无论是跨部门沟通, 分店绩效报告, 还是提供卓越的客户服务, 我们的POS系统让餐厅技术掌握在您手中.",
+  
+    "ke_dalam_genggaman": "",
+
+    "m_cross_departmental_communication": "无论是跨部门沟通, 分店绩效报告, 还是提供卓越的客户服务, 我们的POS系统让餐厅技术掌握在您手中.",
+    
+    "enabling_you": "这使您能够给顾客留下深刻印象, 减少工作负担, 并脱颖而出!",
+  
+    "see_all": "查看所有产品详情",
+  
+    "tedious_steps": "不要让繁琐的步骤",
+  
+    "hinder_your": "阻碍您的业务进展",
+
+    "m_tedious_steps": "不要让繁琐的步骤",
+
+    "m_hinder_your": "阻碍您的业务进展",
+  
+    "you_cannot_resist": "您无法抗拒这款产品",
+
+    "that_the_product": "为您带来的优势",
+
+    "m_you_cannot_resist": "您无法抗拒这款产品",
+
+    "m_advantages": "为您带来的优势",
+  
+    "we_offer": "我们提供的不仅仅是 POS 系统, 支付终端或电子发票. ",
+  
+    "be_customised_for": "E-inbill 解决方案可以定制适用于餐饮, 美容和零售店铺. ",
+
+    "have_choosing": "无论您经营何种类型的业务, 选择 E-inbill 是开始利用您优势的第一步.",
+
+    "m_we_offer": "我们提供的不仅仅是 POS 系统, 支付终端或电子发票. E-inbill 解决方案可以定制适用于餐饮, 美容和零售店铺. 无论您经营何种类型的业务, 选择 E-inbill 是开始利用您优势的第一步.",
+
+    "beauty": "美容, 美发",
+  
+    "salon_spas": "和水疗",
+  
+    "cafes": "咖啡馆, 饮料店",
+  
+    "quick_service": "和快餐服务",
+  
+    "food": "食品店, 餐厅,",
+  
+    "bar": " 酒吧和小酒馆",
+  
+    "health": "健康",
+  
+    "medical": "与医疗",
+  
+    "retail_shop": "零售商店",
+  
+    "pets": "宠物及",
+  
+    "grooming": "宠物美容",
+  
+    "courses": "课程, 补习",
+  
+    "education": "和教育",
+  
+    "automotive": "汽车",
+  
+    "service": "及服务",
+  
+    "wholesales": "批发",
+  
+    "stock": "和库存",
+
+    "m_beauty": "美容, 美发和水疗",
+
+    "m_cafes": "咖啡馆, 饮料店和快餐服务",
+
+    "m_food": "食品店, 餐厅, 酒吧和小酒馆",
+
+    "m_health": "健康与医疗",
+
+    "m_pets": "宠物及宠物美容",
+
+    "m_courses": "课程, 补习和教育",
+
+    "m_automotive": "汽车及服务",
+
+    "m_wholesales": "批发和库存",
+  
+    "join_millions": "加入数百万成功的E-inBill商户",
+
+    "usher_in": "为您的业务开启新时代",
+
+    "m_join_millions": "加入数百万成功的E-inBill商户",
+
+    "m_for_your": "为您的业务开启新时代",
+  
+    "full_name": "姓名",
+  
+    "company_name": "公司名称",
+  
+    "contact_number": "联系号码",
+  
+    "email_address": "电邮地址",
+  
+    "your_state": "您的所在地区",
+  
+    "your_business_sector": "您的业务类型",
+  
+    "leave_your_contact_to": "留下您的联系方式, 以安排免费演示.",
+
+    "m_leave_your_contact_to": "留下您的联系方式, 以安排免费演示.",
+
+    "m_a_complimentary": "",
+  
+    
+    
+    
+    "choose_us": "选择我们是因为",
+
+    "believe_in": "您相信我们的专业知识",
+
+    "m_choose_us": "选择我们是因为",
+
+    "m_believe_in": "您相信我们的专业知识",
+  
+    "we_can_elevate": "我们可以将您的业务推向新的高度,",
+
+    "heights_helping": "帮助您轻松实现目标.",
+
+    "with_ease": "",
+
+    "m_we_can_elevate": "我们可以将您的业务推向新的高度,",
+  
+    "m_heights_helping": "帮助您轻松实现目标.",
+
+    "why_you_should": "为什么您应该选择E-inbill?",
+
+    "customizable_and_scalable_solution": "可定制且可扩展的解决方案",
+
+    "freedom_to_choose": "您可以根据需要选择各种扩展模块, 例如移动订购, 厨房管理, 预订, 会员管理或具有集成电子发票功能的支付系统. 此外, 我们提供全面的第三方集成解决方案, 无缝整合您运营管理的各个方面到一个系统中.",
+
+    "m_freedom_to_choose": "您可以根据需要选择各种扩展模块, 例如移动订购, 厨房管理, 预订, 会员管理或具有集成电子发票功能的支付系统. 此外, 我们提供全面的第三方集成解决方案, 无缝整合您运营管理的各个方面到一个系统中.",
+
+    "m_of_expansion": "",
+
+    "m_a_single_system": "",
+  
+    "operational_management": "",
+
+    "e_inbill_ecosystem": "E-inbill 生态系统",
+
+    "experience_unparalleled": "通过 E-inbill 生态系统, 体验无与伦比的效率和适应性. 拥有强大的核心 POS 系统, 可定制的扩展模块以及在各种技术上的无缝集成, 您可以为业务运营的每个方面赋能, 实现最佳的性能和成功.",
+
+    "m_experience_unparalleled": "通过 E-inbill 生态系统, 体验无与伦比的效率和适应性. 拥有强大的核心 POS 系统, 可定制的扩展模块以及在各种技术上的无缝集成, 您可以为业务运营的每个方面赋能, 实现最佳的性能和成功.",
+
+    "m_with_a_robust": "",
+
+    "for_optimal": "",
+
+    "keep_pace": "紧跟创新与优化步伐",
+
+    "m_keep_pace": "紧跟创新与优化步伐",
+
+    "m_innovation_and_optimisation": "",
+
+    "continuously_analyse": "我们不断分析市场趋势, 并将研究结果融入到新产品的开发中. 我们的目标是帮助餐厅快速适应不断变化的餐饮市场. 我们的研发团队推出符合行业趋势的产品, 并整合用户反馈. 所有新功能都经过严格测试. 我们对更新的承诺确保了速度和质量的兼顾.",
+    
+    "quickly": "",
+
+    "user_feedback": "",
+    
+    "m_continuously_analyse": "我们不断分析市场趋势, 并将研究结果融入到新产品的开发中. 我们的目标是帮助餐厅快速适应不断变化的餐饮市场. 我们的研发团队推出符合行业趋势的产品, 并整合用户反馈. 所有新功能都经过严格测试. 我们对更新的承诺确保了速度和质量的兼顾.",
+
+    "m_to_the_evolving": "",
+
+    "r_and_d_team": "",
+
+    "system_fully_supports": "系统完全支持云功能",
+
+    "m_system_fully_supports": "系统完全支持云功能",
+
+    "m_cloud_based": "",
+
+    "small_footprint": "小的投入也能带来可观的利润! 利用精简的解决方案, 您可以优化运营效率, 提高生产力, 并扩展品牌的线上影响力, 使您成为首选, 同时保持成本效益!",
+
+    "you_to_optimise": "",
+
+    "m_small_footprint": "小的投入也能带来可观的利润! 利用精简的解决方案, 您可以优化运营效率, 提高生产力, 并扩展品牌的线上影响力, 使您成为首选, 同时保持成本效益!",
+
+    "suitable_for_all_sizes": "适用于各种规模",
+
+    "no_matter_if_you": "无论您经营单个餐厅, 小型或中型连锁店, 还是大型企业, 实施 E-inbill 的餐厅解决方案都非常简单且可定制. 我们的系统支持不同的餐厅集团结构, 能够远程监控各个门店的运营数据. 您可以通过全面的报告跟踪营收, 平均订单价值, 客流量, 库存等信息. 此外, 您可以轻松管理多个品牌和位置, 为餐厅的无痛增长赋能.",
+
+    "support_different": "",
+
+    "foot_trafic": "",
+
+    "m_no_matter_if_you": "无论您经营单个餐厅, 小型或中型连锁店, 还是大型企业, 实施 E-inbill 的餐厅解决方案都非常简单且可定制. 我们的系统支持不同的餐厅集团结构, 能够远程监控各个门店的运营数据. 您可以通过全面的报告跟踪营收, 平均订单价值, 客流量, 库存等信息. 此外, 您可以轻松管理多个品牌和位置, 为餐厅的无痛增长赋能.",
+
+    "m_small_or_medium": "",
+
+    "technical_support": "24/7 全天候技术支持",
+
+    "e_inbill_provides": "E-inbill 提供全天候技术支持, 包括门店咨询, 实时多语种在线客户服务和现场系统培训. 我们透明的售后服务包括硬件维护和设备租赁服务, 确保客户在操作问题出现时能够及时解决.",
+  
+    "cepat_bagi": "",
+
+    "m_e_inbill_provides": "E-inbill 提供全天候技术支持, 包括门店咨询, 实时多语种在线客户服务和现场系统培训. 我们透明的售后服务包括硬件维护和设备租赁服务, 确保客户在操作问题出现时能够及时解决.",
+
+    "our_system_is_fully_equipped": "我们的系统完全能够匹配您行业的特性,",
+  
+    "m_our_system_is_fully_equipped": "我们的系统完全能够匹配您行业的特性, 使我们成为您的理想选择.",
+
+    "m_to_match": "",
+
+    "m_of_your_industry": "",
+
+    "m_the_ideal": "",
+
+    "us_the_ideal": " 使我们成为您的理想选择.",
+
+    "our_point_of_sales": "我们的销售特点.",
+  
+    "interface": "制定界面",
+  
+    "tailor_the_layout": "根据您的偏好定制布局, 包括产品描述, 可定制选项, 税务规定, 收据, 分类等等. 享受对界面的完全控制, 确保它与您的业务需求完美对接.",
+  
+    "options_tax_regulations": "",
+
+    "your_interface": "",
+
+    "m_tailor_the_layout": "根据您的偏好定制布局, 包括产品描述, 可定制选项, 税务规定, 收据, 分类等等. 享受对界面的完全控制, 确保它与您的业务需求完美对接.",
+  
+    "security": "安全性",
+  
+    "this_guarantees_that": "将所有数据安全地存储在本地驱动器上, 确保在有或没有互联网连接时均可访问. 这保证了您的信息始终安全可靠, 并在您需要时随时可用, 为您带来安心和不间断的访问.",
+  
+    "you_have_an": "",
+
+    "m_this_guarantees_that": "将所有数据安全地存储在本地驱动器上, 确保在有或没有互联网连接时均可访问. 这保证了您的信息始终安全可靠, 并在您需要时随时可用, 为您带来安心和不间断的访问.",
+
+    "m_you_have_an": "",
+
+    "receipts": "收据发票",
+  
+    "provide_your_customers": "为您的客户提供选择, 他们可以选择环保的电子收据或经典的打印收据. 这种灵活性满足了不同客户的偏好, 既促进了可持续发展, 同时也满足了喜欢传统方法的客户.",
+  
+    "digital_receipt": "",
+
+    "m_provide_your_customers": "为您的客户提供选择, 他们可以选择环保的电子收据或经典的打印收据. 这种灵活性满足了不同客户的偏好, 既促进了可持续发展, 同时也满足了喜欢传统方法的客户.",
+
+    "m_digital_receipt": "",
+   
+    "payment": "支付模式",
+  
+    "offer_your_customers": "为您的客户提供多种支付选项, 包括现金, 信用卡 / 借记卡和电子钱包. 这种多样化选择确保了客",
+  
+    "dan_fleksibiliti": "户的便利性和灵活性, 使他们可以选择最适合他们偏好和需求的支付方式.",
+
+    "m_offer_your_customers": "为您的客户提供多种支付选项, 包括现金, 信用卡 / 借记卡和电子钱包. 这种多样化选择确保了客户的便利性和灵活性, 使他们可以选择最适合他们偏好和需求的支付方式.",
+
+    "m_and_ewallets": "",
+    
+    "offline": "离线",
+  
+    "keep_your_operations": "即使在互联网连接不稳定的情况下, 也能确保您的运营顺利进行. 一旦连接恢复, 您的数据将会自动保存和同步, 确保业务连续性, 并将工作流程中的中断降至最低.",
+  
+    "connection": "",
+    
+    "is_reestablish": "",
+
+    "m_keep_your_operations": "即使在互联网连接不稳定的情况下, 也能确保您的运营顺利进行. 一旦连接恢复, 您的数据将会自动保存和同步, 确保业务连续性, 并将工作流程中的中断降至最低.",
+
+    "m_in_the_face": "",
+
+    "leave_your_contact_info": "请留下您的联系信息",
+  
+    "e_inbill_empowers": "了解 E-inbill 如何赋能商家实现更多",
+
+    "memberdayakan_peniaga": "",
+
+    "m_leave_your_contact_info": "请留下您的联系信息",
+
+    "m_e_inbill_empowers": "了解 E-inbill 如何赋能商家实现更多",
+  
+    "m_memberdayakan_peniaga": "",
+  
+  
+    
+    "what_is_an_e_invoice": "什么是电子发票",
+  
+    "simplify_your_malaysian": "通过 E-Inbill 简化您在马来西亚的",
+
+    "m_simplify_your_malaysian": "通过 E-Inbill 简化您在马来西亚的电子发票流程.",
+      
+    "electronic_invoicing": "电子发票流程.",
+
+    "e_inbill": "",
+
+    "m_invoicing_process": "",
+  
+    "the_malaysian_inland_revenue_board": "马来西亚国内税务局 (LHDN) 要求为税务目的使用电子发票. E-Inbill已获得认证, 符合这些要",
+  
+    "for_tax_purpose": "求, 为您的业务需求提供无缝解决方案. 电子发票的实施正在逐步推行, 首批需要遵守的企业需在2024年8月1日前完成. 到2025年7月1日, 所有马来西亚企业, 无论规模大小, 都必须过渡到电子发票系统. 立即过渡到 E-Inbill, 确保您的业务符合LHDN法规, 保持在数字化转型旅程中的领先",
+
+    "by_july_1": "地位.",
+
+    "m_the_malaysian_inland_revenue_board": "马来西亚国内税务局 (LHDN) 要求为税务目的使用电子发票. E-Inbill已获得认证, 符合这些要求, 为您的业务需求提供无缝解决方案. 电子发票的实施正在逐步推行, 首批需要遵守的企业需在2024年8月1日前完成. 到2025年7月1日, 所有马来西亚企业, 无论规模大小, 都必须过渡到电子发票系统. 立即过渡到 E-Inbill, 确保您的业务符合LHDN法规, 保持在数字化转型旅程中的领先地位.",
+  
+    "m_by_august_1": "",
+  
+    "start_implementing_e_invoicing": "已经开始为您的业务实施电子发票吗?",
+
+    "m_start_implementing_e_invoicing": "已经开始为您的业务实施电子发票吗?",
+
+    "m_for_your_business": "",
+
+    "the_implementating_of_e_invoice": "电子发票的实施将分阶段进行, 以确保顺利过渡. 确定电子发票实施的年营业额或收入门槛的标准如下:",
+  
+    "for_taxpayers_with_audited": "对于具有审计财务报表的纳税人: ",
+  
+    "m_for_taxpayers_with_audited": "对于具有审计财务报表的纳税人:",
+
+    "financail_statement": "",
+
+    "the_annual_turnover_or_revenue": "根据2022财年审计财务报表中的综合收入表中的数据确定年营业额或收入.",
+  
+    "for_taxpayers_without_audited": "对于没有审计财务报表的纳税人:",
+
+    "m_for_taxpayers_without_audited": "对于没有审计财务报表的纳税人:",
+  
+    "the_annual_revenue": "根据2022年度评估年度报税申报表中的数据确定年收入.",
+  
+    "in_the_event_of": "如果2022财年会计年度结尾发生变更, 将按比例计算纳税人的营业额或收入, 以准确确定电子发票实施日期.",
+  
+    "m_in_the_event_of": "如果2022财年会计年度结尾发生变更, 将按比例计算纳税人的营业额或收入, 以准确确定电子发票实施日期.",
+
+    "m_year_end": "",
+
+    "e_invoice_implementing_timeline": "电子发票实施时间表:",
+  
+    "target_taxpayers": "目标纳税人: ",
+  
+    "taxpayers_with_100": "年营业额或收入超过1亿令吉的纳税人.",
+  
+    "implementation_date": "实施日期:",
+  
+    "1_august_2024": "2024年8月1日",
+  
+    "taxpayers_with_25_100": "年营业额或收入超过2,500万令吉且不超过1亿令吉的纳税人.",
+    
+    "m_taxpayers_with_25_100": "年营业额或收入超过2,500万令吉且不超过1亿令吉的纳税人.",
+
+    "m_up_to_100": "",
+
+    "1_january_2025": "2025年1月1日",
+  
+    "taxpayers_with_25": "年营业额或收入低于2,500万令吉的纳税人.",
+  
+    "1_july_2025": "️2025年7月1日",
+  
+    "irbm_myinvoice_system": "IRBM MyInvois 系统",
+  
+    "to_support_the_growth": "为支持数字经济的增长, 政府打算分阶段实施电子发票, 以提升马来西亚税务管理的效率. 这一举措与第十二马来西亚计划保持一致, 旨在通过数字化加强数字服务基础设施, 并现代化税务管理系统.",
+  
+    "m_to_support_the_growth": "为支持数字经济的增长, 政府打算分阶段实施电子发票, 以提升马来西亚税务管理的效率. 这一举措与第十二马来西亚计划保持一致, 旨在通过数字化加强数字服务基础设施, 并现代化税务管理系统.",
+  
+    "e_invoice_in_stages": "",
+  
+    "the_e_invoice": "电子发票将实现交易的几乎实时验证和存储, 适用于企业对企业 (B2B), 企业对消费者 (B2C) 和企业对政府(B2G) 的交易.",
+  
+    "benefits_of_adopting_e_invoice": "采用电子发票的好处",
+  
+    "the_implementation_of_e_Invoice": "电子发票的实施不仅为纳税人提供了无缝的体验, 还提高了业务效率并增强了税收合规性.",
+  
+    "overall_benefits": "采用电子发票的总体好处包括:",
+  
+    "unified_invoicing_process": "通过简化交易文件创建和电子数据提交至IRBM的统一开票流程. 交易数据录入的自动化减少了手工操作和人为错误;",
+  
+    "facilitate_tax_return_filing": "通过无缝系统集成便利税务申报，促进税务申报的高效准确;",
+  
+    "for_larger_businesses": "对于大型企业, 采用电子发票实现了业务流程的优化, 通过自动化流程, 无缝数据集成和改善的发票管理, 显著提升了效率, 并实现了显著的时间和成本节约;",
+  
+    "for_micro": "对于微型, 小型和中型企业 (MSMEs), 分阶段的实施为其提供了渐进和可控的电子发票过渡, 使 MSMEs 能够将其财务报告和流程与行业标准数字化对齐, 确保 MSMEs 在较长时间内适应, 并减少潜在的中断.",
+  
+    "m_for_micro": "对于微型, 小型和中型企业 (MSMEs), 分阶段的实施为其提供了渐进和可控的电子发票过渡, 使 MSMEs 能够将其财务报告和流程与行业标准数字化对齐, 确保 MSMEs 在较长时间内适应, 并减少潜在的中断.",
+
+    "m_over_a_longer_period": "",
+
+    "lhdn_e_invoice_what_are": "LHDN电子发票: 不遵守规定的处罚是什么?",
+  
+    "lhdn_e_invoice": "",
+  
+    "what_are_the_penalties": "LHDN电子发票: 不遵守规定的处罚是什么?",
+  
+    "adhering_to_the_lhdn_title": "遵守马来西亚国内税务局 (LHDN) 的电子发票要求是强制性的, 不遵守可能对您的业务造成重大后果. 以下是您需要注意的内容:",
+  
+    "and_non_compliance": "",
+
+    "adhering_to_the_lhdn": "遵守马来西亚国内税务局 (LHDN) 的电子发票要求是强制性的, 不遵守可能对您的业务造成重大后果. 以下是您需要注意的内容:",
+  
+    "consequences_for_your_business": "",
+  
+    "penalties": "处罚: 不遵守电子发票法规可能会导致从 200令吉 到 20,000令吉 不等的重大财务处罚.",
+  
+    "legal_consequences": "法律后果: 未能遵守可能还会导致最长六个月的监禁. 这突显了 LHDN 法令的严重性.",
+  
+    "for_more_info": "获取更多信息:",
+  
+    "lhdn_offences": "(LHDN) Offences, Fines and Penalties.",
+  
+    "customer_feedback_form": "电子发票客户反馈表格:",
+  
+    "following_link.": "Following link.",
+  
+    "who_needs_to_comply": "马来西亚哪些人需要遵守电子发票要求?",
+    
+    "m_who_needs_to_comply": "马来西亚哪些人需要遵守电子发票要求?",
+
+    "m_in_malaysia": "",
+  
+    "lhdn_has_released_guidelines": "马来西亚国内税务局 (LHDN) 发布了指导方针, 详细说明了哪些实体, 个人和企业需要遵守电子发票规定, 以及哪些实体可以豁免这些规定.",
+  
+    "adhere_to": "",
+
+    "m_lhdn_has_released_guidelines": "马来西亚国内税务局 (LHDN) 发布了指导方针, 详细说明了哪些实体, 个人和企业需要遵守电子发票规定, 以及哪些实体可以豁免这些规定.",
+
+    "entities_required": "马来西亚需要遵守电子发票规定的实体",
+    
+    "m_entities_required": "马来西亚需要遵守电子发票规定的实体",
+
+    "m_malaysia": "",
+  
+    "associations": "协会.",
+  
+    "body_of_persons": "法人团体.",
+  
+    "branches": "分行机构.",
+  
+    "business_trusts": "商业信托.",
+  
+    "co_operative_societies": "合作社.",
+  
+    "corporations": "法人.",
+  
+    "limited_liability": "有限责任合伙企业.",
+  
+    "partnerships": "合伙企业.",
+  
+    "property_trust_funds": "物业信托基金.",
+  
+    "property_trusts": "物业信托.",
+  
+    "real_estate": "房地产投资信托.",
+  
+    "representative_offices": "代表处和区域办事处.",
+  
+    "trust_bodies": "信托机构.",
+  
+    "unit_trusts": "单位信托.",
+  
+    "entities_exempt": "豁免使用电子发票的实体",
+  
+    "ruler_and_ruling_chief": "统治者和统治首领.",
+  
+    "former_ruler": "前统治者和统治首领.",
+  
+    "consort_of_a_ruler": "具有特定头衔的州统治者的配偶.",
+  
+    "consort_of_a_former": "具有特定头衔的前州统治者的配偶.",
+  
+    "state_government": "州政府和州权力机构.",
+  
+    "government_authority": "政府机构.",
+  
+    "local_authority": "地方政府.",
+  
+    "statutory_authority": "法定权力机构和法定机构.",
+  
+    "property_trust": "物业信托基金.",
+  
+    "facilities_provided": "以上政府, 权力机构或机构提供的设施, 包括领事馆和外交官员, 领事官员和领事雇员.",
+  
+    "individual_who": "未从事商业活动的个人.",
+
+    "type_of_e_invoice": "马来西亚的电子发票类型",
+
+    "below_documents": "以下文件必须按照马来西亚电子发票的规定以电子格式发行:",
+  
+    "invoices": "发票:",
+  
+    "it_is_generally_used": "发票通常用于记录供应商与买方之间的交易. 发票还包括为跟踪费用而发出的自开发票.",
+  
+    "credit_notes": "贷项通知:",
+  
+    "a_credit_note_is": "贷项通知是卖方为对先前发出的电子发票进行更正而发出的文件, 主要是为了减少原发票的价值, 而不向买方退款. 通常用于调整错误, 应用折扣或处理退货.",
+  
+    "debit_notes": "借项通知:",
+  
+    "in_constrast_to": "与贷项通知相反, 借项通知是为了记录与先前发出的电子发票相关的额外费用.",
+  
+    "refund_notes": "退款通知:",
+  
+    "a_refund_notes_is": "退款电子发票是卖方发出的正式文件, 用于记录向买方发放的退款.",
+  
+  
+  
+  
+    
+
+
+
+    "tools_to_enhance": "提升您的商业模式",
+
+    "your_business_model": "",
+
+    "switch_to_e_inbill": "现在就切换到 E-inbill, 并确保您的业务符合LHDN电子发票要求.",
+
+    "business_stays_compliant": "",
+
+    "p_lhdn_e_invoice": "",
+
+    "m_switch_to_e_inbill": "现在就切换到 E-inbill, 并确保您的业务符合LHDN电子发票要求.",
+
+    "m_business_stays_compliant": "",
+
+    "m_p_lhdn_e_invoice": "",
+
+    "comprehensive_solution": "全面解决方案: 集成现金收款, 库存管理和商业智能.",
+
+    "suitable_for_small_business": "(适合小型企业)",
+
+    "lhdn_e_invoice_compliance": "LHDN E-INVOICE 合规电子发票",
+
+    "bundle_promo_price": "促销配套价:",
+
+    "rm3": "RM3.01",
+
+    "rm1": "RM1",
+
+    "99day": ".99 / 天",
+
+    "included": "包含:",
+  
+    "software_license": "Software license.",
+  
+    "rm726": "(RM726.35)",
+  
+    "mobile_printer": "Mobile printer.",
+  
+    "free_x_10": "Free X 10 paper roll.",
+
+    "printer": "收据打印机:",
+
+    "203_dpi": "203 dpi 8dots Resolution",
+
+    "basic_printing": "Printing Width 72mm",
+
+    "usb_bluetooth": "USB + Bluetooth / Wifi",
+
+    "basic_paper": "Paper Width 58mm / 80mm",
+  
+    "li_oin_battery": "7.4V Li-ion battery, 1800mAh",
+  
+    "ps_ac": "PS AC 100V-240V 50/60HZ",
+  
+    "weight": "Weight 0.48 KG",
+  
+    "thickness": "Thickness 0.053 ~ 0.15mm",
+  
+    "mobile_pos_device_suitable": "(适合发展中企业的移动POS设备)",
+    
+    "m_mobile_pos_device_suitable": "(适合发展中企业的移动POS设备)",
+  
+    "m_yang_sedang_berkembang": "",
+
+    "yang_sedang_berkembang": "",
+  
+    "rm4": "RM4.10",
+  
+    "rm2": "RM2",
+  
+    "application": "应用程序:",
+  
+    "customisable_menu": "Customisable Menu",
+  
+    "biometric_lock": "Biometric Lock",
+  
+    "unlimited_invoices": "Unlimited Invoices",
+  
+    "cloud_storage": "Cloud Storage",
+  
+    "training_and_support": "Training & Support",
+  
+    "mobile_pos_device": "Mobile POS Device.",
+  
+    "mobile_pos_device2": "移动 POS 设备:",
+  
+    "standard_display": "6.5″, 720*1600 Display",
+  
+    "camera_rear": "Camera Rear 5MP QR Scan",
+  
+    "express_printing": "Express Printing",
+  
+    "usb_c_bluetooh_or_wifi": "USB-C + Bluetooth / Wifi",
+  
+    "nfc": "NFC Compatible (Optional)",
+  
+    "ultra_large": "Ultra Large Printing Roll",
+  
+    "58mm_width": "58mm width & 50mm diameter",
+  
+    "removable_battery": "Removable Battery",
+  
+    "battery_capacity": "battery capacity 3350mAh",
+  
+    "standard_ps_ac": "PS AC 100V-240V 50/60HZ",
+  
+    "charging_dock": "* 充电设备需额外购买",
+  
+    "octa_core": "Octa-Core Cortex 2.0GH",
+  
+    "android_13": "Android 13",
+  
+    "2_gb_ram": "2GB RAM 32GB ROM",
+  
+    "nfc_compatible": "NFC Compatible (Optional)",
+  
+    "bluetooth_5": "Bluetooth 5.0",
+  
+    "support_wifi": "Support Wifi",
+  
+    "support_qr": "Support QR Scan",
+  
+    "up_to_10hrs": "Up to 10hrs Single Charge",
+  
+    "rm8": "RM8.15",
+  
+    "smart_pos_device_suitable": "(适合零售和商业的智能POS设备)",
+  
+    "m_smart_pos_device_suitable": "(适合零售和商业的智能POS设备)",
+
+    "m_runcit_and_perniagaan": "",
+
+    "rm6": "RM6",
+  
+    "11day": ".11 / 天",
+  
+    "rm1095": "(RM1,095.00)",
+  
+    "smart_pos_device": "Smart POS Device.",
+    
+    "smart_pos_device2": "智能 POS 设备:",
+  
+    "advanced_display": "10.1\", 1280 x 800 HD Display",
+  
+    "secondary_screen": "Secondary Screen",
+  
+    "seiko_thermal_printer": "Seiko Thermal Printer",
+  
+    "multiple_peripheral_port": "Multiple Peripheral Port",
+  
+    "nfc_and_qr": "NFC Compatible + QR Scan",
+  
+    "camera": "Camera 1D + 2D Barcode Scan",
+  
+    "standard_roll": "80*80mm Standard Roll",
+  
+    "automatic_cutter": "Automatic Cutter",
+  
+    "printing_speed": "250mm/s Printing Speed",
+  
+    "power_bank": "Compatible with Power Bank",
+  
+    "100v_240v": "100V-240V ~ 24V / 2.5A",
+  
+    "support_2g_3g_4g_lte": "Support 2G / 3G / 4G / LTE",
+  
+    "android_11": "Android 11",
+  
+    "hd_touch_pane": "10.1\" HD Touch Pane",
+  
+    "advanced_print_speed": "250mm/s Print Speed",
+  
+    "icon_support_2g": "Support 2G/3G/4G/LTE",
+  
+    "mono_speaker": "1.5 Mono Speaker",
+  
+    "nanosim": "NanoSim (Optional)",
+  
+    "power_adaptor": "Power Adaptor 100 ~ 240V",
+  
+    "2_nd_screen": "2nd Screen 2.4” LED",
+  
+    "advanced_weight": "Weight 1.785 KG"
+  
+  }
+  

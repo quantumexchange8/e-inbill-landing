@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Video1 from '../Asset/Videos/whyEinbillVideo1.mp4';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
+import Leaveyourcontact from '../Components/Leaveyourcontact.jsx';
 import { useTranslation } from 'react-i18next';
-
 import { HomeGroup1, WhyGroup1, WhyGroup1S, Group13, Group13S, Group71, Group71S, Group72, Group72S, Group73, Group73S, Group74, Group74S, Group18, Group18S, Group84, Group84S, Group85, Group85S, Group86, Group86S, Group87, Group87S } from '../Components/Outline.jsx';
 
 const Whyeinbill = () => {
 
   const { t, i18n } = useTranslation();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className='pt-[54px] md:pt-[113px] pb-[75px] md:pb-[100px] flex flex-col gap-[50px] md:gap-[100px]'>
@@ -18,29 +22,68 @@ const Whyeinbill = () => {
         </video>
         <div className="absolute inset-0 flex justify-center items-center">
           <div className="w-full max-w-[1000px] flex justify-center">
-            <div className="w-[279px] md:w-[870px] flex justify-center text-white/80 text-center text-2xl md:text-[64px] font-bold leading-tight">
-              {t('choose_us')}
+            <div className="flex flex-col justify-center text-white/80 text-center text-2xl md:text-[64px] font-bold leading-tight">
+              <div className='hidden md:flex flex-col'>
+                <div>
+                  {t('choose_us')}
+                </div>
+                <div>
+                  {t('believe_in')}
+                </div>
+              </div>
+              <div className="md:hidden">
+                <div>
+                  {t('m_choose_us')}
+                </div>
+                <div className='w-[300px]'>
+                  {t('m_believe_in')}
+                </div>
+              </div>
             </div>
           </div>
-          <button className="absolute bottom-10 right-10 md:flex flex-col items-center hidden">
-            <HomeGroup1 className="w-[50px] h-[45px]" />
-            <div className="text-[#0046BA] text-center text-sm font-bold leading-normal w-[120px] ">
-              {t('leave_your_contact')}
-            </div>
-          </button>
-        </div>
+          <button onClick={openModal} className="absolute bottom-10 right-10 md:flex flex-col items-center gap-[10px] hidden">
+              <HomeGroup1 className="w-[50px] h-[45px]" />
+              <div className="text-[#0046BA] text-center text-sm font-bold leading-normal">
+                <div className='leading-[18px]'>
+                  {t('leave_your')}
+                </div>
+                <div className='leading-[18px]'>
+                  {t('contact')}
+                </div>
+              </div>
+            </button>
+            <Leaveyourcontact isOpen={isModalOpen} onClose={closeModal} />
+          </div>
       </div>
       {/* 2 */}
-      <div className='w-full flex justify-center px-[30px] md:px-0'>
+      <div className='w-full flex justify-center px-[29px] md:px-0'>
         <div className='flex flex-col gap-[75px] md:gap-[100px] justify-center max-w-[1000px] w-full'>
           {/* 2.1 */}
           <div className='flex flex-col gap-[50px] md:gap-[100px]'> 
             {/* 2.1.1 */}
             <div className='flex flex-col gap-[30px] md:gap-[100px]'>
-              <div className='flex flex-col w-[320px] md:w-[900px] justify-center text-left text-[#0046BA] text-xl md:text-5xl font-bold leading-tight'>
-                {t('we_can_elevate')}
+              <div className='flex flex-col justify-center text-left text-[#0046BA] text-xl md:text-5xl font-bold leading-tight'>
+                <div className="hidden md:flex flex-col leading-tight">
+                  <div>
+                    {t('we_can_elevate')}
+                  </div>
+                  <div>
+                    {t('heights_helping')}
+                  </div>
+                  <div>
+                    {t('with_ease')}
+                  </div>
+                </div>
+                <div className="md:hidden">
+                  <div>
+                    {t('m_we_can_elevate')}
+                  </div>
+                  <div>
+                    {t('m_heights_helping')}
+                  </div>
+                </div>
               </div>
-              <div className='w-[256px] md:w-[512px] text-left text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
+              <div className='text-left text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
                 {t('why_you_should')}
               </div>
             </div>
@@ -55,12 +98,29 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[246] md:w-[422px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  Customizable and Scalable Solution
+                <div className='w-[300px] md:w-full text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                  {t('customizable_and_scalable_solution')}
                 </div>
-                <div className='text-left w-[323px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  You have the freedom to choose from a variety of expansion modules, such as mobile ordering, kitchen management, reservations, membership management, or a payment system with integrated e-invoice functionality. 
-                  Additionally, comprehensive third-party integration solutions are available to seamlessly incorporate all aspects of your operational management into a single system.
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className="hidden md:flex flex-col">
+                    <div>
+                      {t('freedom_to_choose')}
+                    </div>
+                    <div>
+                      {t('operational_management')}
+                    </div>
+                  </div>
+                  <div className="md:hidden">
+                    <div>
+                      {t('m_freedom_to_choose')}
+                    </div>
+                    <div>
+                      {t('m_of_expansion')}
+                    </div>
+                    <div>
+                      {t('m_a_single_system')}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -75,21 +135,23 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[127px] md:w-[218px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  e-inbill Ecosystem
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                  {t('e_inbill_ecosystem')}
                 </div>
-                <div className='hidden md:block text-left w-[320px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem.
-                  With a robust core POS system, customisable expansion modules, and seamless integration across various technologies, 
-                  you can empower every facet of your business operations for optimal performance and success.
-                </div>
-                <div className='md:hidden text-left w-[320px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                <div className='hidden md:block text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
                   <div>
-                    Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem.
+                    {t('experience_unparalleled')}
                   </div>
                   <div>
-                    With a robust core POS system, customisable expansion modules, and seamless integration across various technologies, 
-                    you can empower every facet of your business operations for optimal performance and success.
+                    {t('for_optimal')}
+                  </div>
+                </div>
+                <div className='md:hidden text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className='md:hidden'>
+                    {t('m_experience_unparalleled')}
+                  </div>
+                  <div>
+                    {t('m_with_a_robust')}
                   </div>
                 </div>
               </div>
@@ -105,27 +167,39 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[193px] md:w-[553px] text-[#000] text-sm md:text-2xl font-bold leading-tight'>
-                  Keeping Pace with Innovation and Optimisation
-                </div>
-                <div className='hidden md:block text-left w-[320px] md:w-[810px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  We continuously analyse market trends and integrate our findings into developing new products. 
-                  Our goal is to help restaurants adapt to the evolving catering landscape quickly.
-                  Our R&D team introduces products aligned with industry trends, incorporating user feedback. 
-                  All new features undergo rigorous testing. 
-                  Our commitment to updates ensures both speed and quality.
-                </div>
-                <div>
-                  <div className='md:hidden text-left w-[320px] md:w-[810px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold leading-tight'>
+                  <div className="hidden md:flex">
+                    {t('keep_pace')}
+                  </div>
+                  <div className="md:hidden">
                     <div>
-                      We continuously analyse market trends and integrate our findings into developing new products. 
-                      Our goal is to help restaurants adapt to the evolving catering landscape quickly.
+                      {t('m_keep_pace')}
                     </div>
                     <div>
-                      Our R&D team introduces products aligned with industry trends, incorporating user feedback. 
-                      All new features undergo rigorous testing. 
-                      Our commitment to updates ensures both speed and quality.
+                      {t('m_innovation_and_optimisation')}
                     </div>
+                  </div>
+                </div>
+                <div className='hidden md:block text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div>
+                    {t('continuously_analyse')}
+                  </div>
+                  <div>
+                    {t('quickly')}
+                  </div>
+                  <div>
+                    {t('user_feedback')}
+                  </div>
+                </div>
+                <div className='md:hidden text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div>
+                    {t('m_continuously_analyse')}
+                  </div>
+                  <div>
+                    {t('m_to_the_evolving')}
+                  </div>
+                  <div className='w-[320px]'>
+                    {t('r_and_d_team')}
                   </div>
                 </div>
               </div>
@@ -141,12 +215,31 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[178px] md:w-[567px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  System fully supports cloud-based functionality
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                  <div className="hidden md:flex">
+                    {t('system_fully_supports')}
+                  </div>
+                  <div className="md:hidden">
+                    <div>
+                      {t('m_system_fully_supports')}
+                    </div>
+                    <div>
+                      {t('m_cloud_based')}
+                    </div>
+                  </div>
                 </div>
-                <div className='text-left w-[320px] md:w-[810px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  A small footprint can yield substantial profits! Utilising a streamlined solution enables you to optimise operational efficiency, 
-                  enhance productivity, and extend your brand's online footprint, positioning you as the preferred choice while maintaining cost-effectiveness!
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className="hidden md:flex flex-col">
+                    <div>
+                      {t('small_footprint')}
+                    </div>
+                    <div>
+                      {t('you_to_optimise')}
+                    </div>
+                  </div>
+                  <div className='md:hidden w-[325px]'>
+                    {t('m_small_footprint')}
+                  </div>
                 </div>
               </div>
             </div>
@@ -161,29 +254,26 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[178px] md:w-[242px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  Suitable for All Sizes
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                  {t('suitable_for_all_sizes')}
                 </div>
-                <div className='hidden md:block text-left w-[333px] md:w-[821px] text-[#000] text-sm md:text-xl  font-medium leading-tight'>
+                <div className='hidden md:block text-left text-[#000] text-sm md:text-xl  font-medium leading-tight'>
                   <div>
-                    No matter if you run a single restaurant, a small or medium-sized chain, or an enterprise, implementing E-inbill's restaurant solution is easy and customisable. 
-                    Our system supports different structures for restaurant groups, enabling remote monitoring of operational data for individual stores. 
-                    You can track revenue, average order value,  
+                    {t('no_matter_if_you')}
                   </div>
                   <div>
-                    foot traffic, inventory, and more through comprehensive reports. 
-                    Plus, you can manage multiple brands and locations effortlessly, empowering your restaurant's growth painlessly.
+                    {t('support_different')}
+                  </div>
+                  <div className='md:w-[830px]'>
+                    {t('foot_trafic')}
                   </div>
                 </div>
-                <div className='md:hidden text-left w-[333px] md:w-[821px] text-[#000] text-sm md:text-xl  font-medium leading-tight'>
+                <div className='md:hidden text-left text-[#000] text-sm md:text-xl  font-medium leading-tight'>
                   <div>
-                    No matter if you run a single restaurant,  
+                    {t('m_no_matter_if_you')}  
                   </div>
-                  <div>
-                    a small or medium-sized chain, or an enterprise, implementing E-inbill's restaurant solution is easy and customisable. 
-                    Our system supports different structures for restaurant groups, enabling remote monitoring of operational data for individual stores. 
-                    You can track revenue, average order value, foot traffic, inventory, and more through comprehensive reports. 
-                    Plus, you can manage multiple brands and locations effortlessly, empowering your restaurant's growth painlessly.
+                  <div className='w-[333px]'>
+                    {t('m_small_or_medium')}
                   </div>
                 </div>
               </div>
@@ -199,26 +289,56 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[161px] md:w-[275px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
-                  24/7 Technical Support
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                  {t('technical_support')}
                 </div>
-                <div className='text-left w-[333px] md:w-[825px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  e-inbill provides round-the-clock technical support, offering in-store consultations, real-time multilingual online customer service, and on-site system training. 
-                  Our transparent after-sales service includes hardware maintenance and equipment rental during repairs, ensuring prompt resolution of operational issues for our customers.
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className="hidden md:flex flex-col">
+                    <div>
+                      {t('e_inbill_provides')}
+                    </div>
+                    <div>
+                      {t('cepat_bagi')}
+                    </div>  
+                  </div>
+                  <div className='md:hidden'>
+                    {t('m_e_inbill_provides')}
+                  </div>
                 </div>
               </div>
             </div>
             {/* 2.1.8 */}
-            <div className='h-[1px] bg-[#0046BA] w-[333px] md:w-full'></div>
+            <div className='h-[1px] bg-[#0046BA] w-full' />
           </div>
           {/* 2.2 */}
           <div className='flex flex-col gap-[50px] md:gap-[100px]'>
             {/* 2.2.1 */}
             <div className="flex flex-col gap-[30px] md:gap-[100px]">
-              <div className='flex flex-col w-[290px] md:w-[930px] justify-center text-left text-[#0046BA] text-xl md:text-5xl  font-bold leading-tight'>
-                {t('our_system_is_fully_equipped')}
+              <div className='flex flex-col justify-center text-left text-[#0046BA] text-xl md:text-5xl font-bold leading-tight'>
+                <div className="hidden md:flex flex-col leading-tight">
+                  <div>
+                    {t('our_system_is_fully_equipped')}
+                  </div>
+                  <div>
+                    {t('us_the_ideal')}
+                  </div>
+                </div>
+                <div className="md:hidden">
+                  <div>
+                    {t('m_our_system_is_fully_equipped')}
+                  </div>
+                  <div>
+                    {t('m_to_match')}
+                  </div>
+                  <div>
+                    {t('m_of_your_industry')}
+                  </div>
+                  <div>
+                    {t('m_the_ideal')}
+                  </div>
+                </div>
               </div>
-              <div className='w-[141px] md:w-[512px] text-left text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
+              <div className='text-left text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
                 {t('our_point_of_sales')}
               </div>
             </div>
@@ -233,11 +353,24 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[47px] md:w-[107px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
                   {t('interface')}
                 </div>
-                <div className='text-left w-[333px] md:w-[800px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  {t('tailor_the_layout')}
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className='hidden md:flex flex-col'>
+                    <div>
+                      {t('tailor_the_layout')}
+                    </div>
+                    <div>
+                      {t('options_tax_regulations')}
+                    </div>
+                    <div>
+                      {t('your_interface')}
+                    </div>
+                  </div>
+                  <div className="md:hidden">
+                    {t('m_tailor_the_layout')}
+                  </div>
                 </div>
               </div>
             </div>
@@ -252,11 +385,26 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[47px] md:w-[99px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
                   {t('security')}
                 </div>
-                <div className='text-left w-[310px] md:w-[800px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  {t('this_guarantees_that')}
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className='hidden md:flex flex-col'>
+                    <div>
+                      {t('this_guarantees_that')}
+                    </div>
+                    <div>
+                      {t('you_have_an')}
+                    </div>
+                  </div>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_this_guarantees_that')}
+                    </div>
+                    <div className='w-[320px]'>
+                      {t('m_you_have_an')}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -271,11 +419,26 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[47px] md:w-[103px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
                   {t('receipts')}
                 </div>
-                <div className='text-left w-[310px] md:w-[820px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  {t('provide_your_customers')}
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className="hidden md:flex flex-col">
+                    <div>
+                      {t('provide_your_customers')}
+                    </div>
+                    <div>
+                      {t('digital_receipt')}
+                    </div>
+                  </div>
+                  <div className="md:hidden">
+                    <div>
+                        {t('m_provide_your_customers')}
+                      </div>
+                      <div className='w-[300px]'>
+                        {t('m_digital_receipt')}
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -290,11 +453,26 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[47px] md:w-[104px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
                   {t('payment')}
                 </div>
-                <div className='text-left w-[314px] md:w-[830px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  {t('offer_your_customers')}
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className="hidden md:flex flex-col">
+                    <div>
+                      {t('offer_your_customers')}
+                    </div>
+                    <div>
+                      {t('dan_fleksibiliti')}
+                    </div>
+                  </div>
+                  <div className='md:hidden'>
+                    <div>
+                      {t('m_offer_your_customers')}
+                    </div>
+                    <div>
+                      {t('m_and_ewallets')}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -309,16 +487,34 @@ const Whyeinbill = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-[10px] md:gap-5'>
-                <div className='text-left w-[47px] md:w-[80px] text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
+                <div className='text-left text-[#000] text-sm md:text-2xl font-bold  leading-tight'>
                   {t('offline')}
                 </div>
-                <div className='text-left w-[310px] md:w-[830px] text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  {t('keep_your_operations')}
+                <div className='text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                  <div className="hidden md:flex flex-col">
+                    <div>
+                      {t('keep_your_operations')}
+                    </div>
+                    <div>
+                      {t('connection')}
+                    </div>
+                    <div>
+                      {t('is_reestablish')}
+                    </div>
+                  </div>
+                  <div className="md:hidden">
+                    <div>
+                        {t('m_keep_your_operations')}
+                      </div>
+                      <div className='w-[320px]'>
+                        {t('m_in_the_face')}
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
             {/* 2.2.7 */}
-            <div className='h-[1px] bg-[#0046BA] w-[333px] md:w-full'/>
+            <div className='h-[1px] bg-[#0046BA] w-full'/>
           </div>
           {/* 2.3 */}
           <div className='w-full flex justify-center'>
@@ -326,13 +522,34 @@ const Whyeinbill = () => {
               <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center'>
                 {/* 2.3.1 */}
                 <div className="flex justify-center">
-                  <div className='w-[300px] md:w-[720px] text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
-                    {t('leave_your_contact_info')}
+                  <div className='text-center text-[#0060FF] text-base md:text-[32px] font-semibold leading-tight'>
+                    <div className="hidden md:flex flex-col">
+                      <div>
+                        {t('leave_your_contact_info')}
+                      </div>
+                      <div>
+                        {t('e_inbill_empowers')}
+                      </div>
+                      <div>
+                        {t('memberdayakan_peniaga')}
+                      </div>
+                    </div>
+                    <div className="md:hidden">
+                      <div>
+                          {t('m_leave_your_contact_info')}
+                        </div>
+                        <div>
+                          {t('m_e_inbill_empowers')}
+                        </div>
+                        <div className='w-[310px]'>
+                          {t('m_memberdayakan_peniaga')}
+                        </div>
+                    </div>
                   </div>
                 </div>
                 {/* 2.3.2 */}
                 <div className='flex flex-col gap-[100px]'>
-                  <form className='flex flex-col gap-[50px] md:gap-[100px]'>
+                  <form onSubmit={(e) => e.preventDefault()} className='flex flex-col gap-[50px] md:gap-[100px]'>
                     {/* Content */}
                     <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                       {/* Full name */}
@@ -343,7 +560,7 @@ const Whyeinbill = () => {
                         <input
                           type="text"
                           id="fullname"
-                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
                         />
                       </div>
                       {/* Company name */}
@@ -354,7 +571,7 @@ const Whyeinbill = () => {
                         <input
                           type="text"
                           id="companyname"
-                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
                         />
                       </div>
                       {/* Contact number */}
@@ -365,7 +582,7 @@ const Whyeinbill = () => {
                         <input
                           type="tel"
                           id="contactnumber"
-                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
                         />
                       </div>
                       {/* Email-address */}
@@ -376,7 +593,7 @@ const Whyeinbill = () => {
                         <input
                           type="email"
                           id="email"
-                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
                         />
                       </div>
                       {/* Your state or location */}
@@ -387,7 +604,7 @@ const Whyeinbill = () => {
                         <input
                           type="text"
                           id="location"
-                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
                         />
                       </div>
                       {/* Your business sector */}
@@ -398,16 +615,26 @@ const Whyeinbill = () => {
                         <input
                           type="text"
                           id="sector"
-                          className="w-full h-10 md:h-[60px] border border-solid bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600"
+                          className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
                         />
                       </div>
                     </div>
                     {/* Submit */}
                     <div className="flex items-center justify-center">
-                      <button className="w-full md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
+                      <button className="w-auto rounded-[31px] border-2 border-black shadow-submit " type="submit">
                         <div className='flex justify-center'>
-                          <div className="w-[243px] md:w-[530px] text-black text-center md:text-xl text-base font-semibold leading-tight">
-                            {t('leave_your_contact_to')}
+                          <div className="w-[333px] md:w-auto text-black text-center md:text-xl text-base font-semibold leading-tight py-[10px] px-9">
+                            <div className='hidden md:flex'>
+                              {t('leave_your_contact_to')}
+                            </div>
+                            <div className="md:hidden">
+                              <div>
+                                {t('m_leave_your_contact_to')}
+                              </div>
+                              <div>
+                                {t('m_a_complimentary')}
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </button>

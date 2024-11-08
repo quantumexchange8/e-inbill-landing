@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../Header.css';
 import { Group, GroupS, GroupWorld, GroupLines, Message, MessageL, Facebook, FacebookL, Instagram, InstagramL, AppStore, Playstore, Translate,Triangle } from '../Components/Outline.jsx';
@@ -9,18 +9,37 @@ const Header = () => {
 
   const { t, i18n } = useTranslation();
 
+  const languages = ['en', 'bm', 'zh'];
+  const currentLangIndex = languages.indexOf(i18n.language);
+  const handleCycleLanguage = () => {
+    const nextLangIndex = (currentLangIndex + 1) % languages.length;
+    i18n.changeLanguage(languages[nextLangIndex]);
+  };
+
+  const handleChangeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  }
+
+  const navigate = useNavigate();
+
   return (
       <div className='fixed w-full z-30 flex flex-col'>
         {/* 1 */}
-        <div className='hidden bg-[#0046BA] w-full md:flex justify-center py-3 '>
-          <div className='w-[1000px] flex justify-end gap-[175px]'>
-            <div className='text-white text-xs text-center font-medium leading-tight'>
+        <div className='hidden bg-[#0046BA] w-full md:flex justify-center py-3'>
+          <div className='relative w-[1000px] flex justify-end items-center'>
+            <div className='w-full absolute left-1/2 transform -translate-x-1/2 text-white text-xs text-center font-medium leading-tight'>
               {t('only_RM1.99')}
             </div>
-            <div className="flex gap-[10px]">
-              <Message />
-              <Facebook />
-              <Instagram />
+            <div className="flex gap-[10px] z-50">
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <Message />
+              </a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <Facebook />
+              </a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <Instagram />
+              </a>
             </div>
           </div>
         </div>
@@ -28,14 +47,14 @@ const Header = () => {
         <div className='bg-[#0046BA] md:bg-[#0060FF] w-full flex justify-center px-[30px] md:px-0'>
           <div className='max-w-[1000px] flex justify-between items-center w-full'>
             {/* 2.1 */}
-            <div>
+            <button onClick={ () => navigate('/')}>
               <div className="hidden md:flex items-center">
                 <Group />
               </div>
               <div className="md:hidden">
                 <GroupS />
               </div>
-            </div>
+            </button>
             {/* 2.2 */}
             <div className="hidden md:flex items-center gap-[28px] text-white">
               <div>
@@ -61,9 +80,15 @@ const Header = () => {
             </div>
             {/* 2.3 */}
             <div className="hidden md:flex gap-[10px]">
-              <AppStore />
-              <Playstore />
-              <Translate />
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <AppStore />
+              </a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <Playstore />
+              </a>
+              <button onClick={handleCycleLanguage}>
+                <Translate />
+              </button>
             </div>
             {/* 2.4 */}
             <div className='md:hidden flex gap-5'>
@@ -80,26 +105,32 @@ const Header = () => {
                   </div>
                   <div className="flex flex-col gap-[30px] text-white text-center text-xl font-semibold leading-tight">
                     <MenuItem>
-                      <a className="flex justify-center gap-[25px]">
-                        <MessageL />
-                        <FacebookL />
-                        <InstagramL />
-                      </a>
+                      <div className="flex justify-center gap-[25px]">
+                        <a href="#" onClick={(e) => e.preventDefault()}>
+                          <MessageL />
+                        </a>
+                        <a href="#" onClick={(e) => e.preventDefault()}>
+                          <FacebookL />
+                        </a>
+                        <a href="#" onClick={(e) => e.preventDefault()}>
+                          <InstagramL />
+                        </a>
+                      </div>
                     </MenuItem>
                     <MenuItem>
-                      <a href="#" className="">
+                      <button onClick={() => handleChangeLanguage("en")}>
                         {t('english')}
-                      </a>
+                      </button>
                     </MenuItem>
                     <MenuItem>
-                      <a href="#" className="">
+                      <button onClick={() => handleChangeLanguage("bm")}>
                         {t('malay')}
-                      </a>
+                      </button>
                     </MenuItem>
                     <MenuItem>
-                      <a href="#" className="">
+                      <button onClick={() => handleChangeLanguage("zh")}>
                         {t('chinese')}
-                      </a>
+                      </button>
                     </MenuItem>
                   </div>
                 </MenuItems>
@@ -111,17 +142,23 @@ const Header = () => {
                     <GroupLines />
                   </MenuButton>
                 </div>
-                <MenuItems className="absolute right-0 z-10 mt-6 mr-3 w-[180px] h-[304px] rounded-tr-sm rounded-br-[10px] rounded-s-[10px] bg-[#0060FF] py-[30px] px-7">
+                <MenuItems className="absolute right-0 z-10 mt-6 mr-3 w-[180px] h-[304px] rounded-tr-sm rounded-br-[10px] rounded-s-[10px] bg-[#0060FF] py-[30px] px-2">
                   <div className='absolute top-[-11px] right-0'>
                     <Triangle />
                   </div>
                   <div className="flex flex-col gap-[30px] text-white text-center text-xl font-semibold leading-tight">
                     <MenuItem>
-                      <a className="flex justify-center gap-[25px]">
-                        <MessageL />
-                        <FacebookL />
-                        <InstagramL />
-                      </a>
+                      <div className="flex justify-center gap-[25px]">
+                        <a href="#" onClick={(e) => e.preventDefault()}>
+                          <MessageL />
+                        </a>
+                        <a href="#" onClick={(e) => e.preventDefault()}>
+                          <FacebookL />
+                        </a>
+                        <a href="#" onClick={(e) => e.preventDefault()}>
+                          <InstagramL />
+                        </a>
+                      </div>
                     </MenuItem>
                     <MenuItem>
                       <Link to="/">{t('home')}</Link>

@@ -1,3 +1,883 @@
 {
+    "only_RM1.99": "Hanya RM1.99/hari, perniagaan anda boleh menerima pembayaran tanpa tunai dengan E-invois. Cuba demo percuma sekarang!",
   
-}
+    "home": "Laman Utama",
+  
+    "why_einbill": "Mengapa E-inbill",
+  
+    "e_invoice": "E-invoice",
+  
+    "products": "Produk",
+  
+    "english": "English",
+  
+    "malay": "Malay",
+  
+    "chinese": "简体中文",
+  
+    "powered_by": "Powered by Current Tech Industries Sdn Bhd.",
+  
+  
+  
+    "a_solution_to": "Satu penyelesaian untuk ",
+    
+    "make_payments_easier": "memudahkan pembayaran",
+  
+    "m_a_solution_to": "Satu penyelesaian untuk memudahkan pembayaran",
+
+    "m_payments_easier": "",
+  
+    "leave_your": "Tinggalkan Maklumat",
+
+    "contact": "Hubungan Anda",
+  
+    "about_us": "Tentang Kami",
+  
+    "we_are_einbill": "Kami adalah E-inbill, sebahagian daripada Current Tech Industries Sdn Bhd. Sebagai sebuah syarikat yang didorong oleh teknologi, misi utama kami di E-inbill adalah untuk mempermudahkan proses kewangan dan menggalakkan kesalinghubungan di kalangan perniagaan. Matlamat kami adalah untuk menstreamkan operasi kewangan dan memudahkan interaksi lancar antara syarikat.",
+  
+    "as_a_technology_driven_company": "",
+  
+    "m_we_are_einbill": "Kami adalah E-inbill, sebahagian daripada Current Tech Industries Sdn Bhd. Sebagai sebuah syarikat yang didorong oleh teknologi, misi utama kami di E-inbill adalah untuk mempermudahkan proses kewangan dan menggalakkan kesalinghubungan di kalangan perniagaan. Matlamat kami adalah untuk menstreamkan operasi kewangan dan memudahkan interaksi lancar antara syarikat.",
+  
+    "current_tech": "",
+  
+    "in_malaysia": "Di Malaysia, kami telah memperkenalkan produk e-invois yang mematuhi piawaian ", 
+  
+    "standard_serving": "LHDN, yang melayani lebih daripada 300 perniagaan. Pelanggan kami merangkumi pelbagai sektor, dari runcit hingga pembuatan, dengan fokus untuk memberikan ",
+
+    "retail_to_manufacturing": "sokongan kepada perniagaan kecil dan perusahaan teknologi sederhana. Penyelesaian kami mematuhi peraturan LHDN, PEPPOL, dan keperluan pematuhan MDEC. Melalui kerjasama rapat dengan badan pengawal selia, kami telah mencapai kejayaan dalam ",
+
+    "medium_size": "fasa pertama pelaksanaan e-invois, meletakkan kami sebagai salah satu daripada beberapa syarikat yang bersedia untuk fasa kedua. Infrastruktur awan kami yang ",
+
+    "and_mdec": "dihoskan di Malaysia memastikan keselamatan dan pematuhan data. ",
+
+    "bodies_we": "",
+
+    "m_in_malaysia_we": "Di Malaysia, kami telah memperkenalkan produk e-invois yang mematuhi piawaian LHDN, yang melayani lebih daripada 300 perniagaan. Pelanggan kami merangkumi pelbagai sektor, dari runcit hingga pembuatan, dengan fokus untuk memberikan sokongan kepada perniagaan kecil dan perusahaan teknologi sederhana. Penyelesaian kami mematuhi peraturan LHDN, PEPPOL, dan keperluan pematuhan MDEC. Melalui kerjasama rapat dengan badan pengawal selia, kami telah mencapai kejayaan dalam fasa pertama pelaksanaan e-invois, meletakkan kami sebagai salah satu daripada beberapa syarikat yang bersedia untuk fasa kedua. Infrastruktur awan kami yang dihoskan di Malaysia memastikan keselamatan dan pematuhan data.",
+  
+    "m_e_invoicing_products": "",
+    
+    "m_with_a_focus": "",
+  
+    "m_lhdn_regulations": "",
+  
+    "key_features": "Ciri Utama Produk Kami",
+
+    "m_key_features": "Ciri Utama ",
+  
+    "m_of_our_products": "Produk Kami",
+  
+    "completing": "Menyelesaikan transaksi",
+
+    "transaction": "hanya memerlukan",
+
+    "just": "beberapa klik sahaja",
+    
+    "fully_complaint": "Fungsionaliti e-invois",
+
+    "tax_e_invoice": "cukai yang",
+
+    "functionality": "patuh sepenuhnya",
+
+    "fully_support": "Sokongan sepenuhnya",
+
+    "all_payment": "kepada semua",
+
+    "methods": "kaedah pembayaran",
+
+    "Unbeatable": "Harga rendah",
+
+    "low_prices": "yang tidak",
+
+    "would_not": "dapat anda jangka",
+
+    "absolutely_secure": "Sinkronisasi dan",
+
+    "cloud_synchrnization": "penyimpanan awan",
+
+    "and_storage": "yang sepenuhnya selamat",
+
+    "user_friendly": "Antara muka yang",
+
+    "easy_to_use": "mesra pengguna dan",
+
+    "key_interface": "mudah digunakan",
+
+    "set_up": "Siapkan dan",
+    
+    "start_selling": "mula menjual",
+
+    "within_minutes": "dalam beberapa minit",
+
+    "customer_support": "Sokongan pelanggan",
+
+    "seven_days": "tujuh hari seminggu",
+
+    "for_quick_assistance": "untuk bantuan cepat",
+  
+    "no_matter": "Tidak kira dalam ",
+
+    "anda_berada": "industri mana anda berada",
+    
+    "m_no_matter": "Tidak kira dalam ",
+
+    "m_industry_you_are": "industri mana anda berada",
+  
+    "whether_a_small_street_vendor": "E-inbill sentiasa menyokong perniagaan anda, sama ada penjaja kecil atau rangkaian restoran besar. Peranti keras, perisian, pembayaran, dan sokongan teknikal disatukan ",
+  
+    "di_bawah_satu": "di bawah satu penyelesaian E-inbill.",
+
+    "m_whether_a_small_street_vendor": "E-inbill sentiasa menyokong perniagaan anda, sama ada penjaja kecil atau rangkaian restoran besar. Peranti keras, perisian, pembayaran, dan sokongan teknikal disatukan di bawah satu penyelesaian E-inbill.",
+
+    "m_unified": "",
+    
+    "the_e_inbill_framework": "Kerangka E-inbill memastikan keseluruhan ekosistem berfungsi secara lancar ",
+  
+    "together": "bersama-sama. Itulah matlamat E-inbill - untuk menyediakan pengalaman pengguna terbaik bagi anda dan pelanggan anda.",
+
+    "you_and_your": "",
+
+    "the_e_inbill_solution": "Penyelesaian E-inbill cukup kukuh untuk menyokong ",
+
+    "your_business": "pertumbuhan perniagaan anda dari yang kecil hingga besar.",
+
+    "m_the_e_inbill_solution": "Penyelesaian E-inbill cukup kukuh untuk menyokong pertumbuhan perniagaan anda dari yang kecil hingga besar.",
+
+    "m_your_business": "",
+
+    "basic": "Basic",
+    
+    "for_small_shops_or_stalls": "Bagi kedai atau gerai kecil, ini adalah berita yang sangat baik.",
+  
+    "is_undoubtedly": "",
+    
+    "m_for_small_shops_or_stalls": "Bagi kedai atau gerai kecil, ini adalah berita yang sangat baik.",
+
+    "m_is_undoubtedly": "",
+
+    "the_basic_plan": "Rancangan Asas ini sangat mudah dan praktikal.",
+  
+    "merchants_simply": "Pedagang hanya perlu memuat turun aplikasi E-inbill, log masuk ke akaun, dan menyambungkan pencetak resit Bluetooth untuk mula menggunakannya dengan segera.",
+  
+    "in_to_account": "",
+
+    "m_merchants_simply": "Pedagang hanya perlu memuat turun aplikasi E-inbill, log masuk ke akaun, dan menyambungkan pencetak resit Bluetooth untuk mula menggunakannya dengan segera.",
+
+    "standard": "Standard",
+  
+    "for_small_to_medium_sized": "Bagi kedai makanan dan minuman bersaiz kecil hingga sederhana, kami memahami bahawa menyediakan pengalaman yang selesa bagi pelanggan adalah sangat penting.",
+  
+    "a_comfortable_experience": "",
+  
+    "m_for_small_to_medium_sized": "Bagi kedai makanan dan minuman bersaiz kecil hingga sederhana, kami memahami bahawa menyediakan pengalaman yang selesa bagi pelanggan adalah sangat penting.",
+  
+    "m_a_comfortable_experience": "",
+
+    "m_customer_is": "",
+  
+    "the_standard_plan": "Rancangan Standard ini sepenuhnya menangani keperluan ini.",
+  
+    "with_mobile_devices": "Dengan menggunakan peranti mudah alih, pelanggan dapat menyelesaikan pembayaran mereka tanpa perlu menunggu lama di barisan panjang.",
+  
+    "m_with_mobile_devices": "Dengan menggunakan peranti mudah alih, pelanggan dapat menyelesaikan pembayaran mereka tanpa perlu menunggu lama di barisan panjang.",
+
+    "customers_can": "",
+
+    "advanced": "Advanced",
+  
+    "restaurant_management": "Pengurusan restoran memerlukan pemilihan sistem POS yang mengintegrasikan semua fungsi.",
+  
+    "cross_departmental_communication": "Sama ada komunikasi lintas jabatan, laporan prestasi cawangan, atau menyediakan perkhidmatan pelanggan yang cemerlang, sistem POS kami membawa teknologi restoran",
+  
+    "ke_dalam_genggaman": "ke dalam genggaman anda",
+
+    "m_cross_departmental_communication": "Sama ada komunikasi lintas jabatan, laporan prestasi cawangan, atau menyediakan perkhidmatan pelanggan yang cemerlang, sistem POS kami membawa teknologi restoran ke dalam genggaman anda",
+
+    "enabling_you": "Ini membolehkan anda mengagumkan pelanggan, mengurangkan beban kerja, dan menonjol!",
+  
+    "see_all": "Semak semua butiran produk",
+  
+    "tedious_steps": "Jangan biarkan langkah-langkah",
+  
+    "hinder_your": "yang membosankan menghalang kemajuan perniagaan anda",
+
+    "m_tedious_steps": "Jangan biarkan tugas membosankan",
+
+    "m_hinder_your": "menghalang kemajuan perniagaan anda",
+  
+    "you_cannot_resist": "Anda tidak boleh menolak kelebihan yang",
+
+    "that_the_product": "produk ini tawarkan kepada anda",
+
+    "m_you_cannot_resist": "Anda tidak boleh menolak kelebihan yang produk ini tawarkan kepada anda",
+  
+    "m_advantages": "",
+
+    "we_offer": "Kami menawarkan lebih daripada hanya POS, terminal pembayaran, atau e-invoice.",
+  
+    "be_customised_for": "Penyelesaian E-inbill boleh disesuaikan untuk kedai makanan dan minuman,",
+
+    "have_choosing": "kecantikan, dan kedai runcit. Tidak kira jenis perniagaan anda, memilih E-inbill adalah permulaan untuk memanfaatkan kelebihan anda.",
+  
+    "m_we_offer": "Kami menawarkan lebih daripada hanya POS, terminal pembayaran, atau e-invoice. Penyelesaian E-inbill boleh disesuaikan untuk kedai makanan dan minuman, kecantikan, dan kedai runcit. Tidak kira jenis perniagaan anda, memilih E-inbill adalah permulaan untuk memanfaatkan kelebihan anda.",
+
+    "beauty": "Beauty, ",
+
+    "salon_spas": "Salon & Spas",
+
+    "cafes": "Cafes, Beverage",
+
+    "quick_service": "& Quick Service",
+
+    "food": "Food, Restaurant,",
+
+    "bar": "Bar & Bistros",
+
+    "health": "Health",
+
+    "medical": "& Medical",
+
+    "retail_shop": "Retail Shops",
+
+    "pets": "Pets & ",
+
+    "grooming": "Grooming",
+
+    "courses": "Courses, Tuitions",
+
+    "education": "& Education",
+
+    "automotive": "Automotive",
+
+    "service": "& Service",
+
+    "wholesales": "Wholesales",
+
+    "stock": "& Stock",
+
+    "m_beauty": "Beauty, Salons & Spas",
+
+    "m_cafes": "Cafes, Beverage& Quick Service",
+
+    "m_food": "Food, Restaurant, Bar & Bistros",
+
+    "m_health": "Health & Medical",
+
+    "m_pets": "Pets & Grooming",
+
+    "m_courses": "Courses, Tuitions & Education",
+
+    "m_automotive": "Automotive & Service",
+
+    "m_wholesales": "Wholesales & Stock",
+  
+    "join_millions": "Sertai jutaan peniaga berjaya E-inBill dan ",
+  
+    "usher_in": "bawa masuk era baru untuk perniagaan anda.",
+
+    "m_join_millions": "Sertai jutaan peniaga berjaya E-inBill ",
+
+    "m_for_your": "dan bawa masuk era baru untuk perniagaan anda.",
+
+    "full_name": "Nama penuh",
+  
+    "company_name": "Nama syarikat",
+  
+    "contact_number": "Nombor hubungan",
+  
+    "email_address": "Alamat emel",
+  
+    "your_state": "Negeri atau lokasi anda",
+  
+    "your_business_sector": "Sektor perniagaan anda",
+  
+    "leave_your_contact_to": "Tinggalkan maklumat anda untuk demo percuma",
+
+    "m_leave_your_contact_to": "Tinggalkan maklumat anda",
+
+    "m_a_complimentary": "untuk demo percuma",
+  
+  
+    
+    
+    
+    "choose_us": "Pilih kami kerana anda percaya",
+
+    "believe_in": " kepada kepakaran kami",
+
+    "m_choose_us": "Pilih kami kerana ",
+
+    "m_believe_in": "anda percaya kepada kepakaran kami",
+  
+    "we_can_elevate": "Kami boleh meningkatkan perniagaan",
+  
+    "heights_helping": "anda ke tahap yang baru, membantu anda",
+
+    "with_ease": "mencapai matlamat dengan mudah.",
+
+    "m_we_can_elevate": "Kami boleh meningkatkan perniagaan anda ke tahap yang baru, membantu anda mencapai matlamat dengan mudah.",
+
+    "m_heights_helping": "",
+    
+    "why_you_should": "Mengapa Anda Patut Memilih E-inbill?",
+
+    "customizable_and_scalable_solution": "Penyelesaian yang Boleh Disesuaikan dan Dapat Diperluaskan",
+
+    "freedom_to_choose": "Anda mempunyai kebebasan untuk memilih dari pelbagai modul pengembangan, seperti pesanan mudah alih, pengurusan dapur, tempahan, pengurusan keahlian, atau sistem pembayaran dengan fungsi e-invoice yang terintegrasi. Selain itu, terdapat penyelesaian integrasi pihak ketiga yang komprehensif untuk menyepadukan semua aspek ",
+
+    "operational_management": "pengurusan operasi anda ke dalam satu sistem yang padu.",
+    
+    "m_freedom_to_choose": "Anda mempunyai kebebasan untuk memilih dari pelbagai modul pengembangan, seperti pesanan mudah alih, pengurusan dapur, tempahan, pengurusan keahlian, atau sistem pembayaran dengan fungsi e-invoice yang terintegrasi. Selain itu, terdapat penyelesaian integrasi pihak ketiga yang komprehensif untuk menyepadukan semua aspek pengurusan operasi anda ke dalam satu sistem yang padu.",
+
+    "m_of_expansion": "",
+
+    "m_a_single_system": "",
+
+    "e_inbill_ecosystem": "Ekosistem e-inbill",
+
+    "experience_unparalleled": "Nikmati kecekapan dan kebolehteladanan yang tiada tandingan dengan Ekosistem E-",
+
+    "for_optimal": "inbill. Dengan sistem POS teras yang kukuh, modul pengembangan yang boleh disesuaikan, dan integrasi yang lancar merentasi pelbagai teknologi, anda dapat memberdayakan setiap aspek operasi perniagaan anda untuk prestasi dan kejayaan optimum.",
+
+    "m_experience_unparalleled": "Nikmati kecekapan dan kebolehteladanan yang tiada tandingan dengan Ekosistem E-inbill. Dengan sistem POS teras yang kukuh, modul pengembangan yang boleh disesuaikan, dan integrasi yang lancar merentasi pelbagai teknologi, anda dapat memberdayakan setiap aspek operasi perniagaan anda untuk prestasi dan kejayaan optimum.",
+
+    "m_with_a_robust": "",
+
+    "keep_pace": "Menyelaras dengan Inovasi dan Optimum",
+
+    "m_keep_pace": "Menyelaras dengan Inovasi dan Optimum",
+
+    "m_innovation_and_optimisation": "",
+
+    "continuously_analyse": "Kami secara berterusan menganalisis trend pasaran dan mengintegrasikan dapatan kami ke dalam pembangunan produk baru. Matlamat kami adalah untuk membantu restoran menyesuaikan diri dengan landskap penyediaan makanan yang sentiasa berubah dengan cepat. Pasukan R&D kami memperkenalkan produk-produk yang sejajar dengan trend industri, dengan mengambil kira maklum balas pengguna. Semua ciri baru mengalami ",
+    
+    "quickly": "ujian yang ketat. Komitmen kami terhadap kemaskini memastikan kelajuan dan kualiti ",
+
+    "user_feedback": "yang optimum.",
+  
+    "m_continuously_analyse": "Kami secara berterusan menganalisis trend pasaran dan mengintegrasikan dapatan kami ke dalam pembangunan produk baru. Matlamat kami adalah untuk membantu restoran menyesuaikan diri dengan landskap penyediaan makanan yang sentiasa berubah dengan cepat. Pasukan R&D kami memperkenalkan produk-produk yang sejajar dengan trend industri, dengan mengambil kira maklum balas pengguna. Semua ciri baru mengalami ujian yang ketat. Komitmen kami terhadap kemaskini memastikan kelajuan dan kualiti yang optimum.",
+
+    "m_to_the_evolving": "",
+
+    "r_and_d_team": "",
+
+    "system_fully_supports": "Sistem menyokong sepenuhnya fungsi berasaskan awan",
+
+    "m_system_fully_supports": "Sistem menyokong sepenuhnya fungsi berasaskan awan",
+
+    "m_cloud_based": "",
+
+    "small_footprint": "Satu langkah kecil boleh menghasilkan keuntungan yang besar! Dengan menggunakan penyelesaian yang lancar, anda dapat mengoptimumkan kecekapan operasi, ",
+
+    "you_to_optimise": "meningkatkan produktiviti, dan memperluas kehadiran jenama anda dalam talian, menjadikan anda pilihan utama sambil mengekalkan kecekapan kos!",
+
+    "m_small_footprint": "Satu langkah kecil boleh menghasilkan keuntungan yang besar! Dengan menggunakan penyelesaian yang lancar, anda dapat mengoptimumkan kecekapan operasi, meningkatkan produktiviti, dan memperluas kehadiran jenama anda dalam talian, menjadikan anda pilihan utama sambil mengekalkan kecekapan kos!",
+
+    "suitable_for_all_sizes": "Sesuai untuk Semua Saiz",
+
+    "no_matter_if_you": "Sama ada anda mengendalikan sebuah restoran, rangkaian kecil atau sederhana, atau sebuah perniagaan besar, pelaksanaan penyelesaian restoran E-inbill adalah mudah dan boleh disesuaikan. Sistem kami menyokong pelbagai struktur untuk kumpulan restoran, membolehkan pemantauan jauh data operasi untuk kedai-kedai individu. Anda boleh mengesan pendapatan, nilai pesanan purata, jumlah pengunjung, inventori, dan lebih lagi melalui laporan yang komprehensif. Selain itu, anda boleh menguruskan pelbagai jenama dan lokasi dengan mudah, memberdayakan pertumbuhan restoran anda tanpa kesulitan.",
+
+    "support_different": "",
+
+    "foot_trafic": "",
+
+    "m_no_matter_if_you": "Sama ada anda mengendalikan sebuah restoran, rangkaian kecil atau sederhana, atau sebuah perniagaan besar, pelaksanaan penyelesaian restoran E-inbill adalah mudah dan boleh disesuaikan. Sistem kami menyokong pelbagai struktur untuk kumpulan restoran, membolehkan pemantauan jauh data operasi untuk kedai-kedai individu. Anda boleh mengesan pendapatan, nilai pesanan purata, jumlah pengunjung, inventori, dan lebih lagi melalui laporan yang komprehensif. Selain itu, anda boleh menguruskan pelbagai jenama dan lokasi dengan mudah, memberdayakan pertumbuhan restoran anda tanpa kesulitan.",
+
+    "m_small_or_medium": "",
+
+    "technical_support": "Sokongan Teknikal 24/7",
+
+    "e_inbill_provides": "e-inbill menyediakan sokongan teknikal sepanjang masa, termasuk konsultasi di kedai, perkhidmatan pelanggan dalam talian multibahasa secara real-time, dan latihan sistem di tempat. Perkhidmatan jualan selepas transparan kami termasuk penyelenggaraan perkakasan dan penyewaan peralatan semasa pembaikan, memastikan penyelesaian",
+  
+    "cepat_bagi": "cepat bagi masalah operasi pelanggan kami.",
+
+    "m_e_inbill_provides": "e-inbill menyediakan sokongan teknikal sepanjang masa, termasuk konsultasi di kedai, perkhidmatan pelanggan dalam talian multibahasa secara real-time, dan latihan sistem di tempat. Perkhidmatan jualan selepas transparan kami termasuk penyelenggaraan perkakasan dan penyewaan peralatan semasa pembaikan, memastikan penyelesaian cepat bagi masalah operasi pelanggan kami.",
+
+    "our_system_is_fully_equipped": "Sistem kami dilengkapi sepenuhnya untuk sepadan dengan ciri-ciri industri anda, menjadikan kami pilihan yang ideal untuk anda.",
+
+    "m_our_system_is_fully_equipped": "Sistem kami dilengkapi sepenuhnya untuk sepadan dengan ciri-ciri industri anda, menjadikan kami pilihan yang ideal untuk anda.",
+
+    "m_to_match": "",
+
+    "m_of_your_industry": "",
+
+    "m_the_ideal": "",
+
+    "us_the_ideal": "",
+  
+    "our_point_of_sales": "Sistem jualan kami",
+  
+    "interface": "Antara muka",
+  
+    "tailor_the_layout": "Sesuaikan susunan mengikut pilihan anda, termasuk penerangan produk, pilihan boleh disesuaikan, peraturan cukai, resit, kategori, dan banyak lagi. Nikmati kawalan penuh ke atas antara muka anda, memastikan ia sepenuhnya sepadan dengan keperluan ",
+  
+    "options_tax_regulations": "perniagaan anda.",
+
+    "your_interface": "",
+
+    "m_tailor_the_layout": "Sesuaikan susunan mengikut pilihan anda, termasuk penerangan produk, pilihan boleh disesuaikan, peraturan cukai, resit, kategori, dan banyak lagi. Nikmati kawalan penuh ke atas antara muka anda, memastikan ia sepenuhnya sepadan dengan keperluan perniagaan anda.",
+  
+    "security": "Keselamatan",
+  
+    "this_guarantees_that": "Simpan semua data anda dengan selamat di dalam pemandu tempatan, memastikan ia boleh diakses pada bila-bila masa, sama ada anda mempunyai sambungan internet atau tidak. Ini menjamin bahawa maklumat anda kekal selamat dan sedia untuk diakses pada setiap masa yang anda perlukan, memberikan ketenangan dan akses yang tidak",
+  
+    "you_have_an": "terputus.",
+
+    "m_this_guarantees_that": "Simpan semua data anda dengan selamat di dalam pemandu tempatan, memastikan ia boleh diakses pada bila-bila masa, sama ada anda mempunyai sambungan internet atau tidak. Ini menjamin bahawa maklumat anda kekal selamat dan sedia untuk diakses pada setiap masa yang anda perlukan, memberikan ketenangan dan akses yang tidak terputus.",
+
+    "m_you_have_an": "",
+
+    "receipts": "Resit",
+  
+    "provide_your_customers": "Berikan pelanggan anda pilihan untuk memilih antara resit digital yang mesra alam atau resit cetak yang klasik. Fleksibiliti ini memenuhi pelbagai pilihan pelanggan,",
+  
+    "digital_receipt": " menggalakkan kelestarian sambil tetap menampung mereka yang lebih suka kaedah tradisional.",
+ 
+    "m_provide_your_customers": "Berikan pelanggan anda pilihan untuk memilih antara resit digital yang mesra alam atau resit cetak yang klasik. Fleksibiliti ini memenuhi pelbagai pilihan pelanggan, menggalakkan kelestarian sambil tetap menampung mereka yang lebih suka kaedah tradisional.",
+
+    "m_digital_receipt": "",
+  
+    "payment": "Pembayaran",
+  
+    "offer_your_customers": "Tawarkan kepada pelanggan anda pelbagai pilihan pembayaran, termasuk tunai, kad kredit/debit, dan dompet elektronik. Pilihan yang pelbagai ini memastikan keselesaan ",
+  
+    "dan_fleksibiliti": "dan fleksibiliti bagi pelanggan anda, membolehkan mereka memilih kaedah yang paling sesuai dengan keperluan dan pilihan mereka.",
+
+    "m_offer_your_customers": "Tawarkan kepada pelanggan anda pelbagai pilihan pembayaran, termasuk tunai, kad kredit/ debit, dan dompet elektronik. Pilihan yang pelbagai ini memastikan keselesaan dan fleksibiliti bagi pelanggan anda, membolehkan mereka memilih kaedah yang paling sesuai dengan keperluan dan pilihan mereka.",
+
+    "m_and_ewallets": "",
+
+    "offline": "Luar talian",
+  
+    "keep_your_operations": "Pastikan operasi anda berjalan lancar walaupun menghadapi sambungan internet yang tidak stabil. Data anda akan disimpan secara automatik dan disegerakkan semula apabila sambungan dipulihkan, memastikan kesinambungan yang lancar dan mengurangkan gangguan kepada aliran kerja anda.",
+  
+    "connection": "",
+
+    "is_reestablish": "",
+    
+    "m_keep_your_operations": "Pastikan operasi anda berjalan lancar walaupun menghadapi sambungan internet yang tidak stabil. Data anda akan disimpan secara automatik dan disegerakkan semula apabila sambungan dipulihkan, memastikan kesinambungan yang lancar dan mengurangkan gangguan kepada aliran kerja anda.",
+
+    "m_in_the_face": "",
+
+    "leave_your_contact_info": "Tinggalkan maklumat hubungan anda  ",
+  
+    "e_inbill_empowers": "untuk mengetahui bagaimana E-inbill",
+
+    "memberdayakan_peniaga": "memberdayakan peniaga untuk mencapai lebih banyak.",
+
+    "m_leave_your_contact_info": "Tinggalkan maklumat hubungan anda",
+
+    "m_e_inbill_empowers": "untuk mengetahui bagaimana E-inbill",
+
+    "m_memberdayakan_peniaga": "memberdayakan peniaga untuk mencapai lebih banyak.",
+    
+  
+    
+
+    "what_is_an_e_invoice": "Apakah itu E-invoice",
+  
+    "simplify_your_malaysian": "Permudahkan proses invois elektronik",
+
+    "m_simplify_your_malaysian": "Permudahkan proses invois elektronik perniagaan anda di Malaysia dengan E-Inbill.",
+  
+    "m_invoicing_process": "",
+
+    "electronic_invoicing": " perniagaan anda di Malaysia dengan",
+
+    "e_inbill": "E-Inbill.",
+
+    "the_malaysian_inland_revenue_board": "Lembaga Hasil Dalam Negeri Malaysia (LHDN) mewajibkan penggunaan invois ",
+  
+    "for_tax_purpose": "elektronik untuk tujuan cukai. E-Inbill disahkan memenuhi keperluan ini, menawarkan penyelesaian yang lancar untuk keperluan perniagaan anda. Pelaksanaan invois ",
+
+    "by_july_1": "elektronik sedang dijalankan secara berperingkat, dengan kumpulan pertama perniagaan perlu mematuhi pada 1 Ogos 2024. Menjelang 1 Julai 2025, semua perniagaan di Malaysia, tanpa mengira saiz, mesti beralih kepada invois elektronik. Beralihlah kepada E-Inbill sekarang untuk memastikan perniagaan anda kekal mematuhi peraturan LHDN dan kekal di hadapan dalam perjalanan transformasi digital.",
+
+    "m_the_malaysian_inland_revenue_board": "Lembaga Hasil Dalam Negeri Malaysia (LHDN) mewajibkan penggunaan invois elektronik untuk tujuan cukai. E-Inbill disahkan memenuhi keperluan ini, menawarkan penyelesaian yang lancar untuk keperluan perniagaan anda. Pelaksanaan invois elektronik sedang dijalankan secara berperingkat, dengan kumpulan pertama perniagaan perlu mematuhi pada 1 Ogos 2024. Menjelang 1 Julai 2025, semua perniagaan di Malaysia, tanpa mengira saiz, mesti beralih kepada invois elektronik. Beralihlah kepada E-Inbill sekarang untuk memastikan perniagaan anda kekal mematuhi peraturan LHDN dan kekal di hadapan dalam perjalanan transformasi digital.",
+  
+    "m_by_august_1": "",
+  
+    "start_implementing_e_invoicing": "Mula Melaksanakan E-Invoicing Untuk Perniagaan Anda?",
+  
+    "m_start_implementing_e_invoicing": "Mula Melaksanakan E-Invoicing Untuk",
+
+    "m_for_your_business": "Perniagaan Anda?",
+
+    "the_implementating_of_e_invoice": "Pelaksanaan E-Invoicing akan dijalankan secara berperingkat untuk memastikan peralihan yang lancar. Kriteria untuk menentukan ambang perolehan atau pendapatan tahunan bagi pelaksanaan E-Invoicing adalah seperti berikut:",
+  
+    "for_taxpayers_with_audited": "Bagi pembayar cukai dengan penyata kewangan yang diaudit: ",
+  
+    "m_for_taxpayers_with_audited": "Bagi pembayar cukai dengan penyata kewangan yang diaudit: ",
+
+    "financail_statement": "",
+
+    "the_annual_turnover_or_revenue": "Perolehan atau pendapatan tahunan akan ditentukan berdasarkan angka yang dinyatakan dalam penyata pendapatan komprehensif dalam penyata kewangan yang diaudit bagi tahun kewangan 2022.",
+  
+    "for_taxpayers_without_audited": "Bagi pembayar cukai tanpa penyata kewangan yang diaudit:",
+  
+    "m_for_taxpayers_without_audited": "Bagi pembayar cukai tanpa penyata kewangan yang diaudit:",
+
+    "the_annual_revenue": "Pendapatan tahunan akan ditentukan berdasarkan angka yang dilaporkan dalam penyata cukai bagi tahun taksiran 2022.",
+  
+    "in_the_event_of": "Sekiranya berlaku perubahan dalam tarikh akhir tahun kewangan bagi tahun kewangan 2022, perolehan atau pendapatan pembayar cukai akan diukur secara prorata kepada tempoh 12 bulan untuk menentukan tarikh pelaksanaan e-Invoice dengan tepat.",
+  
+    "m_in_the_event_of": "Sekiranya berlaku perubahan dalam tarikh akhir tahun kewangan bagi tahun kewangan 2022, perolehan atau pendapatan pembayar cukai akan diukur secara prorata kepada tempoh 12 bulan untuk menentukan tarikh pelaksanaan e-Invoice dengan tepat.",
+
+    "m_year_end": "",
+
+    "e_invoice_implementing_timeline": "Garisan Masa Pelaksanaan E-Invoice:",
+  
+    "target_taxpayers": "Pembayar Cukai Sasaran: ",
+  
+    "taxpayers_with_100": "Pembayar cukai dengan perolehan atau pendapatan tahunan melebihi RM100 juta.",
+  
+    "implementation_date": "Tarikh Pelaksanaan",
+  
+    "1_august_2024": "1 Ogos 2024",
+  
+    "taxpayers_with_25_100": "Pembayar cukai dengan perolehan atau pendapatan tahunan melebihi RM25 juta dan sehingga RM100 juta.",
+  
+    "m_taxpayers_with_25_100": "Pembayar cukai dengan perolehan atau pendapatan tahunan melebihi RM25 juta dan sehingga RM100 juta.",
+
+    "m_up_to_100": "",
+
+    "1_january_2025": "1 Januari 2025",
+  
+    "taxpayers_with_25": "Pembayar cukai dengan perolehan atau pendapatan tahunan kurang daripada RM25 juta.",
+  
+    "1_july_2025": "1 Julai 2025",
+  
+    "irbm_myinvoice_system": "IRBM MyInvois Sistem",
+  
+    "to_support_the_growth": "Untuk menyokong pertumbuhan ekonomi digital, Kerajaan bercadang untuk melaksanakan e-Invoice secara berperingkat untuk meningkatkan kecekapan pengurusan pentadbiran cukai Malaysia. Inisiatif ini sejajar dengan Rancangan Malaysia Ke-12 yang bertujuan untuk memperkuat infrastruktur perkhidmatan digital dan memodenkan sistem pentadbiran cukai melalui digitalisasi.",
+  
+    "m_to_support_the_growth": "Untuk menyokong pertumbuhan ekonomi digital, Kerajaan bercadang untuk melaksanakan e-Invoice secara berperingkat untuk meningkatkan kecekapan pengurusan pentadbiran cukai Malaysia. Inisiatif ini sejajar dengan Rancangan Malaysia Ke-12 yang bertujuan untuk memperkuat infrastruktur perkhidmatan digital dan memodenkan sistem pentadbiran cukai melalui digitalisasi.",
+  
+    "e_invoice_in_stages": "",
+  
+    "the_e_invoice": "E-Invoice akan membolehkan pengesahan hampir waktu sebenar dan penyimpanan transaksi, merangkumi transaksi dari Perniagaan-ke-Perniagaan (B2B), Perniagaan-ke-Pengguna (B2C), dan Perniagaan-ke-Kerajaan (B2G).",
+  
+    "benefits_of_adopting_e_invoice": "Manfaat Menggunakan e-Invoice",
+  
+    "the_implementation_of_e_Invoice": "Pelaksanaan e-Invoice tidak hanya menyediakan pengalaman yang lancar kepada pembayar cukai, tetapi juga meningkatkan kecekapan perniagaan dan meningkatkan pematuhan cukai.",
+  
+    "overall_benefits": "Kelebihan keseluruhan dalam mengambil e-Invoice termasuk:",
+  
+    "unified_invoicing_process": "Proses invois yang bersatu melalui penyederhanaan penciptaan dokumen transaksi, dan penyerahan data secara elektronik kepada IRBM. Automasi pemasukan data untuk transaksi mengurangkan usaha manual dan kesilapan manusia.",
+  
+    "facilitate_tax_return_filing": "Memudahkan pengisian borang cukai melalui integrasi sistem yang lancar untuk pelaporan cukai yang cekap dan tepat.",
+  
+    "for_larger_businesses": "Bagi perniagaan yang lebih besar, penggunaan e-Invoice membolehkan penyederhanaan operasi, meningkatkan kecekapan serta berjimat masa dan kos yang signifikan melalui proses automatik, integrasi data yang lancar, dan pengurusan invois yang lebih baik;",
+  
+    "for_micro": "Bagi perusahaan mikro, kecil, dan sederhana (MSME), pelaksanaan berperingkat menawarkan peralihan yang progresif dan mudah untuk e-Invoice, membolehkan MSME menyesuaikan pelaporan kewangan dan proses mereka dengan piawai industri yang digital, memastikan MSME boleh menyesuaikan diri dalam jangka masa yang lebih panjang dan mengurangkan gangguan yang berpotensi.",
+  
+    "m_for_micro": "Bagi perusahaan mikro, kecil, dan sederhana (MSME), pelaksanaan berperingkat menawarkan peralihan yang progresif dan mudah untuk e-Invoice, membolehkan MSME menyesuaikan pelaporan kewangan dan proses mereka dengan piawai industri yang digital, memastikan MSME boleh menyesuaikan diri dalam jangka masa yang lebih panjang dan mengurangkan gangguan yang berpotensi.",
+
+    "m_over_a_longer_period": "",
+
+    "lhdn_e_invoice_what_are": "LHDN E-Invoice: Apa Hukuman Bagi Ketidakpatuhan?",
+  
+    "lhdn_e_invoice": "LHDN E-Invoice:",
+  
+    "what_are_the_penalties": "Apa Hukuman Bagi Ketidakpatuhan?",
+  
+    "adhering_to_the_lhdn_title": "Mematuhi mandat E-Invoice Lembaga Hasil Dalam Negeri Malaysia (LHDN) adalah wajib, dan ketidakpatuhan boleh mengakibatkan konsekuensi yang signifikan bagi perniagaan anda. Inilah yang perlu anda ketahui:",
+  
+    "and_non_compliance": "",
+
+    "adhering_to_the_lhdn": "Mematuhi mandat E-Invoice Lembaga Hasil Dalam Negeri Malaysia (LHDN) adalah wajib, dan ketidakpatuhan boleh mengakibatkan konsekuensi yang signifikan bagi perniagaan anda. Inilah yang perlu anda ketahui:",
+  
+    "consequences_for_your_business": "",
+  
+    "penalties": "Penalti: Ketidakpatuhan dengan peraturan e-invoice boleh mengakibatkan denda kewangan yang besar, mulai dari RM200 hingga RM20,000.",
+  
+    "legal_consequences": "Akibat undang-undang: Kegagalan untuk mematuhi juga boleh mengakibatkan hukuman penjara maksimum selama enam bulan. Ini menunjukkan seriusnya mandat LHDN.",
+  
+    "for_more_info": "Untuk maklumat lanjut:",
+  
+    "lhdn_offences": "(LHDN) Offences, Fines and Penalties.",
+  
+    "customer_feedback_form": "Borang Maklum Balas Pelanggan E-Invoice:",
+  
+    "following_link.": "Following link.",
+  
+    "who_needs_to_comply": "Siapakah yang Perlu Mematuhi e-Invoicing di Malaysia?",
+
+    "m_who_needs_to_comply": "Siapakah yang Perlu Mematuhi e-Invoicing di Malaysia?",
+
+    "m_in_malaysia": "",
+  
+    "lhdn_has_released_guidelines": "LHDN telah mengeluarkan garis panduan yang menghuraikan entiti, individu, dan perniagaan yang dikehendaki mematuhi peraturan e-invoicing, serta yang dikecualikan daripadanya.",
+  
+    "adhere_to": "",
+    
+    "m_lhdn_has_released_guidelines": "LHDN telah mengeluarkan garis panduan yang menghuraikan entiti, individu, dan perniagaan yang dikehendaki mematuhi peraturan e-invoicing, serta yang dikecualikan daripadanya.",
+
+    "entities_required": "Entiti yang Perlu Mematuhi e-Invoicing di Malaysia",
+
+    "m_entities_required": "Entiti yang Perlu Mematuhi e-Invoicing",
+
+    "m_malaysia": "di Malaysia.",
+  
+    "associations": "Persatuan.",
+  
+    "body_of_persons": "Badan-badan.",
+  
+    "branches": "Cawangan-cawangan.",
+  
+    "business_trusts": "Amanah perniagaan.",
+  
+    "co_operative_societies": "Koperasi.",
+  
+    "corporations": "Korporasi.",
+  
+    "limited_liability": "Perkongsian liabiliti terhad.",
+  
+    "partnerships": "Perkongsian.",
+  
+    "property_trust_funds": "Dana amanah hartanah.",
+  
+    "property_trusts": "Amanah hartanah.",
+  
+    "real_estate": "Amanah pelaburan hartanah sebenar.",
+  
+    "representative_offices": "Pejabat perwakilan dan pejabat serantau.",
+  
+    "trust_bodies": "Badan-badan amanah.",
+  
+    "unit_trusts": "Amanah unit.",
+  
+    "entities_exempt": "Entiti yang dikecualikan daripada e-Invoicing",
+  
+    "ruler_and_ruling_chief": "Raja dan Pemimpin Berkuasa.",
+  
+    "former_ruler": "Pemerintah Terdahulu dan Ketua Pemerintah.",
+  
+    "consort_of_a_ruler": "Pasangan Raja Negeri dengan gelaran yang ditentukan.",
+  
+    "consort_of_a_former": "Pasangan Pemerintah Terdahulu Negeri dengan gelaran yang ditentukan.",
+  
+    "state_government": "Kerajaan Negeri dan kuasa negeri.",
+  
+    "government_authority": "Kuasa kerajaan.",
+  
+    "local_authority": "Kuasa tempatan.",
+  
+    "statutory_authority": "Kuasa berkanun dan Badan berkanun.",
+  
+    "property_trust": "Dana amanah hartanah.",
+  
+    "facilities_provided": "Kemudahan yang disediakan oleh kerajaan, kuasa, atau badan tersebut, pejabat konsular dan pegawai diplomatik, pegawai konsular, dan pekerja konsular",
+  
+    "individual_who": "Individu yang tidak menjalankan perniagaan.",
+
+    "type_of_e_invoice": "Jenis-jenis invois elektronik di Malaysia",
+
+    "below_documents": "Dokumen-dokumen di bawah ini harus dikeluarkan dalam format elektronik di bawah Sistem e-Invois Malaysia",
+  
+    "invoices": "Invois:",
+  
+    "it_is_generally_used": "Ia digunakan secara umum untuk merakam transaksi antara pembekal dan pembeli. Invois juga termasuk invois diri yang dikeluarkan untuk mengesan perbelanjaan.",
+  
+    "credit_notes": "Nota kredit:",
+  
+    "a_credit_note_is": "Nota kredit adalah dokumen yang dikeluarkan oleh penjual untuk membuat pembetulan kepada invois elektronik yang telah dikeluarkan sebelum ini terutamanya untuk menurunkan nilai invois asal tanpa mengembalikan wang kepada Pembeli. Ia digunakan secara umum untuk menyesuaikan kesilapan, memberi diskaun, atau mencatat barang yang dikembalikan.",
+  
+    "debit_notes": "Nota debit:",
+  
+    "in_constrast_to": "Berbeza dengan nota kredit, nota debit dikeluarkan untuk merakam kos tambahan yang berkaitan dengan invois elektronik yang telah dikeluarkan sebelum ini.",
+  
+    "refund_notes": "Nota bayaran balik:",
+  
+    "a_refund_notes_is": "Nota bayaran balik (e-Invoice) adalah dokumen rasmi yang dikeluarkan oleh penjual untuk merakam bayaran balik yang dikeluarkan kepada Pembeli.",
+  
+  
+  
+  
+    
+
+
+
+    "tools_to_enhance": "Alat untuk Memperbaiki ",
+
+    "your_business_model": "Model Perniagaan Anda",
+
+    "switch_to_e_inbill": "Tukar kepada E-inbill dan pastikan",
+
+    "business_stays_compliant": " perniagaan anda patuh dengan E-Invois LHDN.",
+
+    "p_lhdn_e_invoice": "",
+
+    "m_switch_to_e_inbill": "Tukar kepada E-inbill dan ",
+
+    "m_business_stays_compliant": "pastikan perniagaan anda patuh dengan E-Invois LHDN.",
+
+    "m_p_lhdn_e_invoice": "",
+
+    "comprehensive_solution": "Penyelesaian Komprehensif: Pengumpulan Tunai Bersepadu, Pengurusan Inventori, dan Kecerdasan Perniagaan.",
+
+    "suitable_for_small_business": "(Sesuai untuk Perniagaan Kecil)",
+
+    "lhdn_e_invoice_compliance": "LHDN E-INVOICE Compliance",
+
+    "bundle_promo_price": "Bundle Promo Price:",
+
+    "rm3": "RM3.01",
+
+    "rm1": "RM1",
+
+    "99day": ".99 / hari",
+
+    "included": "included:",
+  
+    "software_license": "Software license.",
+  
+    "rm726": "(RM726.35)",
+  
+    "mobile_printer": "Mobile printer.",
+  
+    "free_x_10": "Free X 10 paper roll.",
+
+    "printer": "Printer:",
+
+    "203_dpi": "203 dpi 8dots Resolution",
+
+    "basic_printing": "Printing Width 72mm",
+
+    "usb_bluetooth": "USB + Bluetooth / Wifi",
+
+    "basic_paper": "Paper Width 58mm / 80mm",
+  
+    "li_oin_battery": "7.4V Li-ion battery, 1800mAh",
+  
+    "ps_ac": "PS AC 100V-240V 50/60HZ",
+  
+    "weight": "Weight 0.48 KG",
+  
+    "thickness": "Thickness 0.053 ~ 0.15mm",
+  
+    "mobile_pos_device_suitable": "(Mobile POS Device Sesuai untuk Perniagaan yang Sedang Berkembang)",
+
+    "m_mobile_pos_device_suitable": "(Mobile POS Device Sesuai untuk Perniagaan",
+  
+    "m_yang_sedang_berkembang": "yang Sedang Berkembang)",
+
+    "rm4": "RM4.10",
+  
+    "rm2": "RM2",
+  
+    "application": "Application:",
+  
+    "customisable_menu": "Customisable Menu",
+  
+    "biometric_lock": "Biometric Lock",
+  
+    "unlimited_invoices": "Unlimited Invoices",
+  
+    "cloud_storage": "Cloud Storage",
+  
+    "training_and_support": "Training & Support",
+  
+    "mobile_pos_device": "Mobile POS Device.",
+  
+    "mobile_pos_device2": "Mobile POS Device:",
+  
+    "standard_display": "6.5″, 720*1600 Display",
+  
+    "camera_rear": "Camera Rear 5MP QR Scan",
+  
+    "express_printing": "Express Printing",
+  
+    "usb_c_bluetooh_or_wifi": "USB-C + Bluetooth / Wifi",
+  
+    "nfc": "NFC Compatible (Optional)",
+  
+    "ultra_large": "Ultra Large Printing Roll",
+  
+    "58mm_width": "58mm width & 50mm diameter",
+  
+    "removable_battery": "Removable Battery",
+  
+    "battery_capacity": "battery capacity 3350mAh",
+  
+    "standard_ps_ac": "PS AC 100V-240V 50/60HZ",
+  
+    "charging_dock": "* Charging dock sold separately",
+  
+    "octa_core": "Octa-Core Cortex 2.0GH",
+  
+    "android_13": "Android 13",
+  
+    "2_gb_ram": "2GB RAM 32GB ROM",
+  
+    "nfc_compatible": "NFC Compatible (Optional)",
+  
+    "bluetooth_5": "Bluetooth 5.0",
+  
+    "support_wifi": "Support Wifi",
+  
+    "support_qr": "Support QR Scan",
+  
+    "up_to_10hrs": "Up to 10hrs Single Charge",
+  
+    "rm8": "RM8.15",
+  
+    "smart_pos_device_suitable": "(Smart POS Device Sesuai untuk Runcit & Perniagaan)",
+  
+    "m_smart_pos_device_suitable": "(Smart POS Device Sesuai untuk ",
+
+    "m_runcit_and_perniagaan": "Runcit & Perniagaan)",
+
+    "rm6": "RM6",
+  
+    "11day": ".11 / hari",
+  
+    "rm1095": "(RM1,095.00)",
+  
+    "smart_pos_device": "Smart POS Device.",
+    
+    "smart_pos_device2": "Smart POS Device:",
+  
+    "advanced_display": "10.1\", 1280 x 800 HD Display",
+  
+    "secondary_screen": "Secondary Screen",
+  
+    "seiko_thermal_printer": "Seiko Thermal Printer",
+  
+    "multiple_peripheral_port": "Multiple Peripheral Port",
+  
+    "nfc_and_qr": "NFC Compatible + QR Scan",
+  
+    "camera": "Camera 1D + 2D Barcode Scan",
+  
+    "standard_roll": "80*80mm Standard Roll",
+  
+    "automatic_cutter": "Automatic Cutter",
+  
+    "printing_speed": "250mm/s Printing Speed",
+  
+    "power_bank": "Compatible with Power Bank",
+  
+    "100v_240v": "100V-240V ~ 24V / 2.5A",
+  
+    "support_2g_3g_4g_lte": "Support 2G / 3G / 4G / LTE",
+  
+    "android_11": "Android 11",
+  
+    "hd_touch_pane": "10.1\" HD Touch Pane",
+  
+    "advanced_print_speed": "250mm/s Print Speed",
+  
+    "icon_support_2g": "Support 2G/3G/4G/LTE",
+  
+    "mono_speaker": "1.5 Mono Speaker",
+  
+    "nanosim": "NanoSim (Optional)",
+  
+    "power_adaptor": "Power Adaptor 100 ~ 240V",
+  
+    "2_nd_screen": "2nd Screen 2.4” LED",
+  
+    "advanced_weight": "Weight 1.785 KG"
+  
+  }
+  

@@ -23,9 +23,13 @@
   
   "make_payments_easier": "make payments easier",
 
-  "m_a_solution_to": "A solution to make payments easier",
+  "m_a_solution_to": "A solution to make",
 
-  "leave_your_contact": "Leave your Contact",
+  "m_payments_easier": "payments easier",
+
+  "leave_your": "Leave your",
+
+  "contact": "Contact",
 
   "about_us": "About Us",
 
@@ -37,9 +41,19 @@
 
   "current_tech": "Current Tech Industries Sdn Bhd.As a technology-driven company, our core mission at E-inbill is to simplify financial processes and foster connectivity among businesses. Our objective is to streamline financial operations and facilitate seamless interactions between companies.",
 
-  "in_malaysia": "In Malaysia, we have introduced e-invoicing products that comply with LHDN standards, serving over 300 businesses. Our clientele spans various sectors, from retail to manufacturing, with a focus on providing support to small businesses and medium-sized tech enterprises. Our solutions adhere to LHDN regulations, PEPPOL, and MDEC compliance requirements. Through close collaboration with regulatory bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.", 
+  "in_malaysia": "In Malaysia, we have introduced e-invoicing products that comply with LHDN ", 
 
-  "m_in_malaysia": "In Malaysia, we have introduced",
+  "standard_serving": "standards, serving over 300 businesses. Our clientele spans various sectors, from ",
+
+  "retail_to_manufacturing": "retail to manufacturing, with a focus on providing support to small businesses and ",
+
+  "medium_size": "medium-sized tech enterprises. Our solutions adhere to LHDN regulations, PEPPOL, ",
+
+  "and_mdec": "and MDEC compliance requirements. Through close collaboration with regulatory ",
+
+  "bodies_we": "bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.",
+
+  "m_in_malaysia_we": "In Malaysia, we have introduced",
 
   "m_e_invoicing_products": "e-invoicing products that comply with LHDN standards, serving over 300 businesses. Our clientele spans various sectors, from retail to manufacturing,",
   
@@ -47,43 +61,107 @@
 
   "m_lhdn_regulations": "LHDN regulations, PEPPOL, and MDEC compliance requirements. Through close collaboration with regulatory bodies, we have achieved success in the first phase of e-invoicing implementation, positioning us as one of the few companies prepared for the second phase. Our cloud infrastructure, hosted in Malaysia, ensures data security and compliance.",
 
-  "key_features": "Key Features",
+  "key_features": "Key Features of Our Products",
 
-  "of_our_products": "of Our Products",
+  "m_key_features": "Key Features",
 
-  "completing_the_transaction": "Completing the transaction requires just a few clicks.",
+  "m_of_our_products": "of Our Products",
 
-  "fully_complaint": "Fully compliant tax e-invoice functionality",
+  "completing": "Completing the",
 
-  "fully_support": "Fully supports all payment methods",
+  "transaction": "transaction requires",
+
+  "just": "just a few clicks",
+  
+  "fully_complaint": "Fully compliant",
+
+  "tax_e_invoice": "tax e-invoice",
+
+  "functionality": "functionality",
+
+  "fully_support": "Fully supports",
+
+  "all_payment": "all payment",
+
+  "methods": "methods",
 
   "Unbeatable": "Unbeatable",
 
-  "low_prices": "low prices you wouldn’t expect",
+  "low_prices": "low prices you",
 
-  "absolutely_secure": "Absolutely secure cloud synchronization and storage",
+  "would_not": "wouldn’t expect",
 
-  "user_friendly": "User-friendly and easy-to-use interface",
+  "absolutely_secure": "Absolutely secure",
 
-  "set_up_and_start": "Set up and start selling within minutes",
+  "cloud_synchrnization": "cloud synchronization",
 
-  "customer_support": "Customer support seven days a week for quick assistance",
+  "and_storage": "and storage",
+
+  "user_friendly": "User-friendly and",
+
+  "easy_to_use": "easy-to-use",
+
+  "key_interface": "interface",
+
+  "set_up": "Set up and",
+  
+  "start_selling": "start selling",
+
+  "within_minutes": "within minutes",
+
+  "customer_support": "Customer support",
+
+  "seven_days": "seven days a week",
+
+  "for_quick_assistance": "for quick assistance",
 
   "no_matter": "No matter what industry you're in",
 
-  "whether_a_small_street_vendor": "Whether a small street vendor or a large restaurant chain, E-inbill always supports your business. Hardware, software, payments, and technical support are unified under one E-inbill solution.",
+  "anda_berada": "",
 
-  "the_e_inbill_framework": "The E-inbill framework ensures that the entire ecosystem works seamlessly together. That is the E-inbill goal - to provide the best user experience for you and your customers.",
+  "m_no_matter": "No matter what",
 
-  "The_e_inbill_solution": "The e-inbill solution is robust enough to support your business growth from small to large.",
+  "m_industry_you_are": "industry you're in",
 
-  "for_small_shops_or_stalls": "For small shops or stalls, this is undoubtedly great news.",
+  "whether_a_small_street_vendor": "Whether a small street vendor or a large restaurant chain, E-inbill always supports your business. Hardware, software, payments, and technical support are unified under one ",
+
+  "di_bawah_satu": "E-inbill solution.",
+
+  "m_unified": "",
+
+  "m_whether_a_small_street_vendor": "Whether a small street vendor or a large restaurant chain, E-inbill always supports your business. Hardware, software, payments, and technical support are unified under one E-inbill solution.",
+  
+  "the_e_inbill_framework": "The E-inbill framework ensures that the entire ecosystem works seamlessly ",
+
+  "together": "together. That is the E-inbill goal - to provide the best user experience for ",
+
+  "you_and_your": "you and your customers.",
+
+  "the_e_inbill_solution": "The e-inbill solution is robust enough to support",
+
+  "your_business": "your business growth from small to large.",
+
+  "m_the_e_inbill_solution": "The e-inbill solution is robust enough ",
+
+  "m_your_business": "to support your business growth from small to large. ",
+
+  "for_small_shops_or_stalls": "For small shops or stalls, this ",
+
+  "is_undoubtedly": "is undoubtedly great news.",
+
+  "m_for_small_shops_or_stalls": "For small shops or stalls, this is ",
+
+  "m_is_undoubtedly": "undoubtedly great news.",
 
   "basic": "Basic",
 
   "the_basic_plan": "The Basic plan is extremely convenient and practical. ",
 
-  "merchants_simply": "Merchants simply need to download the E-inbill app, log in to account, and connect a Bluetooth receipt printer to start using it immediately.",
+  "merchants_simply": "Merchants simply need to download the E-inbill app, log ",
+
+  "in_to_account": "in to account, and connect a Bluetooth receipt printer to start using it immediately.",
+
+  "m_merchants_simply": "Merchants simply need to download the E-inbill app, log in to account, and connect a Bluetooth receipt printer to start using it immediately.",
 
   "standard": "Standard",
 
@@ -93,17 +171,27 @@
 
   "m_for_small_to_medium_sized": "For small to medium-sized food and beverage establishments, we understand that providing a ",
 
-  "m_a_comfortable_experience": "comfortable experience for customers is absolutely crucial.",
+  "m_a_comfortable_experience": "comfortable experience for",
+
+  "m_customer_is": "customers is absolutely crucial.",
 
   "the_standard_plan": "The Standard plan fully addresses this concern.",
 
-  "with_mobile_devices": "With mobile devices, customers can complete their payments without the hassle of waiting in long lines.",
+  "with_mobile_devices": "With mobile devices, ",
+
+  "m_with_mobile_devices": "With mobile devices, customers can complete their payments without the hassle of waiting in long lines.",
+
+  "customers_can": "customers can complete their payments without the hassle of waiting in long lines.",
 
   "advanced": "Advanced",
 
   "restaurant_management": "Restaurant management necessitates choosing a POS system that integrates all functions.",
 
   "cross_departmental_communication": "Whether it's cross-departmental communication, branch performance reports, or providing exceptional customer service, our POS system puts restaurant technology in your hands. ",
+
+  "ke_dalam_genggaman": "",
+
+  "m_cross_departmental_communication": "Whether it's cross-departmental communication, branch performance reports, or providing exceptional customer service, our POS system puts restaurant technology in your hands. ",
 
   "enabling_you": "enabling you to impress customers, reduce workload, and stand out!",
 
@@ -113,13 +201,29 @@
 
   "hinder_your": "hinder your business progress",
 
-  "you_cannot_resist": "You cannot resist the advantages that the product offers you",
+  "m_tedious_steps": "Don't let tedious steps",
 
-  "we_offer": "We offer more than just a POS, payment terminal, or e-invoice. The E-inbill solution can be customised for F&B, beauty, and retail stores. No matter what type of business you have, choosing E-inbill is the start of leveraging your advantages.",
+  "m_hinder_your": "hinder your business progress",
+
+  "you_cannot_resist": "You cannot resist the advantages",
+
+  "that_the_product": "that the product offers you",
+
+  "m_you_cannot_resist": "You cannot resist the advantages that the product offers you",
+
+  "m_advantages": "",
+
+  "we_offer": "We offer more than just a POS, payment terminal, or e-invoice. The E-inbill solution can ",
+
+  "be_customised_for": "be customised for F&B, beauty, and retail stores. No matter what type of business you",
+
+  "have_choosing": "have, choosing E-inbill is the start of leveraging your advantages.",
+
+  "m_we_offer": "We offer more than just a POS, payment terminal, or e-invoice. The E-inbill solution can be customised for F&B, beauty, and retail stores. No matter what type of business you have, choosing E-inbill is the start of leveraging your advantages.",
 
   "beauty": "Beauty, ",
 
-  "salon_spas": "Salon & Spas",
+  "salon_spas": " Salon & Spas",
 
   "cafes": "Cafes, Beverage",
 
@@ -151,7 +255,29 @@
 
   "stock": "& Stock",
 
-  "join_millions": "Join millions of successful E-inBill merchants and usher in a new era for your business",
+  "m_beauty": "Beauty, Salons & Spas",
+
+  "m_cafes": "Cafes, Beverage& Quick Service",
+
+  "m_food": "Food, Restaurant, Bar & Bistros",
+
+  "m_health": "Health & Medical",
+
+  "m_pets": "Pets & Grooming",
+
+  "m_courses": "Courses, Tuitions & Education",
+
+  "m_automotive": "Automotive & Service",
+
+  "m_wholesales": "Wholesales & Stock",
+
+  "join_millions": "Join millions of successful E-inBill merchants and ",
+
+  "usher_in": "usher in a new era for your business",
+
+  "m_join_millions": "Join millions of successful E-inBill merchants and usher in a new era ",
+
+  "m_for_your": "for your business",
 
   "full_name": "Full name",
 
@@ -166,68 +292,237 @@
   "your_business_sector": "Your business sector",
 
   "leave_your_contact_to": "Leave your contact to schedule a complimentary demo",
+  
+  "m_leave_your_contact_to": "Leave your contact to schedule",
+
+  "m_a_complimentary": "a complimentary demo",
 
   
   
   
-  "choose_us": "Choose us because you believe in our expertise",
+  "choose_us": "Choose us because you",
 
-  "we_can_elevate": "We can elevate your business to new heights, helping you achieve your goals with ease.",
+  "believe_in": "believe in our expertise",
+
+  "m_choose_us": "Choose us because you",
+
+  "m_believe_in": "believe in our expertise",
+
+  "we_can_elevate": "We can elevate your business to new",
+
+  "heights_helping": "heights, helping you achieve your goals",
+
+  "with_ease": "with ease.",
+
+  "m_we_can_elevate": "We can elevate your business to new heights, helping you achieve your goals with ease.",
+
+  "m_heights_helping": "",
 
   "why_you_should": "Why You Should Choose E-inbill?",
 
-  "our_system_is_fully_equipped": "Our system is fully equipped to match the characteristics of your industry, making us the ideal choice for you.",
+  "customizable_and_scalable_solution": "Customizable and Scalable Solution",
+
+  "freedom_to_choose": "You have the freedom to choose from a variety of expansion modules, such as mobile ordering, kitchen management, reservations, membership management, or a payment system with integrated e-invoice functionality. Additionally, comprehensive third-party integration solutions are available to seamlessly incorporate all aspects of your",
+
+  "operational_management": "operational management into a single system.",
+
+  "m_freedom_to_choose": "You have the freedom to choose from a variety ",
+
+  "m_of_expansion": "of expansion modules, such as mobile ordering, kitchen management, reservations, membership management, or a payment system with integrated e-invoice functionality. Additionally, comprehensive third-party integration solutions are available to seamlessly incorporate all aspects of your operational management into ",
+
+  "m_a_single_system": "a single system.",
+
+  "e_inbill_ecosystem": "e-inbill Ecosystem",
+
+  "experience_unparalleled": "Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem. With a robust core POS system, customisable expansion modules, and seamless integration across various technologies, you can empower every facet of your business operations ",
+
+  "for_optimal": "for optimal performance and success.",
+
+  "m_experience_unparalleled": "Experience unparalleled efficiency and adaptability with the E-inbill Ecosystem.",
+
+  "m_with_a_robust": "With a robust core POS system, customisable expansion modules, and seamless integration across various technologies, you can empower every facet of your business operations for optimal performance and success.",
+
+  "keep_pace": "Keeping Pace with Innovation and Optimisation",
+
+  "m_keep_pace": "Keeping Pace with",
+
+  "m_innovation_and_optimisation": "Innovation and Optimisation",
+
+  "continuously_analyse": "We continuously analyse market trends and integrate our findings into developing new products. Our goal is to help restaurants adapt to the evolving catering landscape",
+
+  "quickly": "quickly. Our R&D team introduces products aligned with industry trends, incorporating ",
+
+  "user_feedback": "user feedback. All new features undergo rigorous testing. Our commitment to updates ensures both speed and quality.",
+
+  "m_continuously_analyse": "We continuously analyse market trends and integrate our findings into developing new products. Our goal is to help restaurants adapt",
+
+  "m_to_the_evolving": "to the evolving catering landscape quickly.",
+
+  "r_and_d_team": "Our R&D team introduces products aligned with industry trends, incorporating user feedback. All new features undergo rigorous testing. Our commitment to updates ensures both speed and quality.",
+
+  "system_fully_supports": "System fully supports cloud-based functionality",
+
+  "m_system_fully_supports": "System fully supports ",
+
+  "m_cloud_based": "cloud-based functionality",
+
+  "small_footprint": "A small footprint can yield substantial profits! Utilising a streamlined solution enables ",
+
+  "you_to_optimise": "you to optimise operational efficiency, enhance productivity, and extend your brand's online footprint, positioning you as the preferred choice while maintaining cost-effectiveness!",
+
+  "m_small_footprint": "A small footprint can yield substantial profits! Utilising a streamlined solution enables you to optimise operational efficiency, enhance productivity, and extend your brand's online footprint, positioning you as the preferred choice while maintaining cost-effectiveness!",
+
+  "suitable_for_all_sizes": "Suitable for All Sizes",
+
+  "no_matter_if_you": "No matter if you run a single restaurant, a small or medium-sized chain, or an enterprise, implementing E-inbill's restaurant solution is easy and customisable. Our system ",
+
+  "support_different": "supports different structures for restaurant groups, enabling remote monitoring of operational data for individual stores. You can track revenue, average order value, ",
+
+  "foot_trafic": "foot traffic, inventory, and more through comprehensive reports. Plus, you can manage multiple brands and locations effortlessly, empowering your restaurant's growth painlessly.",
+
+  "m_no_matter_if_you": "No matter if you run a single restaurant,",
+
+  "m_small_or_medium": "a small or medium-sized chain, or an enterprise, implementing E-inbill's restaurant solution is easy and customisable. Our system supports different structures for restaurant groups, enabling remote monitoring of operational data for individual stores. You can track revenue, average order value, foot traffic, inventory, and more through comprehensive reports. Plus, you can manage multiple brands and locations effortlessly, empowering your restaurant's growth painlessly.",
+
+  "technical_support": "24/7 Technical Support",
+
+  "e_inbill_provides": "e-inbill provides round-the-clock technical support, offering in-store consultations, real-time multilingual online customer service, and on-site system training. Our transparent after-sales service includes hardware maintenance and equipment rental during repairs, ensuring prompt resolution of operational issues for our customers.",
+
+  "cepat_bagi": "",
+
+  "m_e_inbill_provides": "e-inbill provides round-the-clock technical support, offering in-store consultations, real-time multilingual online customer service, and on-site system training. Our transparent after-sales service includes hardware maintenance and equipment rental during repairs, ensuring prompt resolution of operational issues for our customers.",
+
+  "our_system_is_fully_equipped": "Our system is fully equipped to match the characteristics of your industry, making ",
+
+  "m_our_system_is_fully_equipped": "Our system is fully equipped",
+
+  "m_to_match": " to match the characteristics",
+
+  "m_of_your_industry": "of your industry, making us",
+
+  "m_the_ideal": "the ideal choice for you.",
+
+  "us_the_ideal": "us the ideal choice for you.",
 
   "our_point_of_sales": "Our point of sales.",
 
   "interface": "Interface",
 
-  "tailor_the_layout": "Tailor the layout to your preferences, including product descriptions, customisable options, tax regulations, receipts, categories, and more. Enjoy complete control over your interface, ensuring it perfectly aligns with your business needs.",
+  "tailor_the_layout": "Tailor the layout to your preferences, including product descriptions, customisable",
+
+  "options_tax_regulations": "options, tax regulations, receipts, categories, and more. Enjoy complete control over ",
+
+  "your_interface": "your interface, ensuring it perfectly aligns with your business needs.",
+
+  "m_tailor_the_layout": "Tailor the layout to your preferences, including product descriptions, customisable options, tax regulations, receipts, categories, and more. Enjoy complete control over your interface, ensuring it perfectly aligns with your business needs.",
 
   "security": "Security",
 
-  "this_guarantees_that": "Safely store all your data on a local drive, ensuring it's accessible at any time, whether you have an internet connection or not. This guarantees that your information remains secure and readily available whenever you need it, providing peace of mind and uninterrupted access.",
+  "this_guarantees_that": "Safely store all your data on a local drive, ensuring it's accessible at any time, whether ",
+
+  "you_have_an": "you have an internet connection or not. This guarantees that your information remains secure and readily available whenever you need it, providing peace of mind and uninterrupted access.",
+
+  "m_this_guarantees_that": "Safely store all your data on a local drive, ensuring it's accessible at any time, whether ",
+
+  "m_you_have_an": "you have an internet connection or not. This guarantees that your information remains secure and readily available whenever you need it, providing peace of mind and uninterrupted access.",
 
   "receipts": "Receipts",
 
-  "provide_your_customers": "Provide your customers with the option to choose between environmentally-friendly digital receipts or classic printed ones. This flexibility caters to diverse customer preferences, promoting sustainability while still accommodating those who prefer traditional methods.",
+  "provide_your_customers": "Provide your customers with the option to choose between environmentally-friendly ",
 
+  "digital_receipt": "digital receipts or classic printed ones. This flexibility caters to diverse customer preferences, promoting sustainability while still accommodating those who prefer traditional methods.",
+
+  "m_provide_your_customers": "Provide your customers with the option to",
+
+  "m_digital_receipt": " choose between environmentally-friendly digital receipts or classic printed ones. This flexibility caters to diverse customer preferences, promoting sustainability while still accommodating those who prefer traditional methods.",
+  
   "payment": "Payment",
 
   "offer_your_customers": "Offer your customers a range of payment options, including cash, credit/debit cards, and eWallets. This diverse selection ensures convenience and flexibility for your customers, allowing them to choose the method that best suits their preferences and needs.",
 
+  "dan_fleksibiliti": "",
+
+  "m_offer_your_customers": "Offer your customers a range of payment options, including cash, credit/debit cards, ",
+
+  "m_and_ewallets": "and eWallets. This diverse selection ensures convenience and flexibility for your customers, allowing them to choose the method that best suits their preferences and needs.",
+
   "offline": "Offline",
 
-  "keep_your_operations": "Keep your operations running smoothly even in the face of an unstable internet connection. Your data will be automatically saved and synchronised once the connection is reestablished, ensuring seamless continuity and minimizing disruptions to your workflow.",
+  "keep_your_operations": "Keep your operations running smoothly even in the face of an unstable internet ",
 
-  "leave_your_contact_info": "Leave your contact information to discover how E-inbill empowers merchants to achieve more.",
+  "connection": "connection. Your data will be automatically saved and synchronised once the connection",
+
+  "is_reestablish": " is reestablished, ensuring seamless continuity and minimizing disruptions to your workflow.",
+  
+  "m_keep_your_operations": "Keep your operations running smoothly even ",
+
+  "m_in_the_face": "in the face of an unstable internet connection. Your data will be automatically saved and synchronised once the connection is reestablished, ensuring seamless continuity and minimizing disruptions to your workflow.",
+
+  "leave_your_contact_info": "Leave your contact information to discover how ",
+
+  "e_inbill_empowers": "E-inbill empowers merchants to achieve more.",
+
+  "memberdayakan_peniaga": "",
+
+  "m_leave_your_contact_info": "Leave your contact information to  ",
+
+  "m_e_inbill_empowers": "discover how E-inbill empowers ",
+
+  "m_memberdayakan_peniaga": "merchants to achieve more.",
+
 
 
 
   
   "what_is_an_e_invoice": "What is an E-invoice",
 
-  "simplify_your_malaysian": "Simplify your Malaysian business's electronic invoicing process with E-Inbill.",
+  "simplify_your_malaysian": "Simplify your Malaysian business's",
 
-  "the_malaysian_inland_revenue_board": "The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply by August 1, 2024. By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.",
+  "electronic_invoicing": "electronic invoicing process with E-Inbill.",
 
-  "m_the_malaysian_inland_revenue_board": "The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for tax purposes. E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply",
+  "e_inbill": "",
 
-  "m_by_august_1": "by August 1, 2024. By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.",
+  "m_simplify_your_malaysian": "Simplify your Malaysian business's electronic ",
+
+  "m_invoicing_process": "invoicing process with E-Inbill.",
+  
+  "the_malaysian_inland_revenue_board": "The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing",
+
+  "for_tax_purpose": "for tax purposes. E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply by August 1, 2024. ",
+
+  "by_july_1": "By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.",
+
+  "m_the_malaysian_inland_revenue_board": "The Malaysian Inland Revenue Board (LHDN) mandates the use of electronic invoicing for ",
+
+  "m_by_august_1": "tax purposes. E-Inbill is certified to meet these requirements, offering a seamless solution for your business needs. The implementation of electronic invoicing is being phased in, with the initial group of businesses required to comply by August 1, 2024. By July 1, 2025, all Malaysian businesses, regardless of size, must transition to electronic invoicing. Transition to E-Inbill now to ensure your business remains compliant with LHDN regulations and stays ahead in the digital transformation journey.",
 
   "start_implementing_e_invoicing": "Start Implementing E-Invoicing For Your Business?",
+
+  "m_start_implementing_e_invoicing": "Start Implementing E-Invoicing",
+
+  "m_for_your_business": "For Your Business?",
 
   "the_implementating_of_e_invoice": "The implementating of E-invoice will be phased to ensure a smooth transition. The criteria for determining the annual turnover or revenue thresholds for E-Invoice implementation are as follows:",
 
   "for_taxpayers_with_audited": "For taxpayers with audited financial statements: ",
 
+  "m_for_taxpayers_with_audited": "For taxpayers with audited",
+
+  "financail_statement": "financial statements: ",
+
   "the_annual_turnover_or_revenue": "The annual turnover or revenue will be determined based on the figures stated in the statement of comprehensive income in the audited financial statements for the financial year 2022.",
 
   "for_taxpayers_without_audited": "For taxpayers without audited financial statements:",
 
+  "m_for_taxpayers_without_audited": "For taxpayers without audited",
+
   "the_annual_revenue": "The annual revenue will be determined based on the figures reported in the tax return for the year of assessment 2022.",
 
   "in_the_event_of": "In the event of a change in the accounting year-end for the financial year 2022, the taxpayer’s turnover or revenue will be pro-rated to a 12-month period to accurately determine the e-Invoice implementation date.",
+
+  "m_in_the_event_of": "In the event of a change in the accounting",
+
+  "m_year_end": "year-end for the financial year 2022, the taxpayer’s turnover or revenue will be pro-rated to a 12-month period to accurately determine the e-Invoice implementation date.",
 
   "e_invoice_implementing_timeline": "E-Invoice Implementing Timeline:",
 
@@ -240,6 +535,10 @@
   "1_august_2024": "1 August 2024",
 
   "taxpayers_with_25_100": "Taxpayers with an annual turnover or revenue of more than RM25 million and up to RM100 million.",
+
+  "m_taxpayers_with_25_100": "Taxpayers with an annual turnover or revenue of more than RM25 million and",
+
+  "m_up_to_100": "up to RM100 million.",
 
   "1_january_2025": "1 January 2025",
 
@@ -271,13 +570,19 @@
 
   "for_micro": "For micro, small and medium-sized enterprises (MSMEs), the phased implementation offers a progressive and manageable transition to e-Invoice, allowing MSMEs to align their financial reporting and processes to be digitalised with industry standards, ensuring that MSMEs to adapt over a longer period and mitigating potential disruptions.",
 
+  "m_for_micro": "For micro, small and medium-sized enterprises (MSMEs), the phased implementation offers a progressive and manageable transition to e-Invoice, allowing MSMEs to align their financial reporting and processes to be digitalised with industry standards, ensuring that MSMEs to adapt",
+
+  "m_over_a_longer_period": "over a longer period and mitigating potential disruptions.",
+
   "lhdn_e_invoice_what_are": "LHDN E-Invoice: What Are The Penalties For Non-Compliance?",
 
   "lhdn_e_invoice": "LHDN E-Invoice:",
 
   "what_are_the_penalties": "What Are The Penalties For Non-Compliance?",
 
-  "adhering_to_the_lhdn_title": "Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant consequences for your business. Here's what you need to be aware of:",
+  "adhering_to_the_lhdn_title": "Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory,",
+
+  "and_non_compliance": "and non-compliance can result in significant consequences for your business. Here's what you need to be aware of:",
 
   "adhering_to_the_lhdn": "Adhering to the Malaysian Inland Revenue Board’s (LHDN) E-Invoice mandate is mandatory, and non-compliance can result in significant",
 
@@ -293,13 +598,25 @@
 
   "customer_feedback_form": "E-Invoice Customer Feedback Form: ",
 
-  "following_link.": "Following link.",
+  "following_link": "Following link.",
 
   "who_needs_to_comply": "Who Needs to Comply with e-Invoicing in Malaysia?",
 
-  "lhdn_has_released_guidelines": "LHDN has released guidelines outlining which entities, individuals, and businesses are required to adhere to e-invoicing rules, as well as those exempt from them.",
+  "m_who_needs_to_comply": "Who Needs to Comply with e-Invoicing",
+
+  "m_in_malaysia": "in Malaysia?",
+
+  "lhdn_has_released_guidelines": "LHDN has released guidelines outlining which entities, individuals, and businesses are required to ",
+
+  "adhere_to": "adhere to e-invoicing rules, as well as those exempt from them.",
+
+  "m_lhdn_has_released_guidelines": "LHDN has released guidelines outlining which entities, individuals, and businesses are required to adhere to e-invoicing rules, as well as those exempt from them.",
 
   "entities_required": "Entities Required to Comply with e-Invoicing in Malaysia",
+
+  "m_entities_required": "Entities Required to Comply with e-Invoicing",
+
+  "m_malaysia": "in Malaysia.",
 
   "associations": "Associations.",
 
@@ -353,6 +670,10 @@
 
   "individual_who": "Individual who is not conducting Business.",
 
+  "type_of_e_invoice": "Type of e-invoices in Malaysia",
+
+  "below_documents": "The below documents must be issued in electronic format under Malaysia e-Invoice:",
+
   "invoices": "Invoices:",
 
   "it_is_generally_used": "It is generally used to record transactions between supplier and buyer. Invoices also include a self-billed invoice issued for tracking expenses.",
@@ -372,9 +693,21 @@
 
 
 
-  "tools_to_enhance": "Tools to Enhance Your Business Model",
+  "tools_to_enhance": "Tools to Enhance",
 
-  "switch_to_e_inbill": "Switch to E-inbill and ensure your business stays compliant with LHDN E Invoice.",
+  "your_business_model": "Your Business Model",
+  
+  "switch_to_e_inbill": "Switch to E-inbill and ensure your",
+
+  "business_stays_compliant": "business stays compliant with",
+
+  "p_lhdn_e_invoice": "LHDN E Invoice.",
+
+  "m_switch_to_e_inbill": "Switch to E-inbill and ensure your",
+
+  "m_business_stays_compliant": "business stays compliant with",
+
+  "m_p_lhdn_e_invoice": "LHDN E Invoice.",
 
   "comprehensive_solution": "Comprehensive Solution: Integrated Cash Collection, Inventory Management, and Business Intelligence.",
 
@@ -400,6 +733,16 @@
 
   "free_x_10": "Free X 10 paper roll.",
 
+  "printer": "Printer:",
+
+  "203_dpi": "203 dpi 8dots Resolution",
+
+  "basic_printing": "Printing Width 72mm",
+
+  "usb_bluetooth": "USB + Bluetooth / Wifi",
+
+  "basic_paper": "Paper Width 58mm / 80mm",
+
   "li_oin_battery": "7.4V Li-ion battery, 1800mAh",
 
   "ps_ac": "PS AC 100V-240V 50/60HZ",
@@ -409,6 +752,12 @@
   "thickness": "Thickness 0.053 ~ 0.15mm",
 
   "mobile_pos_device_suitable": "(Mobile POS Device Suitable for Growing Business）",
+
+  "m_mobile_pos_device_suitable": "(Mobile POS Device Suitable for Growing Business）",
+  
+  "m_yang_sedang_berkembang": "",
+
+  "yang_sedang_berkembang": "",
 
   "rm4": "RM4.10",
 
@@ -472,6 +821,10 @@
 
   "smart_pos_device_suitable": "(Smart POS Device Suitable for Retail & Business)",
 
+  "m_smart_pos_device_suitable": "(Smart POS Device Suitable for Retail & Business)",
+
+  "m_runcit_and_perniagaan": "",
+  
   "rm6": "RM6",
 
   "11day": ".11 / day",
