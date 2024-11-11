@@ -37,9 +37,9 @@
   
     "as_a_technology_driven_company": "",
   
-    "m_we_are_einbill": "Kami adalah E-inbill, sebahagian daripada Current Tech Industries Sdn Bhd. Sebagai sebuah syarikat yang didorong oleh teknologi, misi utama kami di E-inbill adalah untuk mempermudahkan proses kewangan dan menggalakkan kesalinghubungan di kalangan perniagaan. Matlamat kami adalah untuk menstreamkan operasi kewangan dan memudahkan interaksi lancar antara syarikat.",
+    "m_we_are_einbill": "Kami adalah E-inbill, sebahagian daripada Current Tech Industries Sdn Bhd. Sebagai sebuah syarikat yang didorong oleh teknologi, misi utama kami di E-inbill adalah untuk mempermudahkan proses kewangan dan menggalakkan kesalinghubungan di kalangan perniagaan. Matlamat kami",
   
-    "current_tech": "",
+    "current_tech": "adalah untuk menstreamkan operasi kewangan dan memudahkan interaksi lancar antara syarikat.",
   
     "in_malaysia": "Di Malaysia, kami telah memperkenalkan produk e-invois yang mematuhi piawaian ", 
   
@@ -363,9 +363,9 @@
 
     "system_fully_supports": "Sistem menyokong sepenuhnya fungsi berasaskan awan",
 
-    "m_system_fully_supports": "Sistem menyokong sepenuhnya fungsi berasaskan awan",
+    "m_system_fully_supports": "Sistem menyokong sepenuhnya fungsi ",
 
-    "m_cloud_based": "",
+    "m_cloud_based": "berasaskan awan",
 
     "small_footprint": "Satu langkah kecil boleh menghasilkan keuntungan yang besar! Dengan menggunakan penyelesaian yang lancar, anda dapat mengoptimumkan kecekapan operasi, ",
 
@@ -877,7 +877,17 @@
   
     "2_nd_screen": "2nd Screen 2.4” LED",
   
-    "advanced_weight": "Weight 1.785 KG"
+    "advanced_weight": "Weight 1.785 KG",
+
+
+
   
+    "f_leave_your_contact": "Leave your contact",
+
+    "f_please_be_patient": "Please be patient, our service personnel ",
+  
+    "f_will_contact": "will contact you shortly.",
+
+    "f_leave_your_contact_to": "Tinggalkan maklumat anda untuk menjadualkan demo percuma"
   }
   

@@ -7,7 +7,7 @@ import { HomeGroup1, WhyGroup1, WhyGroup1S, Group13, Group13S, Group71, Group71S
 
 const Whyeinbill = () => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
@@ -57,7 +57,7 @@ const Whyeinbill = () => {
       </div>
       {/* 2 */}
       <div className='w-full flex justify-center px-[29px] md:px-0'>
-        <div className='flex flex-col gap-[75px] md:gap-[100px] justify-center max-w-[1000px] w-full'>
+        <div className='flex flex-col items-center justify-center gap-[75px] md:gap-[100px] max-w-[1000px] w-full'>
           {/* 2.1 */}
           <div className='flex flex-col gap-[50px] md:gap-[100px]'> 
             {/* 2.1.1 */}
@@ -74,7 +74,7 @@ const Whyeinbill = () => {
                     {t('with_ease')}
                   </div>
                 </div>
-                <div className="md:hidden">
+                <div className="md:hidden w-[333px]">
                   <div>
                     {t('m_we_can_elevate')}
                   </div>
@@ -110,7 +110,7 @@ const Whyeinbill = () => {
                       {t('operational_management')}
                     </div>
                   </div>
-                  <div className="md:hidden">
+                  <div className="md:hidden w-[333px]">
                     <div>
                       {t('m_freedom_to_choose')}
                     </div>
@@ -146,8 +146,8 @@ const Whyeinbill = () => {
                     {t('for_optimal')}
                   </div>
                 </div>
-                <div className='md:hidden text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
-                  <div className='md:hidden'>
+                <div className='md:hidden text-left text-[#000] text-sm md:text-xl font-medium leading-tight w-[333px]'>
+                  <div>
                     {t('m_experience_unparalleled')}
                   </div>
                   <div>
@@ -191,7 +191,7 @@ const Whyeinbill = () => {
                     {t('user_feedback')}
                   </div>
                 </div>
-                <div className='md:hidden text-left text-[#000] text-sm md:text-xl font-medium leading-tight'>
+                <div className='md:hidden text-left text-[#000] text-sm md:text-xl font-medium leading-tight w-[333px]'>
                   <div>
                     {t('m_continuously_analyse')}
                   </div>
@@ -268,11 +268,11 @@ const Whyeinbill = () => {
                     {t('foot_trafic')}
                   </div>
                 </div>
-                <div className='md:hidden text-left text-[#000] text-sm md:text-xl  font-medium leading-tight'>
+                <div className='md:hidden text-left text-[#000] text-sm md:text-xl font-medium leading-tight w-[333px]'>
                   <div>
                     {t('m_no_matter_if_you')}  
                   </div>
-                  <div className='w-[333px]'>
+                  <div>
                     {t('m_small_or_medium')}
                   </div>
                 </div>
@@ -301,7 +301,7 @@ const Whyeinbill = () => {
                       {t('cepat_bagi')}
                     </div>  
                   </div>
-                  <div className='md:hidden'>
+                  <div className='md:hidden w-[333px]'>
                     {t('m_e_inbill_provides')}
                   </div>
                 </div>
@@ -323,7 +323,7 @@ const Whyeinbill = () => {
                     {t('us_the_ideal')}
                   </div>
                 </div>
-                <div className="md:hidden">
+                <div className="md:hidden w-[333px]">
                   <div>
                     {t('m_our_system_is_fully_equipped')}
                   </div>
@@ -368,7 +368,7 @@ const Whyeinbill = () => {
                       {t('your_interface')}
                     </div>
                   </div>
-                  <div className="md:hidden">
+                  <div className="md:hidden w-[333px]">
                     {t('m_tailor_the_layout')}
                   </div>
                 </div>
@@ -397,7 +397,7 @@ const Whyeinbill = () => {
                       {t('you_have_an')}
                     </div>
                   </div>
-                  <div className='md:hidden'>
+                  <div className='md:hidden w-[333px]'>
                     <div>
                       {t('m_this_guarantees_that')}
                     </div>
@@ -431,7 +431,7 @@ const Whyeinbill = () => {
                       {t('digital_receipt')}
                     </div>
                   </div>
-                  <div className="md:hidden">
+                  <div className="md:hidden w-[333px]">
                     <div>
                         {t('m_provide_your_customers')}
                       </div>
@@ -465,7 +465,7 @@ const Whyeinbill = () => {
                       {t('dan_fleksibiliti')}
                     </div>
                   </div>
-                  <div className='md:hidden'>
+                  <div className='md:hidden w-[333px]'>
                     <div>
                       {t('m_offer_your_customers')}
                     </div>
@@ -502,7 +502,7 @@ const Whyeinbill = () => {
                       {t('is_reestablish')}
                     </div>
                   </div>
-                  <div className="md:hidden">
+                  <div className="md:hidden w-[333px]">
                     <div>
                         {t('m_keep_your_operations')}
                       </div>
@@ -558,6 +558,7 @@ const Whyeinbill = () => {
                           {t('full_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </div>
                         <input
+                          autoComplete='on'
                           type="text"
                           id="fullname"
                           className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -569,6 +570,7 @@ const Whyeinbill = () => {
                           {t('company_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
+                          autoComplete='on'
                           type="text"
                           id="companyname"
                           className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -580,6 +582,7 @@ const Whyeinbill = () => {
                           {t('contact_number')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
+                          autoComplete='on'
                           type="tel"
                           id="contactnumber"
                           className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -591,6 +594,7 @@ const Whyeinbill = () => {
                           {t('email_address')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
+                          autoComplete='on'
                           type="email"
                           id="email"
                           className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -602,6 +606,7 @@ const Whyeinbill = () => {
                           {t('your_state')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
+                          autoComplete='on'
                           type="text"
                           id="location"
                           className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -613,6 +618,7 @@ const Whyeinbill = () => {
                           {t('your_business_sector')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                         </label>
                         <input
+                          autoComplete='on'
                           type="text"
                           id="sector"
                           className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"

@@ -244,7 +244,7 @@ const GroupM = () => {
 
 const GroupMS = () => {
     return (
-        <svg width="390" height="510" viewBox="0 0 393 510" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="340" height="510" viewBox="0 0 393 510" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_425_1016)">
                 <circle cx="197" cy="255" r="75" fill="#0046BA"/>
             </g>

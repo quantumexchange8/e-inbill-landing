@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link, useNavigate } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../Header.css';
 import { Group, GroupS, GroupWorld, GroupLines, Message, MessageL, Facebook, FacebookL, Instagram, InstagramL, AppStore, Playstore, Translate,Triangle } from '../Components/Outline.jsx';
@@ -20,8 +20,6 @@ const Header = () => {
     i18n.changeLanguage(lang);
   }
 
-  const navigate = useNavigate();
-
   return (
       <div className='fixed w-full z-30 flex flex-col'>
         {/* 1 */}
@@ -31,15 +29,15 @@ const Header = () => {
               {t('only_RM1.99')}
             </div>
             <div className="flex gap-[10px] z-50">
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <button  onClick={(e) => e.preventDefault()}>
                 <Message />
-              </a>
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              </button>
+              <button  onClick={(e) => e.preventDefault()}>
                 <Facebook />
-              </a>
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              </button>
+              <button onClick={(e) => e.preventDefault()}>
                 <Instagram />
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@ const Header = () => {
         <div className='bg-[#0046BA] md:bg-[#0060FF] w-full flex justify-center px-[30px] md:px-0'>
           <div className='max-w-[1000px] flex justify-between items-center w-full'>
             {/* 2.1 */}
-            <button onClick={ () => navigate('/')}>
+            <button>
               <div className="hidden md:flex items-center">
                 <Group />
               </div>
@@ -80,12 +78,12 @@ const Header = () => {
             </div>
             {/* 2.3 */}
             <div className="hidden md:flex gap-[10px]">
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <button onClick={(e) => e.preventDefault()}>
                 <AppStore />
-              </a>
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              </button>
+              <button onClick={(e) => e.preventDefault()}>
                 <Playstore />
-              </a>
+              </button>
               <button onClick={handleCycleLanguage}>
                 <Translate />
               </button>
@@ -106,15 +104,15 @@ const Header = () => {
                   <div className="flex flex-col gap-[30px] text-white text-center text-xl font-semibold leading-tight">
                     <MenuItem>
                       <div className="flex justify-center gap-[25px]">
-                        <a href="#" onClick={(e) => e.preventDefault()}>
+                        <button   onClick={(e) => e.preventDefault()}>
                           <MessageL />
-                        </a>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
+                        </button>
+                        <button   onClick={(e) => e.preventDefault()}>
                           <FacebookL />
-                        </a>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
+                        </button>
+                        <button   onClick={(e) => e.preventDefault()}>
                           <InstagramL />
-                        </a>
+                        </button>
                       </div>
                     </MenuItem>
                     <MenuItem>
@@ -149,15 +147,15 @@ const Header = () => {
                   <div className="flex flex-col gap-[30px] text-white text-center text-xl font-semibold leading-tight">
                     <MenuItem>
                       <div className="flex justify-center gap-[25px]">
-                        <a href="#" onClick={(e) => e.preventDefault()}>
+                        <button   onClick={(e) => e.preventDefault()}>
                           <MessageL />
-                        </a>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
+                        </button>
+                        <button   onClick={(e) => e.preventDefault()}>
                           <FacebookL />
-                        </a>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
+                        </button>
+                        <button   onClick={(e) => e.preventDefault()}>
                           <InstagramL />
-                        </a>
+                        </button>
                       </div>
                     </MenuItem>
                     <MenuItem>

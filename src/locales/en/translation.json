@@ -39,7 +39,7 @@
 
   "m_we_are_einbill": "We are E-inbill, a division of",
 
-  "current_tech": "Current Tech Industries Sdn Bhd.As a technology-driven company, our core mission at E-inbill is to simplify financial processes and foster connectivity among businesses. Our objective is to streamline financial operations and facilitate seamless interactions between companies.",
+  "current_tech": "Current Tech Industries Sdn Bhd. As a technology-driven company, our core mission at E-inbill is to simplify financial processes and foster connectivity among businesses. Our objective is to streamline financial operations and facilitate seamless interactions between companies.",
 
   "in_malaysia": "In Malaysia, we have introduced e-invoicing products that comply with LHDN ", 
 
@@ -875,6 +875,17 @@
 
   "2_nd_screen": "2nd Screen 2.4” LED",
 
-  "advanced_weight": "Weight 1.785 KG"
+  "advanced_weight": "Weight 1.785 KG",
+
+
+
+
+  "f_leave_your_contact": "Leave your contact",
+
+  "f_please_be_patient": "Please be patient, our service personnel ",
+
+  "f_will_contact": "will contact you shortly.",
+
+  "f_leave_your_contact_to": "Leave your contact to schedule a complimentary demo"
 
 }

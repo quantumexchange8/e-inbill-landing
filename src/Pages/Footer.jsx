@@ -7,7 +7,7 @@ import currentTech from '../Asset/Images/logo.png';
 
 const Header = () => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className='flex flex-col'>
@@ -19,15 +19,15 @@ const Header = () => {
               {t('only_RM1.99')}
             </div>
             <div className="flex gap-[10px] z-50">
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <button   onClick={(e) => e.preventDefault()}>
                 <Message />
-              </a>
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              </button>
+              <button   onClick={(e) => e.preventDefault()}>
                 <Facebook />
-              </a>
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              </button>
+              <button   onClick={(e) => e.preventDefault()}>
                 <Instagram />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -56,12 +56,12 @@ const Header = () => {
                 </div>
               </div> 
               <div className="flex list-none gap-[10px] py-[18px]">
-                <a href="#" onClick={(e) => e.preventDefault()}>
+                <button   onClick={(e) => e.preventDefault()}>
                   <AppStore />
-                </a>
-                <a href="#" onClick={(e) => e.preventDefault()}>
+                </button>
+                <button   onClick={(e) => e.preventDefault()}>
                   <Playstore />
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -87,24 +87,24 @@ const Header = () => {
           </div> 
           {/* 2 */}
           <div className="flex justify-center gap-[30px] md:hidden">
-            <a href="#" onClick={(e) => e.preventDefault()}>
+            <button   onClick={(e) => e.preventDefault()}>
               <AppStoreS />
-            </a>
-            <a href="#" onClick={(e) => e.preventDefault()}>
+            </button>
+            <button   onClick={(e) => e.preventDefault()}>
               <PlaystoreS />
-            </a>
+            </button>
           </div>
           {/* 3 */}
           <div className="flex justify-center gap-[30px] md:hidden">
-            <a href="#" onClick={(e) => e.preventDefault()}>
+            <button   onClick={(e) => e.preventDefault()}>
               <MessageS />
-            </a>
-            <a href="#" onClick={(e) => e.preventDefault()}>
+            </button>
+            <button   onClick={(e) => e.preventDefault()}>
               <FacebookS />
-            </a>
-            <a href="#" onClick={(e) => e.preventDefault()}>
+            </button>
+            <button   onClick={(e) => e.preventDefault()}>
               <InstagramS />
-            </a>
+            </button>
           </div>
           {/* 4 */}
           <div className="flex justify-center gap-[11.35px]">

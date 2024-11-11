@@ -4,7 +4,7 @@ import { Group52 } from './Outline';
 
 const Leaveyourcontact = ({ isOpen, onClose }) => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   if (!isOpen) return null; 
 
@@ -19,15 +19,22 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
             <HomeGroup1F />
           </div>
           <div className="flex flex-col items-center gap-[30px]">
-            <div className="text-black text-5xl font-bold">
-              Leave your contact
+            <div className="text-black text-5xl font-bold flex gap-[10px]">
+              <div>
+                {t('f_leave_your_contact')}
+              </div>
             </div>
-            <div className='text-black text-4xl font-medium w-[691px]'>
-              Please be patient, our service personnel will contact you shortly.
+            <div className='text-black text-4xl font-medium w-[691px] flex flex-col leading-tight'>
+              <div>
+                {t('f_please_be_patient')}
+              </div>
+              <div>
+                {t('f_will_contact')}
+              </div>
             </div>
           </div>
         </div>
-        <form className='flex flex-col gap-[50px] md:gap-[100px]'>
+        <form onSubmit={(e) => e.preventDefault()} className='flex flex-col gap-[50px] md:gap-[100px]'>
           {/* Content */}
           <div className='flex flex-col items-center gap-[30px] md:gap-[50px]'>
             {/* Full name */}
@@ -36,6 +43,7 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
                 {t('full_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
               </div>
               <input
+                autoComplete='on'
                 type="text"
                 id="fullname"
                 className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
@@ -47,6 +55,7 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
                 {t('company_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
               </label>
               <input
+                autoComplete='on'
                 type="text"
                 id="companyname"
                 className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
@@ -58,6 +67,7 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
                 {t('contact_number')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
               </label>
               <input
+                autoComplete='on'
                 type="tel"
                 id="contactnumber"
                 className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
@@ -69,6 +79,7 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
                 {t('email_address')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
               </label>
               <input
+                autoComplete='on'
                 type="email"
                 id="email"
                 className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
@@ -80,6 +91,7 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
                 {t('your_state')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
               </label>
               <input
+                autoComplete='on'
                 type="text"
                 id="location"
                 className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
@@ -91,6 +103,7 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
                 {t('your_business_sector')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
               </label>
               <input
+                autoComplete='on'
                 type="text"
                 id="sector"
                 className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
@@ -99,10 +112,10 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
           </div>
           {/* Submit */}
           <div className="flex items-center justify-center">
-            <button className="w-full md:w-[600px] h-[60px] rounded-[31px] border-2 border-black shadow-submit" type="submit">
+            <button className="w-full md:w-auto h-[60px] rounded-[31px] border-2 border-black shadow-submit px-8" type="submit">
               <div className='flex justify-center'>
-                <div className="w-[243px] md:w-[530px] text-black text-center md:text-xl text-base font-semibold leading-tight">
-                  {t('leave_your_contact_to')}
+                <div className="w-[243px] md:w-auto text-black text-center md:text-xl text-base font-semibold leading-tight">
+                  {t('f_leave_your_contact_to')}
                 </div>
               </div>
             </button>

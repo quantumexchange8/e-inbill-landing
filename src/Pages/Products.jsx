@@ -19,7 +19,7 @@ import { HomeGroup1, Vector, Vector2, Vector3, Group111, Group111S, Group119, Gr
 
 const Home = () => {
   
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
@@ -62,9 +62,9 @@ const Home = () => {
         {/* 2 */}
         <div className='w-full flex justify-center px-[30px] md:px-0'>
           <div className='flex flex-col gap-[100px] justify-center max-w-[1000px] w-full '>
-            <div className="flex flex-col gap-[30px] md:gap-5 text-left">
+            <div className="flex flex-col items-center gap-[30px] md:gap-5 text-left">
               <div className='text-[#0046BA] text-xl md:text-5xl font-bold'>
-                <div className='hidden md:flex flex-col'>
+                <div className='hidden md:flex flex-col w-[1000px]'>
                   <div className='leading-tight'>
                     {t('switch_to_e_inbill')}
                   </div>
@@ -75,7 +75,7 @@ const Home = () => {
                     {t('p_lhdn_e_invoice')}
                   </div>
                 </div>
-                <div className='md:hidden'>
+                <div className='md:hidden w-[333px]'>
                   <div className='leading-tight'>
                     {t('m_switch_to_e_inbill')}
                   </div>
@@ -87,8 +87,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className='md:w-[960px] text-[#0060FF] text-sm md:text-2xl font-medium leading-tight'>
-                {t('comprehensive_solution')}
+              <div className='w-[333px] md:w-[1000px] text-[#0060FF] text-sm md:text-2xl font-medium leading-tight'>
+                <div className='md:w-[960px]'>
+                  {t('comprehensive_solution')}
+                </div>
               </div>
             </div>
           </div>
@@ -96,7 +98,7 @@ const Home = () => {
 
         {/* 3 */}
         <div className='w-full flex justify-center px-[30px] md:px-0'>
-          <div className='flex flex-col max-w-[1000px] h-[1152px] md:h-[841px] w-[333px] md:w-full bg-gradient-to-b from-white/50 from-30% to-[#01A7CA80] to-100% outline outline-1 outline-[#00A6CA] rounded-[10px]'>
+          <div className='flex flex-col max-w-[1000px] h-[1152px] md:h-auto w-[333px] md:w-auto bg-gradient-to-b from-white/50 from-30% to-[#01A7CA80] to-100% outline outline-1 outline-[#00A6CA] rounded-[10px]'>
             <div>
               {/* 3.1 */}
               <div className="inset-0 flex flex-col justify-center items-center">
@@ -313,8 +315,8 @@ const Home = () => {
         </div>
     
         {/* 4 */}
-        <div className='w-full h-[1372px] md:h-[1017px] flex justify-center px-[30px] md:px-0'>
-          <div className='flex flex-col max-w-[1000px] h-[1372px] md:h-[1020px] w-[333px] md:w-full bg-gradient-to-b from-white/50 from-30% to-[#0073F680] to-100% outline outline-1 outline-[#0073F6] rounded-[10px]'>
+        <div className='w-full h-[1372px] md:h-auto flex justify-center px-[30px] md:px-0'>
+          <div className='flex flex-col max-w-[1000px] h-[1372px] md:h-auto w-[333px] md:w-auto bg-gradient-to-b from-white/50 from-30% to-[#0073F680] to-100% outline outline-1 outline-[#0073F6] rounded-[10px]'>
             <div>
               {/* 4.1 */}
               <div className="inset-0 flex flex-col justify-center items-center">
@@ -661,8 +663,8 @@ const Home = () => {
         </div>
 
         {/* 5 */}
-        <div className='w-full h-[1495px] md:h-[1129px] flex justify-center px-[30px] md:px-0'>
-          <div className='flex flex-col max-w-[1000px] h-[1495px] md:h-[1129px] w-[333px] md:w-full bg-gradient-to-b from-white/50 from-30% to-[#0046BA80] to-100% outline outline-1 outline-[#0046BA] rounded-[10px]'>
+        <div className='w-full h-[1495px] md:h-auto flex justify-center px-[30px] md:px-0'>
+          <div className='flex flex-col max-w-[1000px] h-[1495px] md:h-auto w-[333px] md:w-auto bg-gradient-to-b from-white/50 from-30% to-[#0046BA80] to-100% outline outline-1 outline-[#0046BA] rounded-[10px]'>
             <div>
               {/* 5.1 */}
               <div className="inset-0 flex flex-col justify-center items-center">
@@ -1149,6 +1151,7 @@ const Home = () => {
                       {t('full_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </div>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="fullname"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -1160,6 +1163,7 @@ const Home = () => {
                       {t('company_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="companyname"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -1171,6 +1175,7 @@ const Home = () => {
                       {t('contact_number')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="tel"
                       id="contactnumber"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -1182,6 +1187,7 @@ const Home = () => {
                       {t('email_address')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="email"
                       id="email"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -1193,6 +1199,7 @@ const Home = () => {
                       {t('your_state')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="location"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"
@@ -1204,6 +1211,7 @@ const Home = () => {
                       {t('your_business_sector')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="sector"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-none focus:border-blue-600 p-2 md:p-3"

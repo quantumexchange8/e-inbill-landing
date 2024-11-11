@@ -8,7 +8,7 @@ import LHDN from '../Asset/Images/LHDN_logo1.png';
 
 const Einvoice = () => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
@@ -43,11 +43,11 @@ const Einvoice = () => {
       </div>
       {/* 2 */}
       <div className='w-full flex justify-center'>
-        <div className='flex flex-col justify-center max-w-[1000px] w-full px-[29px] md:px-0'>
+        <div className='flex flex-col items-center max-w-[1000px] w-full px-[29px] md:px-0'>
           {/* 2.1 */}
-          <div className='flex flex-col gap-[20px] justify-center max-w-[1000px] w-full'>
-            <div className='flex flex-col md:w-[1000px] justify-center gap-[10px] text-left text-[#0046BA] text-xl md:text-5xl not-italic font-bold leading-tight'>
-              <div className='hidden md:flex flex-col leading-tight'>
+          <div className='flex flex-col items-center md:items-start gap-[20px] max-w-[1000px] w-full'>
+            <div className='flex flex-col gap-[10px] text-left text-[#0046BA] text-xl md:text-5xl font-bold leading-tight'>
+              <div className='hidden md:flex flex-col leading-tight text-left'>
                 <div>
                   {t('simplify_your_malaysian')}
                 </div>
@@ -58,8 +58,8 @@ const Einvoice = () => {
                   {t('e_inbill')}
                 </div>
               </div>
-              <div className="w-[300px] md:hidden">
-                <div>
+              <div className="w-[333px] md:hidden">
+                <div className='w-[310px]'>
                   {t('m_simplify_your_malaysian')}
                 </div>
                 <div> 
@@ -78,7 +78,7 @@ const Einvoice = () => {
                 {t('by_july_1')}
               </div>
             </div>
-            <div className='md:hidden flex flex-col md:flex-row text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight'>
+            <div className='md:hidden flex flex-col md:flex-row text-left text-[#0060FF] text-sm md:text-2xl not-italic font-medium leading-tight w-[333px]'>
               <div>
                 {t('m_the_malaysian_inland_revenue_board')}
               </div>
@@ -88,7 +88,7 @@ const Einvoice = () => {
             </div>
           </div>
           {/* 2.2 */}
-          <div className='py-[100px] md:py-[200px] flex justify-center'>
+          <div className='py-[100px] md:py-[200px]'>
             {/* Web */}
             <div className="hidden md:flex items-center gap-[200px]">
               <div className="bg-blue-800 flex flex-col items-center rounded-[30px] w-[200px] h-[200px] justify-center">
@@ -101,21 +101,21 @@ const Einvoice = () => {
               </div>
             </div>
             {/* Mobile */}
-            <div className="md:hidden flex items-center gap-[50px]">
-              <div className="bg-blue-800 flex flex-col items-center rounded-[30px] w-[100px] h-[100px] justify-center">
+            <div className="md:hidden flex justify-center gap-[50px] w-[333px] ">
+              <div className="bg-blue-800 flex  rounded-[30px] w-[100px] h-[100px]">
                 <div className="flex flex-col gap-[8.15px]">
                   <EGroupS />
                 </div>
               </div>
-              <div className='flex'>
+              <div>
                 <img src={LHDN} alt="LHDN Logo" className="w-[128px] h-[100px] flex-shrink-0" />
               </div>
             </div>
           </div>
           {/* 2.3 */}
-          <div className='flex flex-col text-left w-full gap-[75px] md:gap-[100px]'>
+          <div className='flex flex-col items-center md:items-start text-left w-full gap-[75px] md:gap-[100px]'>
             {/* Start Implementing E-Invoicing */}
-            <div className='flex flex-col gap-[50px]'>
+            <div className='flex flex-col items-center gap-[50px]'>
               <div className='flex flex-col gap-[10px] md:gap-5'>
                 <div className='text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                   <div className='hidden md:flex'>
@@ -132,7 +132,7 @@ const Einvoice = () => {
                     </div>
                   </div>
                 </div>
-                <div className='md:w-[970px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight'>
+                <div className='w-[333px] md:w-[970px] text-[#0060FF] text-sm md:text-xl font-medium leading-tight'>
                   {t('the_implementating_of_e_invoice')}
                 </div>
               </div>
@@ -323,11 +323,11 @@ const Einvoice = () => {
                    <div className='hidden md:block '>
                     {t('to_support_the_growth')}
                    </div>
-                   <div className='md:hidden'>
+                   <div className='md:hidden w-[315px]'>
                     <div>
                       {t('m_to_support_the_growth')}
                     </div> 
-                    <div className='w-[320px]'>
+                    <div className='w-[315px]'>
                       {t('e_invoice_in_stages')}
                     </div>
                    </div>
@@ -381,7 +381,7 @@ const Einvoice = () => {
               </div>
             </div>
             {/* LHDN E-Invoice */}
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-5 w-[333px] md:w-full'>
               <div className='hidden md:flex w-[313px] md:w-[732px] text-[#0046BA] text-sm md:text-2xl font-bold leading-tight'>
                 {t('lhdn_e_invoice_what_are')}
               </div>
@@ -411,28 +411,28 @@ const Einvoice = () => {
                   </div>
                 </div>
                 <div className='pl-5 md:pl-8'>
-                  <ul className='flex flex-col gap-4 list-disc md:w-[950px]'>
+                  <ul className='flex flex-col gap-4 list-disc w-[315px] md:w-[950px]'>
                     <li className='w-[310px] md:w-full'>
                       {t('penalties')}
                     </li>
-                    <li>
+                    <li className='w-[312px] md:w-full'>
                       {t('legal_consequences')}
                     </li>
                     <ul className='flex flex-col md:flex-row gap-1 list-disc'>
                       <li>
                         {t('for_more_info')}
                       </li> 
-                      <a href="#" onClick={(e) => e.preventDefault() } className="underline text-blue-600">
+                      <button href="#" onClick={(e) => e.preventDefault() } className="underline text-blue-600 text-left">
                         {t('lhdn_offences')}
-                      </a>
+                      </button>
                     </ul>
                     <ul className='flex flex-col md:flex-row gap-1 list-disc'>
                       <li>
                         {t('customer_feedback_form')}
                       </li>
-                      <a href="#" onClick={(e) => e.preventDefault() } className="underline text-blue-600">
+                      <button href="#" onClick={(e) => e.preventDefault() } className="underline text-blue-600 text-left">
                         {t('following_link')}
-                      </a>
+                      </button>
                     </ul>
                   </ul>
                 </div>
@@ -464,7 +464,7 @@ const Einvoice = () => {
                       {t('adhere_to')}
                     </div>
                   </div>
-                  <div className='md:hidden'>
+                  <div className='md:hidden w-[333px]'>
                     {t('m_lhdn_has_released_guidelines')}
                   </div>
                 </div>

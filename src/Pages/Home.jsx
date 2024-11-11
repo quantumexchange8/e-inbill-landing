@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { HomeGroup1, GroupM, GroupMS, Tablet, TabletS, KFGroup1, KFGroup1S, Pos, PosS, Group11, Group11S, Group12, Group12S, Group6, Group6S, KFGroup2, KFGroup2S, Startup, StartupS, Arrow, ArrowS } from '../Components/Outline.jsx';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 import Leaveyourcontact from '../Components/Leaveyourcontact.jsx';
-import Product from './Products.jsx';
 import beautyImage from '../Asset/Images/beautician-with-brush-applies-white-moisturizing-mask-face-young-girl-client-spa-beauty-salon-1.png';
 import barista from '../Asset/Images/young-woman-barista-working-modern-coffee-shop-1.png';
 import food from '../Asset/Images/couple-enjoying-food-restaurant-1.png';
@@ -26,7 +25,7 @@ import Video2 from '../Asset/Videos/homeVideo2.mp4';
 
 const Home = () => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
@@ -53,7 +52,7 @@ const Home = () => {
                   {t('make_payments_easier')}
                 </div>
               </div>
-              <div className="md:hidden flex flex-col justify-center text-white/80 text-center text-2xl font-bold leading-tight">
+              <div className="md:hidden flex flex-col justify-center text-white/80 text-center text-2xl font-bold leading-tight w-[333px]">
                 <div>
                   {t('m_a_solution_to')}
                 </div>
@@ -77,100 +76,100 @@ const Home = () => {
           </div>
         </div>
         {/* 1.2 */}
-        <div className='w-full flex justify-center'>
-          <div className='flex flex-col gap-[50px] md:gap-[100px] justify-center max-w-[1000px] md:w-full '>
+        <div className="w-full flex justify-center px-[30px]">
+          <div className="flex flex-col gap-[50px] md:gap-[100px] justify-center max-w-[1000px] w-[333px] md:w-full ">
             {/* About Us */}
-            <div className='flex flex-col gap-[10px] md:gap-5 px-[29px] md:px-0 max-w-[1000px] md:w-full'>
-                <div className='text-[#0046BA] text-xl md:text-5xl font-bold text-left leading-tight'>
-                  {t('about_us')}
-                </div>
-                <div className='text-[#0060FF] text-base md:text-2xl font-medium text-left leading-tight flex flex-col gap-5 md:gap-10'> 
+            <div className="flex flex-col gap-[10px] w-[333px] md:w-full ">
+              <div className='text-[#0046BA] text-xl md:text-5xl font-bold text-left leading-tight w-[333px] md:w-full '>
+                {t('about_us')}
+              </div>
+              <div className="flex w-[333px] md:w-full ">
+                <div className="w-[333px] md:w-full  text-[#0060FF] text-base md:text-2xl font-medium text-left leading-tight flex flex-col gap-5">
                   <div className='hidden md:block'>
-                    <div>
+                  <div>
                       {t('we_are_einbill')}
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('as_a_technology_driven_company')}
-                    </div>
+                  </div>
                   </div>
                   <div className='md:hidden'>
-                    <div>
+                  <div>
                       {t('m_we_are_einbill')}
-                    </div> 
-                    <div>
+                  </div> 
+                  <div>
                       {t('current_tech')}
-                    </div>
+                  </div>
                   </div>
                   <div className='hidden md:block'>
-                    <div>
+                  <div>
                       {t('in_malaysia')}
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('standard_serving')}
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('retail_to_manufacturing')}
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('medium_size')}
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('and_mdec')}
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('bodies_we')}
-                    </div>
+                  </div>
                   </div>
                   <div className='md:hidden'>
-                    <div>
+                  <div>
                       {t('m_in_malaysia_we')}
-                    </div> 
-                    <div>
+                  </div> 
+                  <div>
                       {t('m_e_invoicing_products')} 
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('m_with_a_focus')}
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                       {t('m_lhdn_regulations')}
-                    </div>
+                  </div>
                   </div>
                 </div>
+              </div>
             </div>
-            {/* Key Features */}
-            <div className='flex flex-col gap-[50px] md:gap-[100px] items-center px-[30px] md:px-0 max-w-[1000px] md:w-full'>
-              <div className='flex justify-center'>
-                <div className='md:w-[685px] text-[#0046BA] text-xl md:text-5xl font-bold text-center flex flex-col md:flex-row justify-center'>
-                  <div className='md:hidden'>
+            {/* Key Feature */}
+            <div className="flex flex-col gap-[50px] md:gap-[100px] items-center px-[30px] md:px-0 max-w-[1000px] md:w-full">
+              <div className="flex justify-center md:w-[685px] text-[#0046BA] text-xl md:text-5xl font-bold text-center">
+                <div className='md:hidden'>
                     <div>
-                      {t('m_key_features')}
+                        {t('m_key_features')}
                     </div>
                     <div>
-                      {t('m_of_our_products')}
+                        {t('m_of_our_products')}
                     </div> 
-                  </div>
-                  <div className='hidden md:flex'>
+                </div>
+                <div className='hidden md:flex'>
                     {t('key_features')}
-                  </div>
-                </div> 
+                </div>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-[39px] md:gap-[120px] w-[300px] md:w-full">
                 <div className="order-2 md:order-none flex flex-col items-center gap-[10px] md:gap-[30px]">
                   <div className="hidden md:block">
-                    <Tablet />
+                  <Tablet />
                   </div>
                   <div className="md:hidden">
-                    <TabletS />
+                  <TabletS />
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold ">
                     <div className='md:leading-[23px]'>
-                      {t('completing')}
+                        {t('completing')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('transaction')}
+                        {t('transaction')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('just')}
+                        {t('just')}
                     </div>
                   </div>
                 </div>
@@ -183,13 +182,13 @@ const Home = () => {
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold">
                     <div className='md:leading-[23px]'>
-                      {t('fully_complaint')}
+                        {t('fully_complaint')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('tax_e_invoice')}
+                        {t('tax_e_invoice')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('functionality')}
+                        {t('functionality')}
                     </div>
                   </div>
                 </div>
@@ -202,13 +201,13 @@ const Home = () => {
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold">
                     <div className='md:leading-[23px]'>
-                      {t('fully_support')}
+                        {t('fully_support')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('all_payment')}
+                        {t('all_payment')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('methods')}
+                        {t('methods')}
                     </div>
                   </div>
                 </div>
@@ -221,23 +220,23 @@ const Home = () => {
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold">
                     <div className='md:leading-[23px]'>
-                      {t('Unbeatable')}
+                        {t('Unbeatable')}
                     </div> 
                     <div className='md:leading-[23px]'>
-                      {t('low_prices')}
+                        {t('low_prices')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('would_not')}
+                        {t('would_not')}
                     </div>
                   </div>
                 </div>
-                <div className="order-1 md:order-none flex flex-col col-span-2 md:col-span-1 items-center gap-[30px] justify-center">
+                <div className='order-1 md:order-none flex flex-col col-span-2 md:col-span-1 items-center '>
                   <div className=" flex flex-col items-center rounded-[30px] w-[150px] h-[150px] justify-center">
                     <div className='hidden md:block'>
-                      <GroupM />
+                        <GroupM />
                     </div>
                     <div className='md:hidden'>
-                      <GroupMS />
+                        <GroupMS />
                     </div>
                   </div>
                 </div>
@@ -250,13 +249,13 @@ const Home = () => {
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold">
                     <div className='md:leading-[23px]'>
-                      {t('absolutely_secure')}
+                        {t('absolutely_secure')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('cloud_synchrnization')}
+                        {t('cloud_synchrnization')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('and_storage')}
+                        {t('and_storage')}
                     </div>
                   </div>
                 </div>
@@ -269,13 +268,13 @@ const Home = () => {
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold">
                     <div className='md:leading-[23px]'>
-                      {t('user_friendly')}
+                        {t('user_friendly')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('easy_to_use')}
+                        {t('easy_to_use')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('key_interface')}
+                        {t('key_interface')}
                     </div>
                   </div>
                 </div>
@@ -288,13 +287,13 @@ const Home = () => {
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold">
                     <div className='md:leading-[23px]'>
-                      {t('set_up')}
+                        {t('set_up')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('start_selling')}
+                        {t('start_selling')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('within_minutes')}
+                        {t('within_minutes')}
                     </div>
                   </div>
                 </div>
@@ -307,19 +306,19 @@ const Home = () => {
                   </div>
                   <div className="text-black text-center text-xs md:text-xl font-bold">
                     <div className='md:leading-[23px]'>
-                      {t('customer_support')}
+                        {t('customer_support')}
                     </div>
                     <div className='md:leading-[23px]'> 
-                      {t('seven_days')}
+                        {t('seven_days')}
                     </div>
                     <div className='md:leading-[23px]'>
-                      {t('for_quick_assistance')}
+                        {t('for_quick_assistance')}
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='h-[1px] bg-[#0046BA] w-full' />
             </div>
+            <div className='h-[1px] bg-[#0046BA] w-full' />
           </div>
         </div>
       </div>
@@ -351,23 +350,23 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                <div className='text-black text-base md:text-2xl font-medium text-center leading-tight flex flex-col gap-6'>
-                  <div className='flex flex-col justify-center'>
-                  <div className='hidden md:flex justify-center'>
+              <div className='flex justify-center'>
+                <div className='w-[333px] md:w-full text-black text-base md:text-2xl font-medium text-center leading-tight flex flex-col gap-6'>
+                  <div className='flex flex-col'>
+                    <div className='hidden md:flex justify-center'>
                         {t('whether_a_small_street_vendor')}
+                    </div>
+                    <div className='hidden md:flex justify-center'>
+                      {t('di_bawah_satu')}
+                    </div>
+                    <div className='md:hidden'>
+                      <div>
+                        {t('m_whether_a_small_street_vendor')}
                       </div>
-                      <div className='hidden md:flex justify-center'>
-                        {t('di_bawah_satu')}
+                      <div>
+                        {t('m_unified')}
                       </div>
-                      <div className='md:hidden'>
-                        <div>
-                          {t('m_whether_a_small_street_vendor')}
-                        </div>
-                        <div>
-                          {t('m_unified')}
-                        </div>
-                      </div>
+                    </div>
                   </div>
                   <div className='flex justify-center'>
                     <div>
@@ -395,7 +394,7 @@ const Home = () => {
                   <div className='hidden md:flex justify-center'>
                     {t('your_business')}
                   </div>
-                  <div className='md:hidden'>
+                  <div className='md:hidden w-[333px]'>
                     <div>
                       {t('m_the_e_inbill_solution')}
                     </div>
@@ -562,7 +561,7 @@ const Home = () => {
               {t('hinder_your')}
             </div>
           </div>
-          <div className="md:hidden flex flex-col items-center justify-center text-white/80 text-center text-2xl font-bold leading-tight w-full max-w-[1000px]">
+          <div className="md:hidden flex flex-col items-center justify-center text-white/80 text-center text-2xl font-bold leading-tight w-[333px] md:w-full max-w-[1000px]">
             <div className='flex items-center'>
               {t('m_tedious_steps')}
             </div> 
@@ -590,7 +589,7 @@ const Home = () => {
                       {t('that_the_product')}
                     </div>
                   </div>
-                  <div className='md:hidden'>
+                  <div className='md:hidden w-[333px]'>
                     <div>
                       {t('m_you_cannot_resist')}
                     </div>
@@ -612,7 +611,7 @@ const Home = () => {
                     {t('have_choosing')}
                   </div>
                 </div>
-                <div className='md:hidden'>
+                <div className='md:hidden w-[333px]'>
                   {t('m_we_offer')}
                 </div>
               </div>
@@ -835,12 +834,14 @@ const Home = () => {
                     {t('usher_in')}
                   </div>
                 </div>
-                <div className='md:hidden'>
-                  <div>
-                    {t('m_join_millions')}
-                  </div>
-                  <div>
-                    {t('m_for_your')}
+                <div className='md:hidden flex flex-col items-center'>
+                  <div className='w-[333px]'>
+                    <div>
+                      {t('m_join_millions')}
+                    </div>
+                    <div>
+                      {t('m_for_your')}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -856,6 +857,7 @@ const Home = () => {
                       {t('full_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </div>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="fullname"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
@@ -867,6 +869,7 @@ const Home = () => {
                       {t('company_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="companyname"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
@@ -878,6 +881,7 @@ const Home = () => {
                       {t('contact_number')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="tel"
                       id="contactnumber"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
@@ -889,6 +893,7 @@ const Home = () => {
                       {t('email_address')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="email"
                       id="email"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
@@ -900,6 +905,7 @@ const Home = () => {
                       {t('your_state')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="location"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
@@ -911,6 +917,7 @@ const Home = () => {
                       {t('your_business_sector')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
                     </label>
                     <input
+                      autoComplete='on'
                       type="text"
                       id="sector"
                       className="w-full h-10 md:h-[60px] border border-solid text-black text-sm md:text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-2 md:p-3"
