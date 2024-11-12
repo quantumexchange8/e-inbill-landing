@@ -926,17 +926,19 @@ const Home = () => {
                 </div>
                 {/* Submit */}
                 <div className="flex items-center justify-center">
-                  <button className="w-auto h-auto rounded-[31px] border-2 border-black shadow-submit px-9 py-[10px]" type="submit">
-                    <div className="w-auto text-black text-center md:text-xl text-base font-semibold leading-tight">
-                      <div className='hidden md:flex'>
-                        {t('leave_your_contact_to')}
-                      </div>
-                      <div className='md:hidden'>
-                        <div>
-                          {t('m_leave_your_contact_to')}
+                  <button className="w-auto rounded-[31px] border-2 border-black shadow-submit " type="submit">
+                    <div className='flex justify-center'>
+                      <div className="w-[333px] md:w-auto text-black text-center md:text-xl text-base font-semibold leading-tight py-[10px] px-9">
+                        <div className='hidden md:flex'>
+                          {t('leave_your_contact_to')}
                         </div>
-                        <div>
-                          {t('m_a_complimentary')}
+                        <div className="md:hidden">
+                          <div>
+                            {t('m_leave_your_contact_to')}
+                          </div>
+                          <div>
+                            {t('m_a_complimentary')}
+                          </div>
                         </div>
                       </div>
                     </div>
