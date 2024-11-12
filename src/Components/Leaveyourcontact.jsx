@@ -10,7 +10,7 @@ const Leaveyourcontact = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-[10px] w-[1000px] max-h-[1000px] overflow-auto relative shadow-lg py-[85px] px-[100px] flex flex-col gap-[100px]">
+      <div className="bg-white rounded-[10px] w-[1200px] max-h-screen overflow-auto relative shadow-lg py-[85px] px-[100px] flex flex-col gap-[100px]">
         <button onClick={onClose} className="absolute top-10 right-10 text-black">
           <Group52 />
         </button>
