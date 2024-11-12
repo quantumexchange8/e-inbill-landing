@@ -79,7 +79,7 @@ const Home = () => {
         <div className="w-full flex justify-center px-[30px]">
           <div className="flex flex-col gap-[50px] md:gap-[100px] justify-center max-w-[1000px] w-[333px] md:w-full ">
             {/* About Us */}
-            <div className="flex flex-col gap-[10px] w-[333px] md:w-full ">
+            <div className="flex flex-col gap-[10px] md:gap-[20px] w-[333px] md:w-full ">
               <div className='text-[#0046BA] text-xl md:text-5xl font-bold text-left leading-tight w-[333px] md:w-full '>
                 {t('about_us')}
               </div>
