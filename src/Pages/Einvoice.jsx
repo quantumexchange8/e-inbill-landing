@@ -198,7 +198,7 @@ const Einvoice = () => {
                 {t('e_invoice_implementing_timeline')}
               </div>
               <div className='text-[#0060FF] text-sm md:text-xl leading-tight md:leading-[30px] flex flex-col gap-[15px] md:gap-[30px] w-[333px] md:w-full'>
-                <ul className='list-disc flex flex-col pl-5 md:pl-6'>
+                <ul className='list-disc flex flex-col pl-6 md:pl-6'>
                   <li className='font-bold md:font-semibold'>
                     {t('target_taxpayers')}
                   </li>
