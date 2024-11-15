@@ -1,127 +1,136 @@
 import { useTranslation } from 'react-i18next';
-import { HomeGroup1F } from './Outline';
-import { Group52 } from './Outline';
+import { Button } from "./ui/button"
+import {
+  DrawerBackdrop,
+  DrawerBody,
+  DrawerCloseTrigger,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerRoot,
+  DrawerTitle,
+  DrawerTrigger,
+} from "./ui/drawer"
+import { HomeGroup1 } from './Outline';
 
-const Leaveyourcontact = ({ isOpen, onClose }) => {
+const Leaveyourcontact = () => {
 
   const { t } = useTranslation();
 
-  if (!isOpen) return null; 
-
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-[10px] w-[1200px] max-h-screen overflow-auto relative shadow-lg py-[85px] px-[100px] flex flex-col gap-[100px]">
-        <button onClick={onClose} className="absolute top-10 right-10 text-black">
-          <Group52 />
-        </button>
-        <div className='flex flex-col gap-[50px]'>
-          <div className='flex justify-center'>
-            <HomeGroup1F />
-          </div>
-          <div className="flex flex-col items-center gap-[30px]">
-            <div className="text-black text-5xl font-bold flex gap-[10px]">
-              <div>
-                {t('f_leave_your_contact')}
+    <div className='absolute bottom-10 right-10 md:flex flex-col items-center gap-[10px] hidden'>
+      <DrawerRoot key={"md"} size={"md"}>
+        <DrawerBackdrop />
+        <DrawerTrigger asChild>
+          <Button variant="outline" size="sm" className=' min-w-24 min-h-24 flex flex-col gap-[10px]' > 
+
+          <HomeGroup1 className="w-[50px] h-[45px]" />
+            <div className="text-[#0046BA] text-center text-sm font-bold leading-normal">
+              <div className='leading-[18px]'>
+                {t('leave_your')}
+              </div>
+              <div className='leading-[18px]'>
+                {t('contact')}
               </div>
             </div>
-            <div className='text-black text-4xl font-medium w-[691px] flex flex-col leading-tight'>
-              <div>
-                {t('f_please_be_patient')}
-              </div>
-              <div>
-                {t('f_will_contact')}
-              </div>
-            </div>
-          </div>
-        </div>
-        <form onSubmit={(e) => e.preventDefault()} className='flex flex-col gap-[50px] md:gap-[100px]'>
-          {/* Content */}
-          <div className='flex flex-col items-center gap-[30px] md:gap-[50px]'>
-            {/* Full name */}
-            <div className='flex flex-col gap-[10px] w-full'>
-              <div className="text-[#000] text-base md:text-base font-bold text-left" htmlFor="fullname">
-                {t('full_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
-              </div>
-              <input
-                autoComplete='on'
-                type="text"
-                id="fullname"
-                className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
-              />
-            </div>
-            {/* Company name */}
-            <div className='flex flex-col gap-[10px]  w-full'> 
-              <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="companyname">
-                {t('company_name')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
-              </label>
-              <input
-                autoComplete='on'
-                type="text"
-                id="companyname"
-                className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
-              />
-            </div>
-            {/* Contact number */}
-            <div className='flex flex-col gap-[10px] w-full'>
-              <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="contactnumber">
-                {t('contact_number')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
-              </label>
-              <input
-                autoComplete='on'
-                type="tel"
-                id="contactnumber"
-                className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
-              />
-            </div>
-            {/* Email-address */}
-            <div className='flex flex-col gap-[10px] w-full'>
-              <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="email">
-                {t('email_address')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
-              </label>
-              <input
-                autoComplete='on'
-                type="email"
-                id="email"
-                className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
-              />
-            </div>
-            {/* Your state or location */}
-            <div className='flex flex-col gap-[10px] w-full'>
-              <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="location">
-                {t('your_state')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
-              </label>
-              <input
-                autoComplete='on'
-                type="text"
-                id="location"
-                className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
-              />
-            </div>
-            {/* Your business sector */}
-            <div className='flex flex-col gap-[10px] w-full'>
-              <label className="block text-[#000] text-sm md:text-base font-bold text-left " htmlFor="sector">
-                {t('your_business_sector')}<span className="text-[#F00] text-sm md:text-base font-bold">*</span>
-              </label>
-              <input
-                autoComplete='on'
-                type="text"
-                id="sector"
-                className="w-full h-10 md:h-[60px] border border-solid text-black text-xl bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
-              />
-            </div>
-          </div>
-          {/* Submit */}
-          <div className="flex items-center justify-center">
-            <button className="w-full md:w-auto h-[60px] rounded-[31px] border-2 border-black shadow-submit px-8" type="submit">
-              <div className='flex justify-center'>
-                <div className="w-[243px] md:w-auto text-black text-center md:text-xl text-base font-semibold leading-tight">
-                  {t('f_leave_your_contact_to')}
+          </Button>
+        </DrawerTrigger>
+        <DrawerContent>
+          <DrawerHeader>
+            <DrawerTitle>
+              <div className='flex items-center gap-4 '>
+                <div>
+                  <HomeGroup1 className="w-[45px] h-[40px]" />
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <div className='text-xl font-bold leading-tight'>
+                    {t('leave_your')} {t('contact')}
+                  </div>
+                  <div className='leading-tight'>
+                    {t('f_please_be_patient')}
+                  </div>
                 </div>
               </div>
-            </button>
-          </div>
-        </form>
-      </div>
+            </DrawerTitle>
+          </DrawerHeader>
+          <DrawerBody>
+            <div className='flex flex-col gap-5'>
+              <div className='space-y-1.5'>
+                <div className="text-[#000] text-sm font-bold text-left" htmlFor="fullname">
+                  {t('full_name')}<span className="text-[#F00] text-sm font-medium">*</span>
+                </div>
+                <input
+                  autoComplete='on'
+                  type="text"
+                  id="fullname"
+                  className="w-full border border-solid text-black text-sm bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
+                />
+              </div>
+              <div className='space-y-1.5'>
+                <div className="text-[#000] text-sm font-bold text-left" htmlFor="fullname">
+                  {t('company_name')}<span className="text-[#F00] text-sm font-medium">*</span>
+                </div>
+                <input
+                  autoComplete='on'
+                  type="text"
+                  id="fullname"
+                  className="w-full border border-solid text-black text-sm bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
+                />
+              </div>
+              <div className='space-y-1.5'>
+                <div className="text-[#000] text-sm font-bold text-left" htmlFor="fullname">
+                  {t('contact_number')}<span className="text-[#F00] text-sm font-medium">*</span>
+                </div>
+                <input
+                  autoComplete='on'
+                  type="text"
+                  id="fullname"
+                  className="w-full border border-solid text-black text-sm bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
+                />
+              </div>
+              <div className='space-y-1.5'>
+                <div className="text-[#000] text-sm font-bold text-left" htmlFor="fullname">
+                  {t('email_address')}<span className="text-[#F00] text-sm font-medium">*</span>
+                </div>
+                <input
+                  autoComplete='on'
+                  type="text"
+                  id="fullname"
+                  className="w-full border border-solid text-black text-sm bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
+                />
+              </div>
+              <div className='space-y-1.5'>
+                <div className="text-[#000] text-sm font-bold text-left" htmlFor="fullname">
+                  {t('your_state')}<span className="text-[#F00] text-sm font-medium">*</span>
+                </div>
+                <input
+                  autoComplete='on'
+                  type="text"
+                  id="fullname"
+                  className="w-full border border-solid text-black text-sm bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
+                />
+              </div>
+              <div className='space-y-1.5'>
+                <div className="text-[#000] text-sm font-bold text-left" htmlFor="fullname">
+                  {t('your_business_sector')}<span className="text-[#F00] text-sm font-medium">*</span>
+                </div>
+                <input
+                  autoComplete='on'
+                  type="text"
+                  id="fullname"
+                  className="w-full border border-solid text-black text-sm bg-[#D9E3F5] border-[#0060FF] rounded-[5px] md:rounded-[10px] focus:outline-1 focus:outline-[#0046BA] p-3"
+                />
+              </div>
+            </div>
+          </DrawerBody>
+          <DrawerFooter>
+            <Button className='w-full bg-[#0046BA] text-white rounded-lg' >
+              {t('f_leave_your_contact_to')}
+            </Button>
+          </DrawerFooter>
+          <DrawerCloseTrigger />
+        </DrawerContent>
+      </DrawerRoot>
     </div>
   );
 };

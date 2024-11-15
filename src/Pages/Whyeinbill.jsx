@@ -1,17 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Video1 from '../Asset/Videos/whyEinbillVideo1.mp4';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 import Leaveyourcontact from '../Components/Leaveyourcontact.jsx';
 import { useTranslation } from 'react-i18next';
-import { HomeGroup1, WhyGroup1, WhyGroup1S, Group13, Group13S, Group71, Group71S, Group72, Group72S, Group73, Group73S, Group74, Group74S, Group18, Group18S, Group84, Group84S, Group85, Group85S, Group86, Group86S, Group87, Group87S } from '../Components/Outline.jsx';
+import {  WhyGroup1, WhyGroup1S, Group13, Group13S, Group71, Group71S, Group72, Group72S, Group73, Group73S, Group74, Group74S, Group18, Group18S, Group84, Group84S, Group85, Group85S, Group86, Group86S, Group87, Group87S } from '../Components/Outline.jsx';
 
 const Whyeinbill = () => {
 
   const { t } = useTranslation();
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className='pt-[54px] md:pt-[113px] pb-[75px] md:pb-[100px] flex flex-col gap-[50px] md:gap-[100px]'>
@@ -41,18 +37,7 @@ const Whyeinbill = () => {
               </div>
             </div>
           </div>
-          <button onClick={openModal} className="absolute bottom-10 right-10 md:flex flex-col items-center gap-[10px] hidden">
-              <HomeGroup1 className="w-[50px] h-[45px]" />
-              <div className="text-[#0046BA] text-center text-sm font-bold leading-normal">
-                <div className='leading-[18px]'>
-                  {t('leave_your')}
-                </div>
-                <div className='leading-[18px]'>
-                  {t('contact')}
-                </div>
-              </div>
-            </button>
-            <Leaveyourcontact isOpen={isModalOpen} onClose={closeModal} />
+          <Leaveyourcontact />
           </div>
       </div>
       {/* 2 */}

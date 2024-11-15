@@ -7,22 +7,25 @@ import Einvoice from "./Pages/Einvoice";
 import Product from "./Pages/Products";
 import ScrollToTop from './Components/ScrollToTop';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Provider } from "./Components/ui/provider"
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="App" >
-        <Topbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/whyeinbill" element={<Whyeinbill />} />
-          <Route path="/einvoice" element={<Einvoice />} />
-          <Route path="/products" element={<Product />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <Provider>
+      <Router>
+        <ScrollToTop />
+        <div className="App" >
+          <Topbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/whyeinbill" element={<Whyeinbill />} />
+            <Route path="/einvoice" element={<Einvoice />} />
+            <Route path="/products" element={<Product />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </Provider>
   );
 }
 

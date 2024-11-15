@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { HomeGroup1, GroupM, GroupMS, Tablet, TabletS, KFGroup1, KFGroup1S, Pos, PosS, Group11, Group11S, Group12, Group12S, Group6, Group6S, KFGroup2, KFGroup2S, Startup, StartupS, Arrow, ArrowS } from '../Components/Outline.jsx';
+import { GroupM, GroupMS, Tablet, TabletS, KFGroup1, KFGroup1S, Pos, PosS, Group11, Group11S, Group12, Group12S, Group6, Group6S, KFGroup2, KFGroup2S, Startup, StartupS, Arrow, ArrowS } from '../Components/Outline.jsx';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 import Leaveyourcontact from '../Components/Leaveyourcontact.jsx';
 import beautyImage from '../Asset/Images/beautician-with-brush-applies-white-moisturizing-mask-face-young-girl-client-spa-beauty-salon-1.png';
@@ -26,10 +26,6 @@ import Video2 from '../Asset/Videos/homeVideo2.mp4';
 const Home = () => {
 
   const { t } = useTranslation();
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   const navigate = useNavigate();
 
@@ -61,18 +57,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <button onClick={openModal} className="absolute bottom-10 right-10 md:flex flex-col items-center gap-[10px] hidden">
-              <HomeGroup1 className="w-[50px] h-[45px]" />
-              <div className="text-[#0046BA] text-center text-sm font-bold leading-normal">
-                <div className='leading-[18px]'>
-                  {t('leave_your')}
-                </div>
-                <div className='leading-[18px]'>
-                  {t('contact')}
-                </div>
-              </div>
-            </button>
-            <Leaveyourcontact isOpen={isModalOpen} onClose={closeModal} />
+            <Leaveyourcontact />
           </div>
         </div>
         {/* 1.2 */}

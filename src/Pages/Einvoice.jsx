@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 import Leaveyourcontact from '../Components/Leaveyourcontact.jsx';
 import Video1 from '../Asset/Videos/eInvoiceVideo1.mp4';
 import { useTranslation } from 'react-i18next';
-import { HomeGroup1, EGroup, EGroupS, ArrowFlipForward, ArrowFlipForwardS } from '../Components/Outline.jsx';
+import { EGroup, EGroupS, ArrowFlipForward, ArrowFlipForwardS } from '../Components/Outline.jsx';
 import LHDN from '../Asset/Images/LHDN_logo1.png';
 
 const Einvoice = () => {
 
   const { t } = useTranslation();
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className='pt-[54px] md:pt-[113px] md:pb-[100px] pb-[75px] flex flex-col gap-[50px] md:gap-[100px]'>
@@ -27,18 +23,7 @@ const Einvoice = () => {
               {t('what_is_an_e_invoice')}
             </div>
           </div>
-          <button onClick={openModal} className="absolute bottom-10 right-10 md:flex flex-col items-center gap-[10px] hidden">
-            <HomeGroup1 className="w-[50px] h-[45px]" />
-            <div className="text-[#0046BA] text-center text-sm font-bold leading-normal">
-              <div className='leading-[18px]'>
-                {t('leave_your')}
-              </div>
-              <div className='leading-[18px]'>
-                {t('contact')}
-              </div>
-            </div>
-          </button>
-          <Leaveyourcontact isOpen={isModalOpen} onClose={closeModal} />
+          <Leaveyourcontact />
         </div>
       </div>
       {/* 2 */}
